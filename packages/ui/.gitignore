@@ -1,0 +1,7 @@
+# Generado por scripts/build.mts desde packages/registry
+src/
+lib/
+assets/
+theme.css
+tsconfig.build.json
+dist/

@@ -1,0 +1,405 @@
+{
+  "name": "@farma/ui",
+  "version": "0.1.0",
+  "description": "Design system de Farma para React Native + Expo + Uniwind. Un import por componente: @farma/ui/button, @farma/ui/icon…",
+  "license": "UNLICENSED",
+  "sideEffects": false,
+  "files": [
+    "lib",
+    "assets",
+    "theme.css"
+  ],
+  "exports": {
+    "./accordion": {
+      "types": "./lib/ui/accordion/index.d.ts",
+      "default": "./lib/ui/accordion/index.js"
+    },
+    "./action-sheet": {
+      "types": "./lib/ui/action-sheet/index.d.ts",
+      "default": "./lib/ui/action-sheet/index.js"
+    },
+    "./animated-layout": {
+      "types": "./lib/ui/animated-layout/index.d.ts",
+      "default": "./lib/ui/animated-layout/index.js"
+    },
+    "./app-refresh-control": {
+      "types": "./lib/ui/app-refresh-control/index.d.ts",
+      "default": "./lib/ui/app-refresh-control/index.js"
+    },
+    "./attempt-limit-modal": {
+      "types": "./lib/ui/attempt-limit-modal/index.d.ts",
+      "default": "./lib/ui/attempt-limit-modal/index.js"
+    },
+    "./badge": {
+      "types": "./lib/ui/badge/index.d.ts",
+      "default": "./lib/ui/badge/index.js"
+    },
+    "./bottom-sheet": {
+      "types": "./lib/ui/bottom-sheet/index.d.ts",
+      "default": "./lib/ui/bottom-sheet/index.js"
+    },
+    "./button": {
+      "types": "./lib/ui/button/index.d.ts",
+      "default": "./lib/ui/button/index.js"
+    },
+    "./button-group": {
+      "types": "./lib/ui/button-group/index.d.ts",
+      "default": "./lib/ui/button-group/index.js"
+    },
+    "./button-section-layout": {
+      "types": "./lib/ui/button-section-layout/index.d.ts",
+      "default": "./lib/ui/button-section-layout/index.js"
+    },
+    "./chat-bubble": {
+      "types": "./lib/ui/chat-bubble/index.d.ts",
+      "default": "./lib/ui/chat-bubble/index.js"
+    },
+    "./check-icon": {
+      "types": "./lib/ui/check-icon/index.d.ts",
+      "default": "./lib/ui/check-icon/index.js"
+    },
+    "./checkbox": {
+      "types": "./lib/ui/checkbox/index.d.ts",
+      "default": "./lib/ui/checkbox/index.js"
+    },
+    "./chip": {
+      "types": "./lib/ui/chip/index.d.ts",
+      "default": "./lib/ui/chip/index.js"
+    },
+    "./code-input": {
+      "types": "./lib/ui/code-input/index.d.ts",
+      "default": "./lib/ui/code-input/index.js"
+    },
+    "./counter": {
+      "types": "./lib/ui/counter/index.d.ts",
+      "default": "./lib/ui/counter/index.js"
+    },
+    "./custom-screen-header": {
+      "types": "./lib/ui/custom-screen-header/index.d.ts",
+      "default": "./lib/ui/custom-screen-header/index.js"
+    },
+    "./detail-card": {
+      "types": "./lib/ui/detail-card/index.d.ts",
+      "default": "./lib/ui/detail-card/index.js"
+    },
+    "./dimensions": {
+      "types": "./lib/lib/dimensions/index.d.ts",
+      "default": "./lib/lib/dimensions/index.js"
+    },
+    "./divider": {
+      "types": "./lib/ui/divider/index.d.ts",
+      "default": "./lib/ui/divider/index.js"
+    },
+    "./dots-dropdown": {
+      "types": "./lib/ui/dots-dropdown/index.d.ts",
+      "default": "./lib/ui/dots-dropdown/index.js"
+    },
+    "./dropdown": {
+      "types": "./lib/ui/dropdown/index.d.ts",
+      "default": "./lib/ui/dropdown/index.js"
+    },
+    "./dropdown-button": {
+      "types": "./lib/ui/dropdown-button/index.d.ts",
+      "default": "./lib/ui/dropdown-button/index.js"
+    },
+    "./email-input": {
+      "types": "./lib/ui/email-input/index.d.ts",
+      "default": "./lib/ui/email-input/index.js"
+    },
+    "./empty-state": {
+      "types": "./lib/ui/empty-state/index.d.ts",
+      "default": "./lib/ui/empty-state/index.js"
+    },
+    "./featured-icon": {
+      "types": "./lib/ui/featured-icon/index.d.ts",
+      "default": "./lib/ui/featured-icon/index.js"
+    },
+    "./feedback-screen": {
+      "types": "./lib/ui/feedback-screen/index.d.ts",
+      "default": "./lib/ui/feedback-screen/index.js"
+    },
+    "./fonts": {
+      "types": "./lib/lib/fonts/index.d.ts",
+      "default": "./lib/lib/fonts/index.js"
+    },
+    "./gesture-root": {
+      "types": "./lib/ui/gesture-root/index.d.ts",
+      "default": "./lib/ui/gesture-root/index.js"
+    },
+    "./gradient-card": {
+      "types": "./lib/ui/gradient-card/index.d.ts",
+      "default": "./lib/ui/gradient-card/index.js"
+    },
+    "./header-with-see-more": {
+      "types": "./lib/ui/header-with-see-more/index.d.ts",
+      "default": "./lib/ui/header-with-see-more/index.js"
+    },
+    "./icon": {
+      "types": "./lib/ui/icon/index.d.ts",
+      "default": "./lib/ui/icon/index.js"
+    },
+    "./input": {
+      "types": "./lib/ui/input/index.d.ts",
+      "default": "./lib/ui/input/index.js"
+    },
+    "./linear-gradient": {
+      "types": "./lib/ui/linear-gradient/index.d.ts",
+      "default": "./lib/ui/linear-gradient/index.js"
+    },
+    "./list": {
+      "types": "./lib/ui/list/index.d.ts",
+      "default": "./lib/ui/list/index.js"
+    },
+    "./loading-view": {
+      "types": "./lib/ui/loading-view/index.d.ts",
+      "default": "./lib/ui/loading-view/index.js"
+    },
+    "./modal": {
+      "types": "./lib/ui/modal/index.d.ts",
+      "default": "./lib/ui/modal/index.js"
+    },
+    "./optimized-image": {
+      "types": "./lib/ui/optimized-image/index.d.ts",
+      "default": "./lib/ui/optimized-image/index.js"
+    },
+    "./option-modal": {
+      "types": "./lib/ui/option-modal/index.d.ts",
+      "default": "./lib/ui/option-modal/index.js"
+    },
+    "./overlay-portal": {
+      "types": "./lib/ui/overlay-portal/index.d.ts",
+      "default": "./lib/ui/overlay-portal/index.js"
+    },
+    "./paginator": {
+      "types": "./lib/ui/paginator/index.d.ts",
+      "default": "./lib/ui/paginator/index.js"
+    },
+    "./phone-input": {
+      "types": "./lib/ui/phone-input/index.d.ts",
+      "default": "./lib/ui/phone-input/index.js"
+    },
+    "./portal": {
+      "types": "./lib/ui/portal/index.d.ts",
+      "default": "./lib/ui/portal/index.js"
+    },
+    "./progress": {
+      "types": "./lib/ui/progress/index.d.ts",
+      "default": "./lib/ui/progress/index.js"
+    },
+    "./quantity-indicator": {
+      "types": "./lib/ui/quantity-indicator/index.d.ts",
+      "default": "./lib/ui/quantity-indicator/index.js"
+    },
+    "./radio": {
+      "types": "./lib/ui/radio/index.d.ts",
+      "default": "./lib/ui/radio/index.js"
+    },
+    "./ripple-button": {
+      "types": "./lib/ui/ripple-button/index.d.ts",
+      "default": "./lib/ui/ripple-button/index.js"
+    },
+    "./safe-area-view": {
+      "types": "./lib/ui/safe-area-view/index.d.ts",
+      "default": "./lib/ui/safe-area-view/index.js"
+    },
+    "./screen-layout": {
+      "types": "./lib/ui/screen-layout/index.d.ts",
+      "default": "./lib/ui/screen-layout/index.js"
+    },
+    "./search": {
+      "types": "./lib/ui/search/index.d.ts",
+      "default": "./lib/ui/search/index.js"
+    },
+    "./select-menu": {
+      "types": "./lib/ui/select-menu/index.d.ts",
+      "default": "./lib/ui/select-menu/index.js"
+    },
+    "./selected-files-panel": {
+      "types": "./lib/ui/selected-files-panel/index.d.ts",
+      "default": "./lib/ui/selected-files-panel/index.js"
+    },
+    "./shimmer-skeleton": {
+      "types": "./lib/ui/shimmer-skeleton/index.d.ts",
+      "default": "./lib/ui/shimmer-skeleton/index.js"
+    },
+    "./slider": {
+      "types": "./lib/ui/slider/index.d.ts",
+      "default": "./lib/ui/slider/index.js"
+    },
+    "./snackbar": {
+      "types": "./lib/ui/snackbar/index.d.ts",
+      "default": "./lib/ui/snackbar/index.js"
+    },
+    "./spinner": {
+      "types": "./lib/ui/spinner/index.d.ts",
+      "default": "./lib/ui/spinner/index.js"
+    },
+    "./staged-loading-view": {
+      "types": "./lib/ui/staged-loading-view/index.d.ts",
+      "default": "./lib/ui/staged-loading-view/index.js"
+    },
+    "./step-header": {
+      "types": "./lib/ui/step-header/index.d.ts",
+      "default": "./lib/ui/step-header/index.js"
+    },
+    "./stepper": {
+      "types": "./lib/ui/stepper/index.d.ts",
+      "default": "./lib/ui/stepper/index.js"
+    },
+    "./store": {
+      "types": "./lib/lib/store/index.d.ts",
+      "default": "./lib/lib/store/index.js"
+    },
+    "./tab-bar": {
+      "types": "./lib/ui/tab-bar/index.d.ts",
+      "default": "./lib/ui/tab-bar/index.js"
+    },
+    "./tabs": {
+      "types": "./lib/ui/tabs/index.d.ts",
+      "default": "./lib/ui/tabs/index.js"
+    },
+    "./tag": {
+      "types": "./lib/ui/tag/index.d.ts",
+      "default": "./lib/ui/tag/index.js"
+    },
+    "./text": {
+      "types": "./lib/ui/text/index.d.ts",
+      "default": "./lib/ui/text/index.js"
+    },
+    "./text-with-bold": {
+      "types": "./lib/ui/text-with-bold/index.d.ts",
+      "default": "./lib/ui/text-with-bold/index.js"
+    },
+    "./toast": {
+      "types": "./lib/ui/toast/index.d.ts",
+      "default": "./lib/ui/toast/index.js"
+    },
+    "./toggle": {
+      "types": "./lib/ui/toggle/index.d.ts",
+      "default": "./lib/ui/toggle/index.js"
+    },
+    "./tokens": {
+      "types": "./lib/lib/tokens/index.d.ts",
+      "default": "./lib/lib/tokens/index.js"
+    },
+    "./tooltip": {
+      "types": "./lib/ui/tooltip/index.d.ts",
+      "default": "./lib/ui/tooltip/index.js"
+    },
+    "./typing-indicator": {
+      "types": "./lib/ui/typing-indicator/index.d.ts",
+      "default": "./lib/ui/typing-indicator/index.js"
+    },
+    "./uniwind-image": {
+      "types": "./lib/ui/uniwind-image/index.d.ts",
+      "default": "./lib/ui/uniwind-image/index.js"
+    },
+    "./utils": {
+      "types": "./lib/lib/utils/index.d.ts",
+      "default": "./lib/lib/utils/index.js"
+    },
+    "./vector": {
+      "types": "./lib/ui/vector/index.d.ts",
+      "default": "./lib/ui/vector/index.js"
+    },
+    "./illustrations/*": {
+      "types": "./lib/illustrations/*.d.ts",
+      "default": "./lib/illustrations/*.js"
+    },
+    "./icons/*": {
+      "types": "./lib/icons/*.d.ts",
+      "default": "./lib/icons/*.js"
+    },
+    "./animations/*": "./assets/animations/*",
+    "./fonts/*": "./assets/fonts/*",
+    "./theme.css": "./theme.css",
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@react-native-community/hooks": "^3.1.0",
+    "@react-native-vector-icons/common": "^13.0.4",
+    "clsx": "^2.1.1",
+    "expo-font": "~58.0.9",
+    "expo-image": "~58.0.16",
+    "expo-linear-gradient": "~58.0.3",
+    "expo-status-bar": "~58.0.4",
+    "lottie-react-native": "~7.5.0",
+    "react": "^19.3.0",
+    "react-native": "^0.88.0",
+    "react-native-gesture-handler": "~3.3.0",
+    "react-native-mask-text": "^0.14.2",
+    "react-native-reanimated": "^4.7.1",
+    "react-native-safe-area-context": "~5.10.1",
+    "react-native-screens": "~4.30.0",
+    "react-native-svg": "^15.16.0",
+    "react-native-toast-message": "^2.5.2",
+    "react-native-worklets": "^0.13.0",
+    "tailwind-merge": "^3.7.0",
+    "tailwind-variants": "^3.3.1",
+    "uniwind": "^1.13.0"
+  },
+  "peerDependenciesMeta": {
+    "@react-native-community/hooks": {
+      "optional": true
+    },
+    "@react-native-vector-icons/common": {
+      "optional": true
+    },
+    "clsx": {
+      "optional": true
+    },
+    "expo-font": {
+      "optional": true
+    },
+    "expo-image": {
+      "optional": true
+    },
+    "expo-linear-gradient": {
+      "optional": true
+    },
+    "expo-status-bar": {
+      "optional": true
+    },
+    "lottie-react-native": {
+      "optional": true
+    },
+    "react-native-gesture-handler": {
+      "optional": true
+    },
+    "react-native-mask-text": {
+      "optional": true
+    },
+    "react-native-reanimated": {
+      "optional": true
+    },
+    "react-native-safe-area-context": {
+      "optional": true
+    },
+    "react-native-screens": {
+      "optional": true
+    },
+    "react-native-svg": {
+      "optional": true
+    },
+    "react-native-toast-message": {
+      "optional": true
+    },
+    "react-native-worklets": {
+      "optional": true
+    },
+    "tailwind-merge": {
+      "optional": true
+    },
+    "tailwind-variants": {
+      "optional": true
+    }
+  },
+  "scripts": {
+    "build": "tsx scripts/build.mts",
+    "pack": "pnpm build && rm -rf dist && pnpm pack --pack-destination dist && mv dist/farma-ui-*.tgz dist/farma-ui.tgz"
+  },
+  "devDependencies": {
+    "@farma/registry": "workspace:*",
+    "tsx": "^4.23.15"
+  }
+}

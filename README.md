@@ -10,6 +10,7 @@ en lugar de instalar una librería completa, un CLI copia a tu app **solo** los 
 apps/storybook       Storybook web (react-native-web + Vite + Uniwind) con viewports de móvil
 packages/registry    Componentes (src/), ilustraciones, íconos, animaciones, fuentes, validación y build a dist/r
 packages/cli         CLI `farma-system` (init, add, list)
+packages/ui          Paquete npm @farma/ui, generado desde packages/registry (un import por componente)
 ```
 
 ## Principios
@@ -95,7 +96,65 @@ desde la barra puedes cambiar a iPhone SE, Pixel 8 o iPad mini. Los sistemas glo
 Storybook importa el mismo theme que la app (`packages/registry/src/theme/farma.css`) y declara las fuentes
 con `@font-face` (`apps/storybook/.storybook/fonts.css`).
 
-## Instalarlo en la app
+## Usarlo como paquete npm (`@farma/ui`)
+
+`packages/ui` se genera a partir del registry y se instala en la app como cualquier dependencia.
+Cada componente tiene su propio import, así Metro solo empaqueta lo que la app usa:
+
+```tsx
+import { Button } from '@farma/ui/button'
+import { Icon } from '@farma/ui/icon'
+import { Modal, ModalHost, useModal } from '@farma/ui/modal'
+import { toast, ToastHost, ToastType } from '@farma/ui/toast'
+import { useFarmaFonts } from '@farma/ui/fonts'
+import { cn } from '@farma/ui/utils'
+import Identidad from '@farma/ui/illustrations/kyc/Identidad'   // ilustraciones: un archivo por import
+import clock from '@farma/ui/animations/clock.json'                // animaciones Lottie
+```
+
+**Generar el paquete** (en farma-system):
+
+```sh
+pnpm ui:pack        # registry → packages/ui (lib + .d.ts) → packages/ui/dist/farma-ui.tgz
+```
+
+**Instalarlo en la app** (por ahora desde local; después desde el npm privado):
+
+```sh
+yarn add file:../farma-system/packages/ui/dist/farma-ui.tgz
+```
+
+Se instala desde el tarball (y no desde la carpeta) para que yarn copie solo `lib`, `assets` y `theme.css`,
+igual que cuando se publique. Para actualizar: `pnpm ui:pack` y de nuevo el `yarn add`.
+
+**Configurar la app (una vez):**
+
+```css
+/* global.css */
+@import 'tailwindcss';
+@import 'uniwind';
+@import '@farma/ui/theme.css';            /* tokens del DS */
+@source '../node_modules/@farma/ui/lib';  /* que Uniwind vea las clases de los componentes */
+```
+
+```jsonc
+// package.json → jest.transformIgnorePatterns: agregar @farma/ui a los paquetes que se transforman
+"node_modules/(?!(…|uniwind|@farma/ui))"
+```
+
+Las dependencias nativas (reanimated, svg, lottie, expo-image…) son `peerDependencies`: usa las versiones
+que ya tiene la app. Solo hacen falta las de los componentes que importes.
+
+| Import | Qué trae |
+| --- | --- |
+| `@farma/ui/<componente>` | `button`, `modal`, `toast`, `icon`, `text`, `input`… (un entry por item de `farma-system list`) |
+| `@farma/ui/utils`, `tokens`, `dimensions`, `fonts`, `store` | utilidades |
+| `@farma/ui/illustrations/<grupo>/<Nombre>` | una ilustración (componente TSX) |
+| `@farma/ui/icons/svg/<Nombre>` | un ícono SVG suelto |
+| `@farma/ui/animations/<archivo>.json` | una animación Lottie |
+| `@farma/ui/theme.css` | tokens de Uniwind/Tailwind |
+
+## Instalarlo en la app (CLI, copiando el código)
 
 La rama del design system es `main`. El CLI no se publica: copia el código al repo de la app. Los dos repos tienen que quedar como hermanos (`app-mobile` y `farma-system`).
 
@@ -215,6 +274,7 @@ Ver [`packages/registry/MIGRATING.md`](packages/registry/MIGRATING.md). En resum
 | Script                 | Descripción                                                     |
 | ---------------------- | --------------------------------------------------------------- |
 | `pnpm build`           | Registry (valida + genera `dist/r`) + CLI                       |
+| `pnpm ui:pack`         | Genera el paquete `@farma/ui` y su tarball en `packages/ui/dist` |
 | `pnpm registry:build`  | Solo el registry                                                |
 | `pnpm storybook`       | Storybook web en modo desarrollo                                |
 | `pnpm storybook:build` | Storybook estático en `apps/storybook/storybook-static`         |

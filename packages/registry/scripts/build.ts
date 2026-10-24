@@ -1,44 +1,11 @@
-import { glob, mkdir, readFile, rm, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, rm, writeFile } from 'node:fs/promises'
 import path from 'node:path'
-import { fileURLToPath } from 'node:url'
 
-import {
-  builtItemSchema,
-  registryIndexSchema,
-  registryItemSourceSchema,
-  registryItemsSourceSchema,
-  type BuiltRegistryItem,
-  type RegistryItem,
-} from '../schema'
+import { builtItemSchema, registryIndexSchema, type BuiltRegistryItem } from '../schema'
 import { checkBoundary } from './boundary'
+import { loadItems, registryAssets as assetsDir, registryRoot as root, registrySrc as srcDir } from './items'
 
-const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
-const srcDir = path.join(root, 'src')
-const assetsDir = path.join(root, 'assets')
 const outDir = path.join(root, 'dist', 'r')
-
-const toPosix = (p: string) => p.split(path.sep).join('/')
-
-/** Carga cada `registry-item.json` / `registry-items.json` y deja las rutas de código relativas a `src/`. */
-async function loadItems(): Promise<RegistryItem[]> {
-  const items: RegistryItem[] = []
-  for await (const manifest of glob('**/registry-item{,s}.json', { cwd: srcDir })) {
-    const itemDir = toPosix(path.dirname(manifest))
-    const raw = JSON.parse(await readFile(path.join(srcDir, manifest), 'utf8'))
-    const parsed = manifest.endsWith('registry-items.json')
-      ? registryItemsSourceSchema.parse(raw)
-      : [registryItemSourceSchema.parse(raw)]
-    for (const item of parsed) {
-      items.push({
-        ...item,
-        files: item.files.map((file) =>
-          file.type === 'asset' ? file : { ...file, path: path.posix.join(itemDir, file.path) },
-        ),
-      })
-    }
-  }
-  return items.sort((a, b) => a.name.localeCompare(b.name))
-}
 
 const items = await loadItems()
 const byName = new Map(items.map((item) => [item.name, item]))

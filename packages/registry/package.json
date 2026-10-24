@@ -5,7 +5,8 @@
   "description": "Fuente de los componentes del design system de Farma (React Native + Uniwind).",
   "type": "module",
   "exports": {
-    "./schema": "./schema.ts"
+    "./schema": "./schema.ts",
+    "./items": "./scripts/items.ts"
   },
   "files": [
     "dist"
