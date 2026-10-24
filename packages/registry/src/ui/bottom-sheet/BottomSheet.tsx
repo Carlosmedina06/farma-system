@@ -275,7 +275,7 @@ export const BottomSheet = ({
       minHeight: animatedFixedHeight.value,
       maxHeight: animatedFixedHeight.value,
     }
-  }, [hasFixedHeight])
+  })
 
   if (!isVisible && !open) {
     return null

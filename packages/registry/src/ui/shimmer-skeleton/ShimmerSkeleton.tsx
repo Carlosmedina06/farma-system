@@ -61,7 +61,7 @@ function ShimmerSkeleton({
       width: w * 2.2,
       height: '100%' as const,
     }
-  }, [])
+  })
 
   return (
     <View

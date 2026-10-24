@@ -24,7 +24,7 @@ const buttonVariants = tv({
   variants: {
     full: {
       true: 'self-stretch',
-      false: 'self-start max-w-full',
+      false: 'self-center max-w-full',
     },
     size: {
       xs: 'min-h-[32px] px-padding-lg py-padding-xs',
