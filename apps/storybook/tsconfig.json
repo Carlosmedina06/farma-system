@@ -2,10 +2,24 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["node"],
+    "types": [
+      "node",
+      "jest"
+    ],
     "paths": {
-      "@farma/registry/*": ["../../packages/registry/src/*"]
+      "@farma/registry/*": [
+        "../../packages/registry/src/*"
+      ],
+      "@farma/assets/*": [
+        "../../packages/registry/assets/*"
+      ]
     }
   },
-  "include": [".storybook", "stories", "uniwind-types.d.ts", "../../packages/registry/src"]
+  "include": [
+    ".storybook",
+    "stories",
+    "uniwind-types.d.ts",
+    "../../packages/registry/src",
+    "../../packages/registry/jest/matchers.d.ts"
+  ]
 }

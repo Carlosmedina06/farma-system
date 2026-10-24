@@ -1,0 +1,7 @@
+{
+  "name": "vector",
+  "type": "ui",
+  "description": "Línea vertical SVG (separadores de timeline).",
+  "files": [{ "path": "Vector.tsx" }, { "path": "Vector.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-svg"]
+}

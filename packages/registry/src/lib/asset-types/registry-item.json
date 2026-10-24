@@ -1,0 +1,6 @@
+{
+  "name": "asset-types",
+  "type": "lib",
+  "description": "Declaraciones de TypeScript para importar .ttf/.otf/.png.",
+  "files": [{ "path": "assets.d.ts" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "tokens",
+  "type": "lib",
+  "description": "Constantes de accesibilidad (hit slop, área táctil mínima) y sombras nativas.",
+  "files": [{ "path": "index.ts" }]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "fonts",
+  "type": "lib",
+  "description": "Fuentes Inter, Manrope y farmaIcons + hook useFarmaFonts().",
+  "files": [
+    { "path": "index.ts" },
+    { "path": "fonts/Inter-Regular.ttf", "type": "asset" },
+    { "path": "fonts/Inter-Medium.ttf", "type": "asset" },
+    { "path": "fonts/Inter-SemiBold.ttf", "type": "asset" },
+    { "path": "fonts/Inter-Bold.ttf", "type": "asset" },
+    { "path": "fonts/Manrope-SemiBold.ttf", "type": "asset" },
+    { "path": "fonts/farmaIcons.ttf", "type": "asset" }
+  ],
+  "dependencies": ["expo-font"],
+  "registryDependencies": ["asset-types"]
+}

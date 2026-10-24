@@ -1,0 +1,13 @@
+{
+  "name": "animated-layout",
+  "type": "ui",
+  "description": "Contenedor con animaciones de entrada/salida/layout (reanimated), respeta reduce motion.",
+  "files": [
+    { "path": "AnimatedLayout.tsx" },
+    { "path": "AnimatedLayout.types.ts" },
+    { "path": "animatedLayoutSkipEntering.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["utils"]
+}

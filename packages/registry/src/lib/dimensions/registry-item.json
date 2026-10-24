@@ -1,0 +1,6 @@
+{
+  "name": "dimensions",
+  "type": "lib",
+  "description": "getWP / getHP: tamaños relativos a la ventana.",
+  "files": [{ "path": "index.ts" }]
+}

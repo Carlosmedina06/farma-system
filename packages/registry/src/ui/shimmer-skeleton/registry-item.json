@@ -1,0 +1,14 @@
+{
+  "name": "shimmer-skeleton",
+  "type": "ui",
+  "description": "Skeleton con shimmer animado. Provider opcional para sincronizar todos los skeletons.",
+  "files": [
+    { "path": "ShimmerSkeleton.tsx" },
+    { "path": "ShimmerSkeleton.types.ts" },
+    { "path": "ShimmerSkeletonProvider.tsx" },
+    { "path": "shimmerSkeletonContext.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["utils", "linear-gradient"]
+}

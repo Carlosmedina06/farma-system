@@ -8,11 +8,11 @@ export type WriteResult = 'created' | 'updated' | 'unchanged' | 'skipped'
 
 export async function writeProjectFile(
   target: string,
-  content: string,
+  content: string | Buffer,
   { overwrite, yes }: { overwrite?: boolean; yes?: boolean },
 ): Promise<WriteResult> {
   if (existsSync(target)) {
-    if ((await readFile(target, 'utf8')) === content) return 'unchanged'
+    if ((await readFile(target)).equals(Buffer.from(content))) return 'unchanged'
     if (!overwrite) {
       if (yes) return 'skipped'
       const { confirm } = await prompts({

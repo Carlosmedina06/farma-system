@@ -2,10 +2,11 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "types": ["node"],
+    "types": ["node", "jest"],
     "paths": {
-      "@farma/registry/*": ["./src/*"]
+      "@farma/registry/*": ["./src/*"],
+      "@farma/assets/*": ["./assets/*"]
     }
   },
-  "include": ["src", "scripts", "schema.ts", "uniwind-types.d.ts"]
+  "include": ["src", "scripts", "schema.ts", "uniwind-types.d.ts", "jest/matchers.d.ts"]
 }

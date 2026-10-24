@@ -1,0 +1,7 @@
+{
+  "name": "portal",
+  "type": "ui",
+  "description": "Portal + PortalHost sin dependencias (reemplaza el Portal de react-native-paper). Sin host renderiza en el lugar.",
+  "files": [{ "path": "Portal.tsx" }, { "path": "index.ts" }],
+  "registryDependencies": ["store"]
+}

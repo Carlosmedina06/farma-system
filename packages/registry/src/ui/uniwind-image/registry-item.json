@@ -1,0 +1,7 @@
+{
+  "name": "uniwind-image",
+  "type": "ui",
+  "description": "expo-image con className.",
+  "files": [{ "path": "UniwindImage.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["expo-image"]
+}

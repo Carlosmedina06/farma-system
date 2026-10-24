@@ -1,0 +1,7 @@
+{
+  "name": "gesture-root",
+  "type": "ui",
+  "description": "GestureHandlerRootView con className.",
+  "files": [{ "path": "UniwindGestureHandlerRootView.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-gesture-handler"]
+}

@@ -1,0 +1,1 @@
+export { UniwindLinearGradient } from './UniwindLinearGradient'

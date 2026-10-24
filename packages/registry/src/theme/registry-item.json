@@ -1,0 +1,6 @@
+{
+  "name": "theme",
+  "type": "theme",
+  "description": "Tokens de color, radios, espaciados y utilidades. Impórtalo desde el global.css de la app.",
+  "files": [{ "path": "farma.css" }]
+}

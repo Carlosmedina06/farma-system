@@ -1,0 +1,6 @@
+{
+  "name": "store",
+  "type": "lib",
+  "description": "Store externo mínimo (useSyncExternalStore) para las APIs imperativas opcionales.",
+  "files": [{ "path": "index.ts" }]
+}

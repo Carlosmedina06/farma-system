@@ -1,0 +1,7 @@
+{
+  "name": "utils",
+  "type": "lib",
+  "description": "cn() para combinar clases de Uniwind/Tailwind sin conflictos (conoce los tokens del theme).",
+  "files": [{ "path": "index.ts" }],
+  "dependencies": ["clsx", "tailwind-merge"]
+}

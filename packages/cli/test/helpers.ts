@@ -13,7 +13,7 @@ export async function createRegistryFixture(items: FixtureItem[]) {
     type: 'ui' as const,
     dependencies: [],
     registryDependencies: [],
-    files: [{ path: `ui/${item.name}.tsx`, content: `export const ${item.name} = 1\n` }],
+    files: [{ path: `ui/${item.name}.tsx`, type: 'code' as const, encoding: 'utf8' as const, content: `export const ${item.name} = 1\n` }],
     ...item,
   }))
   for (const item of full) {
@@ -34,7 +34,7 @@ export async function createProjectFixture(registryDir: string) {
   )
   await writeFile(
     path.join(dir, 'farma.json'),
-    JSON.stringify({ registry: `local:${registryDir}`, baseDir: 'src/ds', importAlias: '@ds' }),
+    JSON.stringify({ registry: `local:${registryDir}`, baseDir: 'src/ds', importAlias: '@ds', assetsAlias: '@assets' }),
   )
   await mkdir(path.join(dir, 'src'), { recursive: true })
   return dir

@@ -1,0 +1,534 @@
+/*
+ * Tokens del design system Farma (Uniwind / Tailwind v4).
+ *
+ * En la app:   @import 'tailwindcss'; @import 'uniwind'; @import './src/ds/theme/farma.css';
+ * Copiado tal cual de app-mobile/global.css para no cambiar el resultado visual.
+ * Ojo: gap-gap-xxl / gap-gap-xxxl existen como token (32/40px) y como @utility (28/32px).
+ */
+@theme {
+  --color-base-white: #ffffff;
+  --color-base-black: #000000;
+
+  --color-gray-25: #fafafa;
+  --color-gray-50: #f6f7f9;
+  --color-gray-100: #f2f4f7;
+  --color-gray-200: #eaecf0;
+  --color-gray-300: #d0d5dd;
+  --color-gray-400: #98a2b3;
+  --color-gray-500: #667085;
+  --color-gray-600: #475467;
+  --color-gray-700: #344054;
+  --color-gray-800: #1d2939;
+  --color-gray-900: #101828;
+
+  --color-primary-25: #f7f7ff;
+  --color-primary-50: #eeeffe;
+  --color-primary-100: #e1e4fe;
+  --color-primary-200: #d4d8fd;
+  --color-primary-300: #b5bbfc;
+  --color-primary-400: #959dfb;
+  --color-primary-500: #7680f9;
+  --color-primary-600: #4955ec;
+  --color-primary-700: #3b4aca;
+  --color-primary-800: #1d2f9d;
+  --color-primary-900: #00156f;
+
+  --color-secondary-25: #fafff5;
+  --color-secondary-50: #f5ffeb;
+  --color-secondary-100: #e8ffcd;
+  --color-secondary-200: #d7ffaa;
+  --color-secondary-300: #caff89;
+  --color-secondary-400: #befc6e;
+  --color-secondary-500: #b4f955;
+  --color-secondary-600: #abe74d;
+  --color-secondary-700: #9ed042;
+  --color-secondary-800: #91b837;
+  --color-secondary-900: #7d9023;
+
+  --color-error-25: #fff6f6;
+  --color-error-50: #ffecee;
+  --color-error-100: #fbd2d5;
+  --color-error-200: #ff9aa1;
+  --color-error-300: #ff717a;
+  --color-error-400: #fa4752;
+  --color-error-500: #d8313c;
+  --color-error-600: #b61f29;
+  --color-error-700: #94111a;
+  --color-error-800: #72070e;
+  --color-error-900: #500006;
+
+  --color-warning-25: #fffcf5;
+  --color-warning-50: #fffaeb;
+  --color-warning-100: #fef0c7;
+  --color-warning-200: #fedf89;
+  --color-warning-300: #fec84b;
+  --color-warning-400: #fdb022;
+  --color-warning-500: #f79009;
+  --color-warning-600: #dc6803;
+  --color-warning-700: #b54708;
+  --color-warning-800: #93370d;
+  --color-warning-900: #7a2e0e;
+
+  --color-success-25: #f6fef9;
+  --color-success-50: #ecfdf3;
+  --color-success-100: #d1fadf;
+  --color-success-200: #6ce9a6;
+  --color-success-300: #32d583;
+  --color-success-400: #12b76a;
+  --color-success-500: #039855;
+  --color-success-600: #027a48;
+  --color-success-700: #05603a;
+  --color-success-800: #054f31;
+  --color-success-900: #003620;
+
+  --color-info-25: #edfafe;
+  --color-info-50: #dff5fd;
+  --color-info-100: #cbeefa;
+  --color-info-200: #98daf1;
+  --color-info-300: #66bddb;
+  --color-info-400: #42a2c2;
+  --color-info-500: #248db0;
+  --color-info-600: #007faa;
+  --color-info-700: #027293;
+  --color-info-800: #01627e;
+  --color-info-900: #004a60;
+
+  --color-tertiary-25: #fbf6ff;
+  --color-tertiary-50: #f4e8ff;
+  --color-tertiary-100: #ecd8ff;
+  --color-tertiary-200: #c992fc;
+  --color-tertiary-300: #b362ff;
+  --color-tertiary-400: #a23efe;
+  --color-tertiary-500: #953ae9;
+  --color-tertiary-600: #7728c0;
+  --color-tertiary-700: #5d0ea7;
+  --color-tertiary-800: #4b038d;
+  --color-tertiary-900: #39006e;
+
+  --color-overlay-gray80080: #1d2939cc;
+  --color-overlay-gray80060: #1d293999;
+
+  --color-gray-blue-25: #fcfcfd;
+  --color-gray-blue-50: #f8f9fc;
+  --color-gray-blue-100: #eaecf5;
+  --color-gray-blue-200: #d5d9eb;
+  --color-gray-blue-300: #b3b8db;
+  --color-gray-blue-400: #717bbc;
+  --color-gray-blue-500: #4e5ba6;
+  --color-gray-blue-600: #3e4784;
+  --color-gray-blue-700: #363f72;
+  --color-gray-blue-800: #293056;
+  --color-gray-blue-900: #101323;
+
+  --color-gray-cool-25: #fcfcfd;
+  --color-gray-cool-50: #f9f9fb;
+  --color-gray-cool-100: #eff1f5;
+  --color-gray-cool-200: #dcdfea;
+  --color-gray-cool-300: #b9c0d4;
+  --color-gray-cool-400: #7d89b0;
+  --color-gray-cool-500: #5d6b98;
+  --color-gray-cool-600: #4a5578;
+  --color-gray-cool-700: #404968;
+  --color-gray-cool-800: #30374f;
+  --color-gray-cool-900: #111322;
+
+  --color-gray-modern-25: #fcfcfd;
+  --color-gray-modern-50: #f8fafc;
+  --color-gray-modern-100: #eef2f6;
+  --color-gray-modern-200: #e3e8ef;
+  --color-gray-modern-300: #cdd5df;
+  --color-gray-modern-400: #9aa4b2;
+  --color-gray-modern-500: #697586;
+  --color-gray-modern-600: #4b5565;
+  --color-gray-modern-700: #364152;
+  --color-gray-modern-800: #202939;
+  --color-gray-modern-900: #121926;
+
+  --color-gray-neutral-25: #fcfcfd;
+  --color-gray-neutral-50: #f9fafb;
+  --color-gray-neutral-100: #f3f4f6;
+  --color-gray-neutral-200: #e5e7eb;
+  --color-gray-neutral-300: #d2d6db;
+  --color-gray-neutral-400: #9da4ae;
+  --color-gray-neutral-500: #6c737f;
+  --color-gray-neutral-600: #4d5761;
+  --color-gray-neutral-700: #384250;
+  --color-gray-neutral-800: #1f2a37;
+  --color-gray-neutral-900: #111927;
+
+  --color-gray-iron-25: #fcfcfc;
+  --color-gray-iron-50: #fafafa;
+  --color-gray-iron-100: #f4f4f5;
+  --color-gray-iron-200: #e4e4e7;
+  --color-gray-iron-300: #d1d1d6;
+  --color-gray-iron-400: #a0a0ab;
+  --color-gray-iron-500: #70707b;
+  --color-gray-iron-600: #51525c;
+  --color-gray-iron-700: #3f3f46;
+  --color-gray-iron-800: #26272b;
+  --color-gray-iron-900: #18181b;
+
+  --color-gray-true-25: #fcfcfc;
+  --color-gray-true-50: #fafafa;
+  --color-gray-true-100: #f5f5f5;
+  --color-gray-true-200: #e5e5e5;
+  --color-gray-true-300: #d6d6d6;
+  --color-gray-true-400: #a3a3a3;
+  --color-gray-true-500: #737373;
+  --color-gray-true-600: #525252;
+  --color-gray-true-700: #424242;
+  --color-gray-true-800: #292929;
+  --color-gray-true-900: #141414;
+
+  --color-gray-warm-25: #fdfdfc;
+  --color-gray-warm-50: #fafaf9;
+  --color-gray-warm-100: #f5f5f4;
+  --color-gray-warm-200: #e7e5e4;
+  --color-gray-warm-300: #d7d3d0;
+  --color-gray-warm-400: #a9a29d;
+  --color-gray-warm-500: #79716b;
+  --color-gray-warm-600: #57534e;
+  --color-gray-warm-700: #44403c;
+  --color-gray-warm-800: #292524;
+  --color-gray-warm-900: #1c1917;
+
+  --color-moss-25: #fafdf7;
+  --color-moss-50: #f5fbee;
+  --color-moss-100: #e6f4d7;
+  --color-moss-200: #ceeab0;
+  --color-moss-300: #acdc79;
+  --color-moss-400: #86cb3c;
+  --color-moss-500: #669f2a;
+  --color-moss-600: #4f7a21;
+  --color-moss-700: #3f621a;
+  --color-moss-800: #335015;
+  --color-moss-900: #2b4212;
+
+  --color-green-light-25: #fafef5;
+  --color-green-light-50: #f3fee7;
+  --color-green-light-100: #e3fbcc;
+  --color-green-light-200: #d0f8ab;
+  --color-green-light-300: #a6ef67;
+  --color-green-light-400: #85e13a;
+  --color-green-light-500: #66c61c;
+  --color-green-light-600: #4ca30d;
+  --color-green-light-700: #3b7c0f;
+  --color-green-light-800: #326212;
+  --color-green-light-900: #2b5314;
+
+  --color-green-25: #f6fef9;
+  --color-green-50: #edfcf2;
+  --color-green-100: #d3f8df;
+  --color-green-200: #aaf0c4;
+  --color-green-300: #73e2a3;
+  --color-green-400: #3ccb7f;
+  --color-green-500: #16b364;
+  --color-green-600: #099250;
+  --color-green-700: #087443;
+  --color-green-800: #095c37;
+  --color-green-900: #084c2e;
+
+  --color-teal-25: #f6fefc;
+  --color-teal-50: #f0fdf9;
+  --color-teal-100: #ccfbef;
+  --color-teal-200: #99f6e0;
+  --color-teal-300: #5fe9d0;
+  --color-teal-400: #2ed3b7;
+  --color-teal-500: #15b79e;
+  --color-teal-600: #0e9384;
+  --color-teal-700: #107569;
+  --color-teal-800: #125d56;
+  --color-teal-900: #134e48;
+
+  --color-cyan-25: #f5feff;
+  --color-cyan-50: #ecfdff;
+  --color-cyan-100: #cff9fe;
+  --color-cyan-200: #a5f0fc;
+  --color-cyan-300: #67e3f9;
+  --color-cyan-400: #22ccee;
+  --color-cyan-500: #06aed4;
+  --color-cyan-600: #088ab2;
+  --color-cyan-700: #0e7090;
+  --color-cyan-800: #155b75;
+  --color-cyan-900: #164c63;
+
+  --color-blue-light-25: #f5fbff;
+  --color-blue-light-50: #f0f9ff;
+  --color-blue-light-100: #e0f2fe;
+  --color-blue-light-200: #b9e6fe;
+  --color-blue-light-300: #7cd4fd;
+  --color-blue-light-400: #36bffa;
+  --color-blue-light-500: #0ba5ec;
+  --color-blue-light-600: #0086c9;
+  --color-blue-light-700: #026aa2;
+  --color-blue-light-800: #065986;
+  --color-blue-light-900: #0b4a6f;
+
+  --color-blue-25: #f5faff;
+  --color-blue-50: #eff8ff;
+  --color-blue-100: #d1e9ff;
+  --color-blue-200: #b2ddff;
+  --color-blue-300: #84caff;
+  --color-blue-400: #53b1fd;
+  --color-blue-500: #2e90fa;
+  --color-blue-600: #1570ef;
+  --color-blue-700: #175cd3;
+  --color-blue-800: #1849a9;
+  --color-blue-900: #194185;
+
+  --color-blue-dark-25: #f5f8ff;
+  --color-blue-dark-50: #eff4ff;
+  --color-blue-dark-100: #d1e0ff;
+  --color-blue-dark-200: #b2ccff;
+  --color-blue-dark-300: #84adff;
+  --color-blue-dark-400: #528bff;
+  --color-blue-dark-500: #2970ff;
+  --color-blue-dark-600: #155eef;
+  --color-blue-dark-700: #004eeb;
+  --color-blue-dark-800: #0040c1;
+  --color-blue-dark-900: #00359e;
+
+  --color-indigo-25: #f5f8ff;
+  --color-indigo-50: #eef4ff;
+  --color-indigo-100: #e0eaff;
+  --color-indigo-200: #c7d7fe;
+  --color-indigo-300: #a4bcfd;
+  --color-indigo-400: #8098f9;
+  --color-indigo-500: #6172f3;
+  --color-indigo-600: #444ce7;
+  --color-indigo-700: #3538cd;
+  --color-indigo-800: #2d31a6;
+  --color-indigo-900: #2d3282;
+
+  --color-violet-25: #fbfaff;
+  --color-violet-50: #f5f3ff;
+  --color-violet-100: #ece9fe;
+  --color-violet-200: #ddd6fe;
+  --color-violet-300: #c3b5fd;
+  --color-violet-400: #a48afb;
+  --color-violet-500: #875bf7;
+  --color-violet-600: #7839ee;
+  --color-violet-700: #6927da;
+  --color-violet-800: #5720b7;
+  --color-violet-900: #491c96;
+
+  --color-purple-25: #fafaff;
+  --color-purple-50: #f4f3ff;
+  --color-purple-100: #ebe9fe;
+  --color-purple-200: #d9d6fe;
+  --color-purple-300: #bdb4fe;
+  --color-purple-400: #9b8afb;
+  --color-purple-500: #7a5af8;
+  --color-purple-600: #6938ef;
+  --color-purple-700: #5925dc;
+  --color-purple-800: #4a1fb8;
+  --color-purple-900: #3e1c96;
+
+  --color-fuchsia-25: #fefaff;
+  --color-fuchsia-50: #fdf4ff;
+  --color-fuchsia-100: #fbe8ff;
+  --color-fuchsia-200: #f6d0fe;
+  --color-fuchsia-300: #eeaafd;
+  --color-fuchsia-400: #e478fa;
+  --color-fuchsia-500: #d444f1;
+  --color-fuchsia-600: #ba24d5;
+  --color-fuchsia-700: #9f1ab1;
+  --color-fuchsia-800: #821890;
+  --color-fuchsia-900: #6f1877;
+
+  --color-pink-25: #fef6fb;
+  --color-pink-50: #fdf2fa;
+  --color-pink-100: #fce7f6;
+  --color-pink-200: #fcceee;
+  --color-pink-300: #faa7e0;
+  --color-pink-400: #f670c7;
+  --color-pink-500: #ee46bc;
+  --color-pink-600: #dd2590;
+  --color-pink-700: #c11574;
+  --color-pink-800: #9e165f;
+  --color-pink-900: #851651;
+
+  --color-rose-25: #fff5f6;
+  --color-rose-50: #fff1f3;
+  --color-rose-100: #ffe4e8;
+  --color-rose-200: #fecdd6;
+  --color-rose-300: #fea3b4;
+  --color-rose-400: #fd6f8e;
+  --color-rose-500: #f63d68;
+  --color-rose-600: #e31b54;
+  --color-rose-700: #c01048;
+  --color-rose-800: #a11043;
+  --color-rose-900: #89123e;
+
+  --color-orange-dark-25: #fff9f5;
+  --color-orange-dark-50: #fff4ed;
+  --color-orange-dark-100: #ffe6d5;
+  --color-orange-dark-200: #ffd6ae;
+  --color-orange-dark-300: #ff9c66;
+  --color-orange-dark-400: #ff692e;
+  --color-orange-dark-500: #ff4405;
+  --color-orange-dark-600: #e62e05;
+  --color-orange-dark-700: #bc1b06;
+  --color-orange-dark-800: #97180c;
+  --color-orange-dark-900: #771a0d;
+
+  --color-orange-25: #fefaf5;
+  --color-orange-50: #fef6ee;
+  --color-orange-100: #fdead7;
+  --color-orange-200: #f9dbaf;
+  --color-orange-300: #f7b27a;
+  --color-orange-400: #f38744;
+  --color-orange-500: #ef6820;
+  --color-orange-600: #e04f16;
+  --color-orange-700: #b93815;
+  --color-orange-800: #932f19;
+  --color-orange-900: #772917;
+
+  --color-yellow-25: #fefdf0;
+  --color-yellow-50: #fefbe8;
+  --color-yellow-100: #fef7c3;
+  --color-yellow-200: #feee95;
+  --color-yellow-300: #fde272;
+  --color-yellow-400: #fac515;
+  --color-yellow-500: #eaaa08;
+  --color-yellow-600: #ca8504;
+  --color-yellow-700: #a15c07;
+  --color-yellow-800: #854a0e;
+  --color-yellow-900: #713b12;
+
+  --radius-s: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 32px;
+
+  --spacing-none: 0;
+  --spacing-xxxs: 2px;
+  --spacing-xxs: 4px;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 16px;
+  --spacing-lg: 20px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-xxxl: 40px;
+  --spacing-padding-none: 0;
+  --spacing-padding-xxxs: 2px;
+  --spacing-padding-xxs: 4px;
+  --spacing-padding-xs: 6px;
+  --spacing-padding-sm: 8px;
+  --spacing-padding-md: 10px;
+  --spacing-padding-lg: 12px;
+  --spacing-spacing-3: 12px;
+  --spacing-padding-xl: 16px;
+  --spacing-padding-2xl: 24px;
+  --spacing-padding-3xl: 18px;
+  --spacing-padding-4xl: 20px;
+  --spacing-padding-5xl: 28px;
+  --spacing-gap-xxxs: 2px;
+  --spacing-gap-xxs: 4px;
+  --spacing-gap-xs: 8px;
+  --spacing-gap-sm: 12px;
+  --spacing-gap-md: 16px;
+  --spacing-gap-lg: 20px;
+  --spacing-gap-xl: 24px;
+  --spacing-gap-xxl: 32px;
+  --spacing-gap-xxxl: 40px;
+
+  --spacing-spacing-1: 4px;
+  --spacing-spacing-2: 8px;
+  --spacing-spacing-3: 12px;
+  --spacing-spacing-4: 16px;
+  --spacing-spacing-5: 24px;
+  --spacing-spacing-6: 32px;
+  --spacing-spacing-7: 48px;
+  --spacing-spacing-8: 64px;
+}
+
+@utility w-s {
+  width: 20px;
+}
+
+@utility w-sm {
+  width: 24px;
+}
+
+@utility w-md {
+  width: 28px;
+}
+
+@utility w-lg {
+  width: 32px;
+}
+
+@utility w-xl {
+  width: 36px;
+}
+
+@utility w-2xl {
+  width: 40px;
+}
+
+@utility h-s {
+  height: 20px;
+}
+
+@utility h-sm {
+  height: 24px;
+}
+
+@utility h-md {
+  height: 28px;
+}
+
+@utility h-lg {
+  height: 32px;
+}
+
+@utility h-xl {
+  height: 36px;
+}
+
+@utility h-2xl {
+  height: 40px;
+}
+
+@utility gap-xxl {
+  gap: 28px;
+}
+
+@utility gap-xxxl {
+  gap: 32px;
+}
+
+@utility gap-gap-sm {
+  gap: 12px;
+}
+
+@utility gap-gap-md {
+  gap: 16px;
+}
+
+@utility gap-gap-lg {
+  gap: 20px;
+}
+
+@utility gap-gap-xl {
+  gap: 24px;
+}
+
+@utility gap-gap-xxl {
+  gap: 28px;
+}
+
+@utility gap-gap-xxxl {
+  gap: 32px;
+}
+
+@utility shadow-card {
+  elevation: 2;
+  shadow-color: rgba(16, 24, 40, 1);
+  shadow-offset: 0px 1px;
+  shadow-opacity: 0.26;
+  shadow-radius: 2px;
+}

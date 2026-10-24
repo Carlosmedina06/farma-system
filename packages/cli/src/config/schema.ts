@@ -14,6 +14,10 @@ export const farmaConfigSchema = z.object({
   baseDir: z.string().default('src/ds'),
   /** Alias con el que el proyecto importa `baseDir` (debe existir en tsconfig/babel). */
   importAlias: z.string().default('src/ds'),
+  /** Carpeta del proyecto donde se copian los assets (fuentes, lotties). */
+  assetsDir: z.string().default('assets/farma'),
+  /** Alias con el que el proyecto importa `assetsDir`. */
+  assetsAlias: z.string().default('assets/farma'),
 })
 
 export type FarmaConfig = z.infer<typeof farmaConfigSchema>

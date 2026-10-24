@@ -1,0 +1,14 @@
+{
+  "name": "icon",
+  "type": "ui",
+  "description": "Icon (fuente farmaIcons, ~1200 glifos tipados) y SvgIcon para SVGs propios.",
+  "files": [
+    { "path": "Icon.tsx" },
+    { "path": "FarmaIcon.tsx" },
+    { "path": "SvgIcon.tsx" },
+    { "path": "glyph-map.json" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["@react-native-vector-icons/common", "react-native-svg", "clsx"],
+  "registryDependencies": ["utils", "fonts"]
+}

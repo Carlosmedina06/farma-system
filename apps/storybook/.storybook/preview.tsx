@@ -1,8 +1,11 @@
 import '../global.css'
+import './fonts.css'
 
 import type { Preview } from '@storybook/react-native-web-vite'
 import { View } from 'react-native'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+
+import { PortalHost } from '@farma/registry/ui/portal'
 
 /** Viewports de dispositivos para ver los componentes como en la app. */
 const MOBILE_VIEWPORTS = {
@@ -45,6 +48,7 @@ const preview: Preview = {
         <View className="flex-1 bg-white p-4">
           <Story />
         </View>
+        <PortalHost />
       </SafeAreaProvider>
     ),
   ],

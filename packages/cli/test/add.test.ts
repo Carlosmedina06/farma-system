@@ -11,12 +11,22 @@ const registry = () =>
     {
       name: 'utils',
       type: 'lib',
-      files: [{ path: 'lib/utils.ts', content: 'export const cn = () => ""\n' }],
+      files: [
+        { path: 'lib/utils.ts', type: 'code', encoding: 'utf8', content: 'export const cn = () => ""\n' },
+        { path: 'fonts/font.ttf', type: 'asset', encoding: 'base64', content: Buffer.from([0, 1, 2, 255]).toString('base64') },
+      ],
     },
     {
       name: 'button',
       registryDependencies: ['utils'],
-      files: [{ path: 'ui/button.tsx', content: "import { cn } from '@farma/registry/lib/utils'\n" }],
+      files: [
+        {
+          path: 'ui/button.tsx',
+          type: 'code',
+          encoding: 'utf8',
+          content: "import { cn } from '@farma/registry/lib/utils'\nimport font from '@farma/assets/fonts/font.ttf'\n",
+        },
+      ],
     },
   ])
 
@@ -27,8 +37,9 @@ describe('add', () => {
 
     expect(items).toEqual(['utils', 'button'])
     expect(await readFile(path.join(cwd, 'src/ds/ui/button.tsx'), 'utf8')).toBe(
-      "import { cn } from '@ds/lib/utils'\n",
+      "import { cn } from '@ds/lib/utils'\nimport font from '@assets/fonts/font.ttf'\n",
     )
+    expect([...(await readFile(path.join(cwd, 'assets/farma/fonts/font.ttf')))]).toEqual([0, 1, 2, 255])
     expect(await readFile(path.join(cwd, 'src/ds/lib/utils.ts'), 'utf8')).toContain('cn')
   })
 

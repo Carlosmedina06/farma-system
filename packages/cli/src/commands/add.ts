@@ -37,8 +37,10 @@ export async function add(names: string[], options: AddOptions) {
   const results: { file: string; result: WriteResult }[] = []
   for (const item of items) {
     for (const file of item.files) {
-      const target = path.join(cwd, config.baseDir, file.path)
-      const content = transformImports(file.content, config.importAlias)
+      const isAsset = file.type === 'asset'
+      const target = path.join(cwd, isAsset ? config.assetsDir : config.baseDir, file.path)
+      const content =
+        file.encoding === 'base64' ? Buffer.from(file.content, 'base64') : transformImports(file.content, config)
       const result = await writeProjectFile(target, content, options)
       results.push({ file: path.relative(cwd, target), result })
       console.log(`  ${LABELS[result]} ${path.relative(cwd, target)}`)

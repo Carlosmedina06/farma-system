@@ -1,0 +1,7 @@
+{
+  "name": "safe-area-view",
+  "type": "ui",
+  "description": "SafeAreaView con className.",
+  "files": [{ "path": "UniwindSafeAreaView.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-safe-area-context"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "linear-gradient",
+  "type": "ui",
+  "description": "expo-linear-gradient con className.",
+  "files": [{ "path": "UniwindLinearGradient.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["expo-linear-gradient"]
+}

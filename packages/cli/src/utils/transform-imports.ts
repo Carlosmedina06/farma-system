@@ -1,8 +1,10 @@
-import { REGISTRY_IMPORT_PREFIX } from '@farma/registry/schema'
+import { ASSETS_IMPORT_PREFIX, REGISTRY_IMPORT_PREFIX } from '@farma/registry/schema'
 
-/** Reescribe `@farma/registry/...` al alias que usa el proyecto destino. */
-export function transformImports(content: string, importAlias: string) {
-  const prefix = REGISTRY_IMPORT_PREFIX.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')
-  const alias = importAlias.replace(/\/$/, '')
-  return content.replace(new RegExp(`(['"])${prefix}`, 'g'), `$1${alias}/`)
+const escape = (value: string) => value.replace(/[.*+?^${}()|[\]\\/]/g, '\\$&')
+
+/** Reescribe `@farma/registry/...` y `@farma/assets/...` a los alias del proyecto destino. */
+export function transformImports(content: string, aliases: { importAlias: string; assetsAlias: string }) {
+  return content
+    .replace(new RegExp(`(['"])${escape(REGISTRY_IMPORT_PREFIX)}`, 'g'), `$1${aliases.importAlias.replace(/\/$/, '')}/`)
+    .replace(new RegExp(`(['"])${escape(ASSETS_IMPORT_PREFIX)}`, 'g'), `$1${aliases.assetsAlias.replace(/\/$/, '')}/`)
 }

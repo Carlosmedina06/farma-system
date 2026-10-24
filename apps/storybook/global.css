@@ -1,12 +1,8 @@
 @import 'tailwindcss';
 @import 'uniwind';
 
+/* Mismos tokens que usa la app */
+@import '../../packages/registry/src/theme/farma.css';
+
 /* Uniwind/Tailwind deben escanear los componentes del registry */
 @source '../../packages/registry/src';
-
-/*
- * Tokens del design system. Aquí se migrarán los de app-mobile/global.css
- * para que Storybook muestre los componentes con los mismos colores/espaciados.
- */
-@theme {
-}

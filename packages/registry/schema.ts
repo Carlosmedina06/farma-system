@@ -8,8 +8,12 @@ import { z } from 'zod'
 export const registryItemTypeSchema = z.enum(['ui', 'lib', 'hook', 'theme'])
 
 export const registryFileSchema = z.object({
-  /** Ruta relativa a `src/` del registry y a `baseDir` del proyecto destino. */
+  /**
+   * - `code`: ruta relativa a `src/` del registry y a `baseDir` del proyecto.
+   * - `asset`: ruta relativa a `assets/` del registry y a `assetsDir` del proyecto.
+   */
   path: z.string().min(1),
+  type: z.enum(['code', 'asset']).default('code'),
 })
 
 export const registryItemSchema = z.object({
@@ -23,12 +27,15 @@ export const registryItemSchema = z.object({
   registryDependencies: z.array(z.string()).default([]),
 })
 
-export const registrySchema = z.object({
-  items: z.array(registryItemSchema),
-})
+/**
+ * `registry-item.json`, junto al código del item. Las rutas `code` son
+ * relativas a la carpeta del propio item.
+ */
+export const registryItemSourceSchema = registryItemSchema
 
 export const builtFileSchema = registryFileSchema.extend({
   content: z.string(),
+  encoding: z.enum(['utf8', 'base64']),
 })
 
 export const builtItemSchema = registryItemSchema.extend({
@@ -50,3 +57,5 @@ export type RegistryIndex = z.infer<typeof registryIndexSchema>
 
 /** Prefijo con el que los items del registry se importan entre sí. */
 export const REGISTRY_IMPORT_PREFIX = '@farma/registry/'
+/** Prefijo con el que los items importan assets (fuentes, lotties, imágenes). */
+export const ASSETS_IMPORT_PREFIX = '@farma/assets/'

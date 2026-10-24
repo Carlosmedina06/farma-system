@@ -1,0 +1,8 @@
+{
+  "name": "overlay-portal",
+  "type": "ui",
+  "description": "Overlay por encima de todo: FullWindowOverlay en iOS, Portal en Android.",
+  "files": [{ "path": "OverlayPortal.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-screens"],
+  "registryDependencies": ["portal"]
+}

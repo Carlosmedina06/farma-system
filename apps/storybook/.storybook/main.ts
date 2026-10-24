@@ -8,8 +8,10 @@ import { mergeConfig } from 'vite'
 
 const dirname = path.dirname(fileURLToPath(import.meta.url))
 const registrySrc = path.resolve(dirname, '../../../packages/registry/src')
+const registryAssets = path.resolve(dirname, '../../../packages/registry/assets')
 
 const config: StorybookConfig = {
+  staticDirs: [{ from: '../../../packages/registry/assets/fonts', to: '/fonts' }],
   stories: [
     '../stories/**/*.mdx',
     '../stories/**/*.stories.@(ts|tsx)',
@@ -28,7 +30,10 @@ const config: StorybookConfig = {
         uniwind({ cssEntryFile: './global.css', dtsFile: './uniwind-types.d.ts' }),
       ],
       resolve: {
-        alias: [{ find: /^@farma\/registry\//, replacement: `${registrySrc}/` }],
+        alias: [
+          { find: /^@farma\/registry\//, replacement: `${registrySrc}/` },
+          { find: /^@farma\/assets\//, replacement: `${registryAssets}/` },
+        ],
       },
     }),
 }

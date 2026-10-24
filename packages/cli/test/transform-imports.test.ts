@@ -10,12 +10,21 @@ describe('transformImports', () => {
       "import { View } from 'react-native'",
     ].join('\n')
 
-    expect(transformImports(input, 'src/ds/')).toBe(
+    expect(transformImports(input, { importAlias: 'src/ds/', assetsAlias: 'assets/farma' })).toBe(
       [
         "import { cn } from 'src/ds/lib/utils'",
         'import { Text } from "src/ds/ui/text"',
         "import { View } from 'react-native'",
       ].join('\n'),
     )
+  })
+
+  it('reescribe los assets al alias de assets', () => {
+    expect(
+      transformImports("import font from '@farma/assets/fonts/Inter.ttf'", {
+        importAlias: 'src/ds',
+        assetsAlias: 'assets/farma/',
+      }),
+    ).toBe("import font from 'assets/farma/fonts/Inter.ttf'")
   })
 })

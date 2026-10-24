@@ -1,0 +1,8 @@
+{
+  "name": "text",
+  "type": "ui",
+  "description": "Tipografía del DS (h1–h4, body, caption, mono, price…). Usa las fuentes Inter/Manrope.",
+  "files": [{ "path": "Text.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants", "clsx"],
+  "registryDependencies": ["utils", "fonts"]
+}

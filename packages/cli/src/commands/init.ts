@@ -39,6 +39,8 @@ export async function init(options: InitOptions) {
     registry: options.registry ?? 'local:../farma-system/packages/registry/dist/r',
     baseDir: 'src/ds',
     importAlias: 'src/ds',
+    assetsDir: 'assets/farma',
+    assetsAlias: 'assets/farma',
   }
 
   const answers = options.yes
@@ -48,6 +50,8 @@ export async function init(options: InitOptions) {
           { type: 'text', name: 'registry', message: 'Registry (local:<ruta> o npm:<paquete>)', initial: defaults.registry },
           { type: 'text', name: 'baseDir', message: 'Carpeta donde copiar los componentes', initial: defaults.baseDir },
           { type: 'text', name: 'importAlias', message: 'Alias de import para esa carpeta', initial: defaults.importAlias },
+          { type: 'text', name: 'assetsDir', message: 'Carpeta para assets (fuentes, animaciones)', initial: defaults.assetsDir },
+          { type: 'text', name: 'assetsAlias', message: 'Alias de import para esos assets', initial: defaults.assetsAlias },
         ],
         { onCancel: () => process.exit(1) },
       )
