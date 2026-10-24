@@ -62,6 +62,14 @@ const subset = await subsetFont(full, text, { targetFormat: 'truetype' })
 await writeFile(path.join(root, 'assets/fonts/farmaIcons.ttf'), subset)
 await writeFile(path.join(root, 'src/ui/icon/glyph-map.json'), JSON.stringify(subsetMap, null, 2) + '\n')
 
+// Stories que usan íconos fuera de la fuente se verían vacías en Storybook.
+const keepSet = new Set(keep)
+for await (const file of glob('**/*.stories.tsx', { cwd: path.join(root, 'src') })) {
+  const text = await readFile(path.join(root, 'src', file), 'utf8')
+  const missing = [...text.matchAll(LITERAL)].map((m) => m[1]!).filter((v) => v in fullMap && !keepSet.has(v))
+  if (missing.length > 0) console.warn(`⚠ ${file} usa íconos que no están en la fuente: ${[...new Set(missing)].join(', ')}`)
+}
+
 console.log(
   `icons: ${keep.length}/${Object.keys(fullMap).length} glifos ` +
     `(registry ${registryIcons.size}, app ${appIcons.length}, backend ${backend.icons.length}) · ` +

@@ -11,7 +11,7 @@ const meta = {
   decorators: [
     (Story) => (
       <View className="h-8 w-8 items-center justify-center">
-        <Icon name="bell-01" size={24} />
+        <Icon name="bell-03" size={24} />
         <Story />
       </View>
     ),

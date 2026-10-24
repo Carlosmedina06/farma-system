@@ -6,7 +6,7 @@ import { EmptyState } from './EmptyState'
 
 const SampleIllustration = () => (
   <View className="h-32 w-32 items-center justify-center rounded-full bg-gray-100">
-    <Icon color="#98A2B3" name="search-lg" size={56} />
+    <Icon color="#98A2B3" name="search-sm" size={56} />
   </View>
 )
 
