@@ -202,5 +202,7 @@ export const toast = {
   },
 }
 
-/** Alias compatible con la API anterior de app-mobile. */
-export const showToast = toast.show
+/** Alias compatible con la API anterior de app-mobile (no devuelve nada; para el id usá `toast.show`). */
+export const showToast = (props: ShowToastProps): void => {
+  toast.show(props)
+}

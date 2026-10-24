@@ -21,7 +21,7 @@ describe('toast (pila propia, sin librerías)', () => {
     expect(queryByTestId('toast')).toBeNull()
   })
 
-  it('muestra un toast con toast.show y showToast es el mismo método', () => {
+  it('muestra un toast con showToast (alias de toast.show)', () => {
     const { getByText } = render(<ToastHost />)
 
     act(() => {
@@ -29,7 +29,6 @@ describe('toast (pila propia, sin librerías)', () => {
     })
 
     expect(getByText('Guardado')).toBeTruthy()
-    expect(showToast).toBe(toast.show)
   })
 
   it(`apila hasta ${MAX_VISIBLE_TOASTS}: el más nuevo abajo y el más viejo se descarta`, () => {
