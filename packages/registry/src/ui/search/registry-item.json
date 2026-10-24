@@ -1,0 +1,7 @@
+{
+  "name": "search",
+  "type": "ui",
+  "description": "Campo de búsqueda redondeado con ícono de lupa (opcionalmente presionable) y botón de borrar accesible.",
+  "files": [{ "path": "Search.tsx" }, { "path": "Search.types.ts" }, { "path": "index.ts" }],
+  "registryDependencies": ["utils", "tokens", "icon"]
+}

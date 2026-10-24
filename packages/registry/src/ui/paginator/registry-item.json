@@ -1,0 +1,8 @@
+{
+  "name": "paginator",
+  "type": "ui",
+  "description": "Indicador de páginas con puntos animados (reanimated) que sigue un SharedValue con el índice actual.",
+  "files": [{ "path": "Paginator.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": []
+}

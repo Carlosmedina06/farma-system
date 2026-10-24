@@ -1,0 +1,14 @@
+{
+  "name": "list",
+  "type": "ui",
+  "description": "Filas de lista: ListBold (icono + label + descripciones + caption/link/icono derecho), ListIcon y ListSingleLine.",
+  "files": [
+    { "path": "ListBold.tsx" },
+    { "path": "ListIcon.tsx" },
+    { "path": "ListSingleLine.tsx" },
+    { "path": "List.types.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": [],
+  "registryDependencies": ["utils", "text", "icon", "button"]
+}

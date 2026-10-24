@@ -1,0 +1,7 @@
+{
+  "name": "dropdown-button",
+  "type": "ui",
+  "description": "Botón tipo select (abre un selector externo) con label, placeholder, valor formateable y estado de error.",
+  "files": [{ "path": "DropDownButton.tsx" }, { "path": "DropDownButton.types.ts" }, { "path": "index.ts" }],
+  "registryDependencies": ["utils", "text", "icon"]
+}

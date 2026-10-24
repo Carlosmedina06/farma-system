@@ -1,0 +1,8 @@
+{
+  "name": "toggle",
+  "type": "ui",
+  "description": "Switch on/off animado (reanimated) en tamaños xs/sm/md.",
+  "files": [{ "path": "Toggle.tsx" }, { "path": "Toggle.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-reanimated", "tailwind-variants"],
+  "registryDependencies": ["utils"]
+}

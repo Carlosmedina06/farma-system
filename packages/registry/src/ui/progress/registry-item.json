@@ -1,0 +1,14 @@
+{
+  "name": "progress",
+  "type": "ui",
+  "description": "Barras de progreso: Progress (estática con label), AnimatedProgressBar (indeterminada) y SteppedProgressBar (animada por pasos).",
+  "files": [
+    { "path": "Progress.tsx" },
+    { "path": "Progress.types.ts" },
+    { "path": "ProgressBarAnimated.tsx" },
+    { "path": "SteppedProgressBar.tsx" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["tailwind-variants", "react-native-reanimated"],
+  "registryDependencies": ["utils", "text"]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "toast",
+  "type": "ui",
+  "description": "API imperativa opcional: <ToastHost /> + toast.show() sobre react-native-toast-message.",
+  "files": [{ "path": "toast.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-toast-message"],
+  "registryDependencies": ["snackbar"]
+}

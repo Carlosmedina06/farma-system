@@ -1,0 +1,8 @@
+{
+  "name": "radio",
+  "type": "ui",
+  "description": "Radio button animado (reanimated) en tamaños sm/md/lg.",
+  "files": [{ "path": "Radio.tsx" }, { "path": "Radio.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-reanimated", "tailwind-variants"],
+  "registryDependencies": ["utils"]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "tag",
+  "type": "ui",
+  "description": "Tag con borde, checkbox opcional, icono, contador y botón de cierre.",
+  "files": [{ "path": "Tag.tsx" }, { "path": "Tag.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants"],
+  "registryDependencies": ["utils", "text", "icon"]
+}

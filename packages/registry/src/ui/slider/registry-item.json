@@ -1,0 +1,14 @@
+{
+  "name": "slider",
+  "type": "ui",
+  "description": "Slider de un valor y de rango (RangeSlider) con gesto pan (gesture-handler + reanimated).",
+  "files": [
+    { "path": "Slider.tsx" },
+    { "path": "SliderRange.tsx" },
+    { "path": "SliderDot.tsx" },
+    { "path": "Slider.types.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-gesture-handler", "react-native-reanimated"],
+  "registryDependencies": ["utils"]
+}

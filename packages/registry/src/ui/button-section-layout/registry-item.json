@@ -1,0 +1,16 @@
+{
+  "name": "button-section-layout",
+  "type": "ui",
+  "description": "Sección inferior de acciones con variantes de layout (uno/dos botones, vertical/horizontal, con monto, encabezado, prompt con link o slot de acción).",
+  "files": [
+    { "path": "ButtonSectionLayout.tsx" },
+    { "path": "ButtonSectionLayout.types.ts" },
+    { "path": "ButtonSectionLayout.variantMap.ts" },
+    { "path": "ButtonSectionLayout.variants.tsx" },
+    { "path": "ButtonSectionLayout.parts.tsx" },
+    { "path": "ButtonSectionLayout.utils.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": [],
+  "registryDependencies": ["utils", "dimensions", "button", "text", "icon", "shimmer-skeleton", "animated-layout"]
+}

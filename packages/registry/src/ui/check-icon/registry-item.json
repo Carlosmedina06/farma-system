@@ -1,0 +1,7 @@
+{
+  "name": "check-icon",
+  "type": "ui",
+  "description": "Íconos SVG de check (validación 24×24 y check compacto del Checkbox).",
+  "files": [{ "path": "CheckIcon.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-svg"]
+}

@@ -6,6 +6,7 @@ import { View } from 'react-native'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 import { PortalHost } from '@farma/registry/ui/portal'
+import { ToastHost } from '@farma/registry/ui/toast'
 
 /** Viewports de dispositivos para ver los componentes como en la app. */
 const MOBILE_VIEWPORTS = {
@@ -49,6 +50,7 @@ const preview: Preview = {
           <Story />
         </View>
         <PortalHost />
+        <ToastHost topOffset={60} />
       </SafeAreaProvider>
     ),
   ],

@@ -1,0 +1,8 @@
+{
+  "name": "tooltip",
+  "type": "ui",
+  "description": "Tooltip oscuro que se abre al tocar el trigger (Modal transparente), se posiciona arriba/abajo según el espacio disponible.",
+  "files": [{ "path": "Tooltip.tsx" }, { "path": "Tooltip.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "text", "icon"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "input",
+  "type": "ui",
+  "description": "Campo de texto con label, helper, error accesible, ícono, máscara (react-native-mask-text) y halo de focus/error.",
+  "files": [
+    { "path": "Input.tsx" },
+    { "path": "Input.types.ts" },
+    { "path": "Input.hooks.tsx" },
+    { "path": "Input.styles.tsx" },
+    { "path": "utils/buildFieldErrorAccessibilityLabel.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-mask-text"],
+  "registryDependencies": ["utils", "text", "icon", "animated-layout"]
+}

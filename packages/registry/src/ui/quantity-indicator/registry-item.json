@@ -1,0 +1,8 @@
+{
+  "name": "quantity-indicator",
+  "type": "ui",
+  "description": "Burbuja numérica absoluta (esquina inferior derecha) para indicar cantidades sobre un icono.",
+  "files": [{ "path": "QuantityIndicator.tsx" }, { "path": "QuantityIndicator.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "text"]
+}

@@ -1,0 +1,5 @@
+export { Slider } from './Slider'
+export { RangeSlider } from './SliderRange'
+export { SliderDot } from './SliderDot'
+export type { Range, RangeSliderProps, SliderProps } from './Slider.types'
+export { dotSize, pointToValue, valueToPoint } from './Slider.types'

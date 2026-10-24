@@ -1,0 +1,8 @@
+{
+  "name": "button",
+  "type": "ui",
+  "description": "Botón del DS (primary, secondary, tertiary, textLink, socialButton…) con icono, loading y tamaños; ButtonOnly para botones de solo icono.",
+  "files": [{ "path": "Button.tsx" }, { "path": "ButtonOnly.tsx" }, { "path": "Button.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants"],
+  "registryDependencies": ["utils", "text", "icon", "spinner"]
+}

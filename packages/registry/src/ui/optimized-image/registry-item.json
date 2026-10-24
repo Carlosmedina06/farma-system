@@ -1,0 +1,8 @@
+{
+  "name": "optimized-image",
+  "type": "ui",
+  "description": "Imagen remota (expo-image) con spinner de carga, fallback opcional y cache inyectable de URLs fallidas.",
+  "files": [{ "path": "OptimizedImage.tsx" }, { "path": "OptimizedImage.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["expo-image"],
+  "registryDependencies": ["utils", "spinner", "uniwind-image"]
+}

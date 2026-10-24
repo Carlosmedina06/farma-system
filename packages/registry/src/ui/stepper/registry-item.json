@@ -1,0 +1,8 @@
+{
+  "name": "stepper",
+  "type": "ui",
+  "description": "Indicador de pasos en segmentos horizontales.",
+  "files": [{ "path": "Stepper.tsx" }, { "path": "Stepper.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants"],
+  "registryDependencies": ["utils"]
+}

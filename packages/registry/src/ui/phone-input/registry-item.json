@@ -1,0 +1,7 @@
+{
+  "name": "phone-input",
+  "type": "ui",
+  "description": "Input de teléfono con prefijo de país, solo dígitos (máx. 10), estado válido/error. Textos por defecto en español sobreescribibles.",
+  "files": [{ "path": "PhoneInput.tsx" }, { "path": "PhoneInput.types.ts" }, { "path": "index.ts" }],
+  "registryDependencies": ["utils", "text", "icon", "check-icon"]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "divider",
+  "type": "ui",
+  "description": "Separador horizontal (línea o línea con texto central) con márgenes verticales por tamaño.",
+  "files": [{ "path": "Divider.tsx" }, { "path": "Divider.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants"],
+  "registryDependencies": ["utils", "text"]
+}

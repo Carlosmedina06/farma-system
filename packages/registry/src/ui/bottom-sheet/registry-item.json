@@ -1,0 +1,14 @@
+{
+  "name": "bottom-sheet",
+  "type": "ui",
+  "description": "Bottom sheet controlado (open/close) con backdrop, arrastre para cerrar, título/píldora/X, altura fija o auto y botón atrás de Android. Se dibuja en el PortalHost si existe.",
+  "files": [{ "path": "BottomSheet.tsx" }, { "path": "BottomSheet.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [
+    "@react-native-community/hooks",
+    "react-native-gesture-handler",
+    "react-native-reanimated",
+    "react-native-safe-area-context",
+    "react-native-worklets"
+  ],
+  "registryDependencies": ["tokens", "text", "icon", "portal"]
+}

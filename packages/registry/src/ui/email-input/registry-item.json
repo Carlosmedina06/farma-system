@@ -1,0 +1,8 @@
+{
+  "name": "email-input",
+  "type": "ui",
+  "description": "Input de email con sugerencias de dominio al escribir @ (lista configurable vía `domains`) y estado válido/error.",
+  "files": [{ "path": "EmailInput.tsx" }, { "path": "EmailInput.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["utils", "tokens", "text", "icon", "input", "check-icon"]
+}

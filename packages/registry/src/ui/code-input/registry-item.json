@@ -1,0 +1,7 @@
+{
+  "name": "code-input",
+  "type": "ui",
+  "description": "Input de código OTP por celdas con autofill (iOS/Android) y callbacks de ciclo de vida (onMounted, onError, onAutofill, onComplete).",
+  "files": [{ "path": "CodeInput.tsx" }, { "path": "CodeInput.types.ts" }, { "path": "index.ts" }],
+  "registryDependencies": ["utils", "text"]
+}

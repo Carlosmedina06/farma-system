@@ -1,0 +1,8 @@
+{
+  "name": "chip",
+  "type": "ui",
+  "description": "Chip presionable con estados checked/selected/disabled y botón de cierre opcional.",
+  "files": [{ "path": "Chip.tsx" }, { "path": "Chip.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "text", "icon"]
+}

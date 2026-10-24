@@ -1,0 +1,8 @@
+{
+  "name": "tabs",
+  "type": "ui",
+  "description": "Tabs horizontales con indicador animado (reanimated) y tabs deshabilitables.",
+  "files": [{ "path": "Tabs.tsx" }, { "path": "Tabs.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants", "react-native-reanimated"],
+  "registryDependencies": ["utils", "text"]
+}

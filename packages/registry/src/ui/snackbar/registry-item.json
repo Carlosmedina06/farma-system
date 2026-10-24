@@ -1,0 +1,8 @@
+{
+  "name": "snackbar",
+  "type": "ui",
+  "description": "Snackbar presentacional (default, success, error). Sin estado global: usalo solo o con toast.",
+  "files": [{ "path": "Snackbar.tsx" }, { "path": "Snackbar.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants"],
+  "registryDependencies": ["utils", "icon", "text"]
+}

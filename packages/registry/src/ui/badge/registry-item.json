@@ -1,0 +1,8 @@
+{
+  "name": "badge",
+  "type": "ui",
+  "description": "Badge de estado con colores semánticos, tamaños e icono opcional a izquierda o derecha.",
+  "files": [{ "path": "Badge.tsx" }, { "path": "Badge.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants"],
+  "registryDependencies": ["utils", "text", "icon"]
+}

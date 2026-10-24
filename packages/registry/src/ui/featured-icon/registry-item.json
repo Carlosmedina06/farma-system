@@ -1,0 +1,8 @@
+{
+  "name": "featured-icon",
+  "type": "ui",
+  "description": "Icono destacado dentro de un círculo de color con borde (outline) opcional.",
+  "files": [{ "path": "FeaturedIcon.tsx" }, { "path": "FeaturedIcon.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "icon"]
+}

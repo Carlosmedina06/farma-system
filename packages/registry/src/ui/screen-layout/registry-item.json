@@ -1,0 +1,8 @@
+{
+  "name": "screen-layout",
+  "type": "ui",
+  "description": "Contenedor de pantalla con SafeAreaView (edges configurables), fondo y padding/gap estándar.",
+  "files": [{ "path": "ScreenLayout.tsx" }, { "path": "ScreenLayout.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-safe-area-context"],
+  "registryDependencies": ["utils", "safe-area-view"]
+}

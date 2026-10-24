@@ -1,0 +1,8 @@
+{
+  "name": "button-group",
+  "type": "ui",
+  "description": "Grupo horizontal de botones segmentados (texto y/o icono).",
+  "files": [{ "path": "ButtonGroup.tsx" }, { "path": "ButtonGroup.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["tailwind-variants"],
+  "registryDependencies": ["text", "icon"]
+}

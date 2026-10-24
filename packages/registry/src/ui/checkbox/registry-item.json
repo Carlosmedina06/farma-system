@@ -1,0 +1,8 @@
+{
+  "name": "checkbox",
+  "type": "ui",
+  "description": "Checkbox animado (cuadrado o circular vía Radio), con estado indeterminado (minus), apariencia primary/neutral y a11y.",
+  "files": [{ "path": "CheckBox.tsx" }, { "path": "Checkbox.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-reanimated", "tailwind-variants"],
+  "registryDependencies": ["utils", "icon", "radio", "check-icon"]
+}

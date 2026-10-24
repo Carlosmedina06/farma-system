@@ -1,0 +1,8 @@
+{
+  "name": "accordion",
+  "type": "ui",
+  "description": "Acordeón con encabezado y cuerpo de altura animada (reanimated).",
+  "files": [{ "path": "Accordion.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["text", "icon"]
+}

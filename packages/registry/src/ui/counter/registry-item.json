@@ -1,0 +1,8 @@
+{
+  "name": "counter",
+  "type": "ui",
+  "description": "Contador +/− (con papelera al llegar a 1), máximo configurable y estado loading con skeleton.",
+  "files": [{ "path": "Counter.tsx" }, { "path": "Counter.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "text", "icon", "shimmer-skeleton"]
+}
