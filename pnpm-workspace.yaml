@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+  - packages/*
+
+# React Native / Metro funcionan mejor con node_modules planos
+nodeLinker: hoisted
+
+allowBuilds:
+  esbuild: true

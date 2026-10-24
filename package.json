@@ -1,0 +1,21 @@
+{
+  "name": "farma-system",
+  "private": true,
+  "version": "0.0.0",
+  "packageManager": "pnpm@12.11.2",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "pnpm registry:build && pnpm --filter @farma/cli build",
+    "registry:build": "pnpm --filter @farma/registry build",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test",
+    "storybook": "pnpm --filter @farma/storybook storybook",
+    "farma-system": "node packages/cli/dist/index.js",
+    "storybook:build": "pnpm --filter @farma/storybook build"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.3"
+  }
+}

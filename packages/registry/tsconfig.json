@@ -1,0 +1,11 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "types": ["node"],
+    "paths": {
+      "@farma/registry/*": ["./src/*"]
+    }
+  },
+  "include": ["src", "scripts", "schema.ts", "uniwind-types.d.ts"]
+}

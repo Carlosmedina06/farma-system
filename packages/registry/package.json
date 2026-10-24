@@ -1,0 +1,31 @@
+{
+  "name": "@farma/registry",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Fuente de los componentes del design system de Farma (React Native + Uniwind).",
+  "type": "module",
+  "exports": {
+    "./schema": "./schema.ts"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/react": "~19.3.0",
+    "clsx": "^2.1.1",
+    "react": "19.3.0",
+    "react-native": "0.88.0",
+    "tailwind-merge": "^3.7.0",
+    "tailwind-variants": "^3.3.1",
+    "tsx": "^4.23.15",
+    "uniwind": "^1.13.0"
+  }
+}
