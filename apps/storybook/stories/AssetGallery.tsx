@@ -6,10 +6,19 @@ import { Text } from '@farma/registry/ui/text'
 export type GalleryEntry = { item: string; label: string; render: () => ReactNode }
 
 /** Grilla filtrable de assets del registry, con el nombre del item para `farma-system add`. */
-export function AssetGallery({ entries, tileClassName = 'w-[110px]' }: { entries: GalleryEntry[]; tileClassName?: string }) {
+export function AssetGallery({
+  entries,
+  tileClassName = 'w-[110px]',
+  copyPrefix = 'farma-system add ',
+}: {
+  entries: GalleryEntry[]
+  tileClassName?: string
+  /** Texto que se copia antes del nombre; '' copia solo el nombre (ej. para <Icon name>). */
+  copyPrefix?: string
+}) {
   const [query, setQuery] = useState('')
   const [copied, setCopied] = useState<string>()
-  const filtered = entries.filter((entry) => entry.item.includes(query.toLowerCase()))
+  const filtered = entries.filter((entry) => entry.item.toLowerCase().includes(query.toLowerCase()))
 
   return (
     <View className="gap-3">
@@ -19,14 +28,14 @@ export function AssetGallery({ entries, tileClassName = 'w-[110px]' }: { entries
         value={query}
         onChangeText={setQuery}
       />
-      {copied && <Text type="caption">Copiado: farma-system add {copied}</Text>}
+      {copied && <Text type="caption">Copiado: {copyPrefix}{copied}</Text>}
       <View className="flex-row flex-wrap gap-3">
         {filtered.map((entry) => (
           <Pressable
             key={entry.item}
             className={`${tileClassName} items-center gap-1 rounded-md border border-gray-200 p-2`}
             onPress={() => {
-              void globalThis.navigator?.clipboard?.writeText(`farma-system add ${entry.item}`)
+              void globalThis.navigator?.clipboard?.writeText(`${copyPrefix}${entry.item}`)
               setCopied(entry.item)
             }}
           >

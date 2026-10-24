@@ -202,7 +202,7 @@ pnpm --filter @farma/registry icons:build                         # regenera la 
 (`icons-src/config.json` → `"subset": false`). Con `"subset": true` la recorta a los glifos usados por el DS,
 por la app y los de `icons-src/keep-backend.json`.
 Para nombres que llegan de afuera (ej. notificaciones) usá `<Icon name={x} fallback="bell-03" />` o `isIconName(x)`.
-En Storybook están las galerías **Assets/Ilustraciones**, **Assets/Íconos SVG** y **Assets/Animaciones**.
+En Storybook están las galerías **Assets/Íconos** (todos: glifos, misc-* y SVG sueltos), **Assets/Ilustraciones** y **Assets/Animaciones**.
 
 ## Agregar o migrar un componente
 
