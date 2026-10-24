@@ -1,6 +1,6 @@
 /**
  * Empaqueta el paquete para instalarlo desde local (sin publicar):
- *   pnpm --filter @carlosmedina/farma-ui pack:local  →  dist/farma-ui.tgz
+ *   pnpm --filter @carlosmedina06/farma-ui pack:local  →  dist/farma-ui.tgz
  *
  * Trabaja sobre una copia: la versión del tarball es `<versión>-local.<fecha>` (única por empaquetado,
  * así yarn no reutiliza su caché), sin tocar el package.json versionado.

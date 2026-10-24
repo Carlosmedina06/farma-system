@@ -1,7 +1,7 @@
 {
-  "name": "@carlosmedina/farma-ui",
-  "version": "0.0.0",
-  "description": "Design system de Farma para React Native + Expo + Uniwind. Un import por componente: @carlosmedina/farma-ui/button, /icon, /modal…",
+  "name": "@carlosmedina06/farma-ui",
+  "version": "0.1.0",
+  "description": "Design system de Farma para React Native + Expo + Uniwind. Un import por componente: @carlosmedina06/farma-ui/button, /icon, /modal…",
   "keywords": [
     "react-native",
     "expo",

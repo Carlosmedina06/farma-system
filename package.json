@@ -14,8 +14,8 @@
     "storybook": "pnpm --filter @farma/storybook storybook",
     "farma-system": "node packages/cli/dist/index.js",
     "storybook:build": "pnpm --filter @farma/storybook build",
-    "ui:build": "pnpm registry:build && pnpm --filter @carlosmedina/farma-ui build",
-    "ui:pack": "pnpm registry:build && pnpm --filter @carlosmedina/farma-ui pack:local",
+    "ui:build": "pnpm registry:build && pnpm --filter @carlosmedina06/farma-ui build",
+    "ui:pack": "pnpm registry:build && pnpm --filter @carlosmedina06/farma-ui pack:local",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "pnpm registry:build && changeset publish"

@@ -10,7 +10,7 @@ en lugar de instalar una librería completa, un CLI copia a tu app **solo** los 
 apps/storybook       Storybook web (react-native-web + Vite + Uniwind) con viewports de móvil
 packages/registry    Componentes (src/), ilustraciones, íconos, animaciones, fuentes, validación y build a dist/r
 packages/cli         CLI `farma-system` (init, add, list)
-packages/ui          Paquete npm @carlosmedina/farma-ui, generado desde packages/registry (un import por componente)
+packages/ui          Paquete npm @carlosmedina06/farma-ui, generado desde packages/registry (un import por componente)
 ```
 
 ## Principios
@@ -96,26 +96,26 @@ desde la barra puedes cambiar a iPhone SE, Pixel 8 o iPad mini. Los sistemas glo
 Storybook importa el mismo theme que la app (`packages/registry/src/theme/farma.css`) y declara las fuentes
 con `@font-face` (`apps/storybook/.storybook/fonts.css`).
 
-## Usarlo como paquete npm (`@carlosmedina/farma-ui`)
+## Usarlo como paquete npm (`@carlosmedina06/farma-ui`)
 
 `packages/ui` se genera a partir del registry y se instala en la app como cualquier dependencia.
 Cada componente tiene su propio import, así Metro solo empaqueta lo que la app usa:
 
 ```tsx
-import { Button } from '@carlosmedina/farma-ui/button'
-import { Icon } from '@carlosmedina/farma-ui/icon'
-import { Modal, ModalHost, useModal } from '@carlosmedina/farma-ui/modal'
-import { toast, ToastHost, ToastType } from '@carlosmedina/farma-ui/toast'
-import { useFarmaFonts } from '@carlosmedina/farma-ui/fonts'
-import { cn } from '@carlosmedina/farma-ui/utils'
-import Identidad from '@carlosmedina/farma-ui/illustrations/kyc/Identidad'   // ilustraciones: un archivo por import
-import clock from '@carlosmedina/farma-ui/animations/clock.json'                // animaciones Lottie
+import { Button } from '@carlosmedina06/farma-ui/button'
+import { Icon } from '@carlosmedina06/farma-ui/icon'
+import { Modal, ModalHost, useModal } from '@carlosmedina06/farma-ui/modal'
+import { toast, ToastHost, ToastType } from '@carlosmedina06/farma-ui/toast'
+import { useFarmaFonts } from '@carlosmedina06/farma-ui/fonts'
+import { cn } from '@carlosmedina06/farma-ui/utils'
+import Identidad from '@carlosmedina06/farma-ui/illustrations/kyc/Identidad'   // ilustraciones: un archivo por import
+import clock from '@carlosmedina06/farma-ui/animations/clock.json'                // animaciones Lottie
 ```
 
 **Instalarlo desde npm:**
 
 ```sh
-yarn add @carlosmedina/farma-ui
+yarn add @carlosmedina06/farma-ui
 ```
 
 **Probar cambios sin publicar** (tarball local, versión `x.y.z-local.<fecha>` única por empaquetado):
@@ -132,13 +132,13 @@ yarn ds:update                                             # en app-mobile, para
 /* global.css */
 @import 'tailwindcss';
 @import 'uniwind';
-@import '@carlosmedina/farma-ui/theme.css';            /* tokens del DS */
-@source './node_modules/@carlosmedina/farma-ui/lib';   /* relativo a global.css (en la raíz de la app): que Uniwind vea las clases del paquete */
+@import '@carlosmedina06/farma-ui/theme.css';            /* tokens del DS */
+@source './node_modules/@carlosmedina06/farma-ui/lib';   /* relativo a global.css (en la raíz de la app): que Uniwind vea las clases del paquete */
 ```
 
 ```jsonc
-// package.json → jest.transformIgnorePatterns: agregar @carlosmedina/farma-ui a los paquetes que se transforman
-"node_modules/(?!(…|uniwind|@carlosmedina/farma-ui))"
+// package.json → jest.transformIgnorePatterns: agregar @carlosmedina06/farma-ui a los paquetes que se transforman
+"node_modules/(?!(…|uniwind|@carlosmedina06/farma-ui))"
 ```
 
 Las dependencias nativas (reanimated, svg, lottie, expo-image…) son `peerDependencies`: usa las versiones
@@ -146,12 +146,12 @@ que ya tiene la app. Solo hacen falta las de los componentes que importes.
 
 | Import | Qué trae |
 | --- | --- |
-| `@carlosmedina/farma-ui/<componente>` | `button`, `modal`, `toast`, `icon`, `text`, `input`… (un entry por item de `farma-system list`) |
-| `@carlosmedina/farma-ui/utils`, `tokens`, `dimensions`, `fonts`, `store` | utilidades |
-| `@carlosmedina/farma-ui/illustrations/<grupo>/<Nombre>` | una ilustración (componente TSX) |
-| `@carlosmedina/farma-ui/icons/svg/<Nombre>` | un ícono SVG suelto |
-| `@carlosmedina/farma-ui/animations/<archivo>.json` | una animación Lottie |
-| `@carlosmedina/farma-ui/theme.css` | tokens de Uniwind/Tailwind |
+| `@carlosmedina06/farma-ui/<componente>` | `button`, `modal`, `toast`, `icon`, `text`, `input`… (un entry por item de `farma-system list`) |
+| `@carlosmedina06/farma-ui/utils`, `tokens`, `dimensions`, `fonts`, `store` | utilidades |
+| `@carlosmedina06/farma-ui/illustrations/<grupo>/<Nombre>` | una ilustración (componente TSX) |
+| `@carlosmedina06/farma-ui/icons/svg/<Nombre>` | un ícono SVG suelto |
+| `@carlosmedina06/farma-ui/animations/<archivo>.json` | una animación Lottie |
+| `@carlosmedina06/farma-ui/theme.css` | tokens de Uniwind/Tailwind |
 
 ## Publicar en npm (Changesets)
 
@@ -159,10 +159,10 @@ que ya tiene la app. Solo hacen falta las de los componentes que importes.
    y describir el cambio (queda en `.changeset/*.md` y entra en el PR).
 2. Al mergear a `main`, el workflow **Release** abre (o actualiza) el PR **"chore: version packages"** con la versión
    nueva y el `CHANGELOG.md`.
-3. Al mergear ese PR, el workflow publica `@carlosmedina/farma-ui` en npm (con provenance) y crea el tag.
+3. Al mergear ese PR, el workflow publica `@carlosmedina06/farma-ui` en npm (con provenance) y crea el tag.
 
 Requisitos (una vez): secret `NPM_TOKEN` en el repo de GitHub (token *Automation* o *Granular* con permiso de
-publicación del scope `@carlosmedina`) y, en Settings → Actions, permitir que los workflows creen PRs.
+publicación del scope `@carlosmedina06`) y, en Settings → Actions, permitir que los workflows creen PRs.
 
 Publicación manual (sin CI): `pnpm version-packages && pnpm release` con `npm login` hecho.
 
@@ -286,7 +286,7 @@ Ver [`packages/registry/MIGRATING.md`](packages/registry/MIGRATING.md). En resum
 | Script                 | Descripción                                                     |
 | ---------------------- | --------------------------------------------------------------- |
 | `pnpm build`           | Registry (valida + genera `dist/r`) + CLI                       |
-| `pnpm ui:pack`         | Genera el paquete `@carlosmedina/farma-ui` y su tarball en `packages/ui/dist` |
+| `pnpm ui:pack`         | Genera el paquete `@carlosmedina06/farma-ui` y su tarball en `packages/ui/dist` |
 | `pnpm registry:build`  | Solo el registry                                                |
 | `pnpm storybook`       | Storybook web en modo desarrollo                                |
 | `pnpm storybook:build` | Storybook estático en `apps/storybook/storybook-static`         |
