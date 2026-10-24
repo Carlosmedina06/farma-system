@@ -1,7 +1,8 @@
-import { Pressable, TouchableOpacity, View } from 'react-native'
-import Toast, { type ToastConfig } from 'react-native-toast-message'
+import { Pressable, StyleSheet, TouchableOpacity, View } from 'react-native'
+import Animated, { FadeInDown, FadeInUp, FadeOut, LinearTransition, ReduceMotion } from 'react-native-reanimated'
 import { tv } from 'tailwind-variants'
 
+import { createStore, useStore } from '@farma/registry/lib/store'
 import { cn } from '@farma/registry/lib/utils'
 import { Icon, type IconName } from '@farma/registry/ui/icon'
 import { Text } from '@farma/registry/ui/text'
@@ -63,7 +64,8 @@ function ToastView({
   iconSize = 20,
   closeLabel = 'Cerrar',
   className,
-}: Omit<ShowToastProps, 'position' | 'duration'>) {
+  onClose,
+}: Omit<ShowToastProps, 'position' | 'duration'> & { onClose: () => void }) {
   return (
     <Pressable
       className={cn(toastVariants({ type }), className)}
@@ -75,7 +77,7 @@ function ToastView({
         elevation: 4,
       }}
       testID="toast"
-      onPress={() => Toast.hide()}
+      onPress={onClose}
     >
       <View className="flex-shrink flex-row items-center gap-2">
         {withIcon && <Icon color="#FFFFFF" name={icon ?? iconMapper[type]} size={iconSize} />}
@@ -96,7 +98,7 @@ function ToastView({
             accessibilityLabel={closeLabel}
             accessibilityRole="button"
             testID="toast-close"
-            onPress={() => Toast.hide()}
+            onPress={onClose}
           >
             <Icon color="#FFFFFF" name="x-close" size={24} />
           </TouchableOpacity>
@@ -106,33 +108,99 @@ function ToastView({
   )
 }
 
-const toastConfig: ToastConfig = Object.fromEntries(
-  Object.values(ToastType).map((type) => [type, ({ props }: { props: ShowToastProps }) => <ToastView {...props} />]),
-)
+/** Cantidad máxima de toasts visibles a la vez; al llegar uno más se descarta el más viejo. */
+export const MAX_VISIBLE_TOASTS = 3
+
+type ToastItem = ShowToastProps & { id: number }
+
+const toastStore = createStore<ToastItem[]>([])
+const timers = new Map<number, ReturnType<typeof setTimeout>>()
+let nextId = 0
+
+const removeToast = (id: number) => {
+  clearTimeout(timers.get(id))
+  timers.delete(id)
+  toastStore.set((items) => items.filter((item) => item.id !== id))
+}
+
+const styles = StyleSheet.create({ stack: { position: 'absolute', left: 0, right: 0 } })
+
+/** Opacidad según la antigüedad: el más nuevo se ve entero y los de atrás se atenúan. */
+const STACK_OPACITY = [1, 0.85, 0.7]
 
 export type ToastHostProps = {
+  /** Distancia desde arriba de la pila `top` (ej. alto del header de la app). */
   topOffset?: number
+  /** Distancia desde abajo de la pila `bottom`. */
   bottomOffset?: number
 }
 
-export function ToastHost({ topOffset, bottomOffset }: ToastHostProps) {
-  return <Toast bottomOffset={bottomOffset} config={toastConfig} position="top" topOffset={topOffset} />
+function ToastStack({ items, position, offset }: { items: ToastItem[]; position: 'top' | 'bottom'; offset: number }) {
+  if (items.length === 0) return null
+
+  return (
+    <View
+      pointerEvents="box-none"
+      style={[styles.stack, position === 'top' ? { top: offset } : { bottom: offset }]}
+      testID={`toast-stack-${position}`}
+    >
+      {items.map(({ id, position: _position, duration: _duration, ...viewProps }, index) => (
+        <Animated.View
+          key={id}
+          entering={(position === 'top' ? FadeInDown : FadeInUp).reduceMotion(ReduceMotion.System)}
+          exiting={FadeOut.reduceMotion(ReduceMotion.System)}
+          layout={LinearTransition.springify().reduceMotion(ReduceMotion.System)}
+          style={{ marginTop: index === 0 ? 0 : 8 }}
+        >
+          <View style={{ opacity: STACK_OPACITY[items.length - 1 - index] ?? 1 }}>
+            <ToastView {...viewProps} onClose={() => removeToast(id)} />
+          </View>
+        </Animated.View>
+      ))}
+    </View>
+  )
+}
+
+/**
+ * Capa imperativa OPCIONAL: montá un `<ToastHost />` una vez en el root y llamá `toast.show()`.
+ * Muestra hasta `MAX_VISIBLE_TOASTS` apilados: el más nuevo abajo, los anteriores suben
+ * y el más viejo desaparece cuando llega uno más. Sin host, `toast.show()` no se ve.
+ */
+export function ToastHost({ topOffset = 60, bottomOffset = 40 }: ToastHostProps) {
+  const items = useStore(toastStore)
+
+  return (
+    <>
+      <ToastStack items={items.filter((item) => (item.position ?? 'top') === 'top')} offset={topOffset} position="top" />
+      <ToastStack items={items.filter((item) => item.position === 'bottom')} offset={bottomOffset} position="bottom" />
+    </>
+  )
 }
 
 export const toast = {
+  /** Muestra un toast y devuelve su id. */
   show({ type = ToastType.Default, position = 'top', duration, ...viewProps }: ShowToastProps) {
-    Toast.show({
-      type,
-      props: { ...viewProps, type },
-      position,
-      visibilityTime: duration ?? DEFAULT_DURATION,
-      autoHide: true,
-      swipeable: false,
+    nextId += 1
+    const id = nextId
+    toastStore.set((items) => {
+      const next = [...items, { ...viewProps, type, position, id }]
+      next.slice(0, Math.max(0, next.length - MAX_VISIBLE_TOASTS)).forEach((old) => {
+        clearTimeout(timers.get(old.id))
+        timers.delete(old.id)
+      })
+      return next.slice(-MAX_VISIBLE_TOASTS)
     })
+    timers.set(id, setTimeout(() => removeToast(id), duration ?? DEFAULT_DURATION))
+    return id
   },
-  hide() {
-    Toast.hide()
+  /** Oculta un toast por id, o todos si no se pasa id. */
+  hide(id?: number) {
+    if (id !== undefined) return removeToast(id)
+    timers.forEach(clearTimeout)
+    timers.clear()
+    toastStore.set([])
   },
 }
 
+/** Alias compatible con la API anterior de app-mobile. */
 export const showToast = toast.show

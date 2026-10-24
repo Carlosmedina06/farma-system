@@ -1,8 +1,23 @@
 {
   "name": "toast",
   "type": "ui",
-  "description": "Toast flotante. <ToastHost /> + toast.show(), sin depender del snackbar.",
-  "files": [{ "path": "toast.tsx" }, { "path": "index.ts" }],
-  "dependencies": ["react-native-toast-message", "tailwind-variants"],
-  "registryDependencies": ["utils", "icon", "text"]
+  "description": "Toasts apilados (hasta 3): <ToastHost /> + toast.show(). El más nuevo abajo; el más viejo se va cuando llega otro.",
+  "files": [
+    {
+      "path": "toast.tsx"
+    },
+    {
+      "path": "index.ts"
+    }
+  ],
+  "dependencies": [
+    "react-native-reanimated",
+    "tailwind-variants"
+  ],
+  "registryDependencies": [
+    "utils",
+    "store",
+    "icon",
+    "text"
+  ]
 }
