@@ -6,6 +6,7 @@ import {
   builtItemSchema,
   registryIndexSchema,
   registryItemSourceSchema,
+  registryItemsSourceSchema,
   type BuiltRegistryItem,
   type RegistryItem,
 } from '../schema'
@@ -18,19 +19,23 @@ const outDir = path.join(root, 'dist', 'r')
 
 const toPosix = (p: string) => p.split(path.sep).join('/')
 
-/** Carga cada `registry-item.json` y deja las rutas de código relativas a `src/`. */
+/** Carga cada `registry-item.json` / `registry-items.json` y deja las rutas de código relativas a `src/`. */
 async function loadItems(): Promise<RegistryItem[]> {
   const items: RegistryItem[] = []
-  for await (const manifest of glob('**/registry-item.json', { cwd: srcDir })) {
+  for await (const manifest of glob('**/registry-item{,s}.json', { cwd: srcDir })) {
     const itemDir = toPosix(path.dirname(manifest))
     const raw = JSON.parse(await readFile(path.join(srcDir, manifest), 'utf8'))
-    const item = registryItemSourceSchema.parse(raw)
-    items.push({
-      ...item,
-      files: item.files.map((file) =>
-        file.type === 'asset' ? file : { ...file, path: path.posix.join(itemDir, file.path) },
-      ),
-    })
+    const parsed = manifest.endsWith('registry-items.json')
+      ? registryItemsSourceSchema.parse(raw)
+      : [registryItemSourceSchema.parse(raw)]
+    for (const item of parsed) {
+      items.push({
+        ...item,
+        files: item.files.map((file) =>
+          file.type === 'asset' ? file : { ...file, path: path.posix.join(itemDir, file.path) },
+        ),
+      })
+    }
   }
   return items.sort((a, b) => a.name.localeCompare(b.name))
 }

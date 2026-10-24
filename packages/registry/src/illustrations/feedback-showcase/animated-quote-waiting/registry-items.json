@@ -1,0 +1,47 @@
+[
+  {
+    "name": "illustration-feedback-showcase-animated-quote-waiting-layer-1-base",
+    "type": "illustration",
+    "description": "Layer1Base",
+    "files": [
+      {
+        "path": "Layer1Base.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-animated-quote-waiting-layer-2-pill",
+    "type": "illustration",
+    "description": "Layer2Pill",
+    "files": [
+      {
+        "path": "Layer2Pill.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-animated-quote-waiting-layer-3-details",
+    "type": "illustration",
+    "description": "Layer3Details",
+    "files": [
+      {
+        "path": "Layer3Details.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

@@ -3,15 +3,25 @@ import path from 'node:path'
 import kleur from 'kleur'
 
 import { loadConfig } from '../config/load'
+import { expandNames } from '../registry/expand'
 import { createSource } from '../registry/sources'
 
-export async function list({ cwd }: { cwd: string }) {
+export async function list(pattern: string | undefined, { cwd, type }: { cwd: string; type?: string }) {
   const root = path.resolve(cwd)
   const config = await loadConfig(root)
-  const index = await createSource(config.registry, root).getIndex()
+  const all = await createSource(config.registry, root).getIndex()
+  let names: Set<string> | undefined
+  if (pattern) {
+    try {
+      names = new Set(expandNames([pattern.includes('*') ? pattern : `*${pattern}*`], all))
+    } catch {
+      names = new Set()
+    }
+  }
+  const index = all.filter((item) => (!type || item.type === type) && (!names || names.has(item.name)))
 
   if (index.length === 0) {
-    console.log(kleur.dim('El registry no tiene items todavía.'))
+    console.log(kleur.dim('No hay items que coincidan.'))
     return
   }
   for (const item of index) {

@@ -20,10 +20,11 @@ Regla general: los imports pasan a `src/ds/<ui|lib>/<item>` con **exports con no
 
 ## Sistemas globales
 
-- **Toast**: `showToast` existe igual (`ui/toast`). `SnackbarType.DefaultSucces` → `DefaultSuccess`.
-  `SnackbarType.ProductDeleted` no existe: usar `{ type: Default, withIcon: true, withCloseIcon: true, icon: 'info-circle' }`.
-  `Toast.hide()` directo → `toast.hide()`. `SnackbarLayout layout="connectivity"` → `InlineSnackbar` (`ui/snackbar-inline`):
-  `variant` `offline|recovered|error` → `neutral|success|error`; offline usa `entrance="fade"`; recovered usa `centered`.
+- **Toast**: `showToast` existe igual (`ui/toast`); `SnackbarType` → `ToastType` (exportado desde `ui/toast`),
+  `DefaultSucces` → `DefaultSuccess`. `ProductDeleted` no existe: usar `{ type: ToastType.Default, withIcon: true, withCloseIcon: true }`.
+  `Toast.hide()` directo → `toast.hide()`.
+- **Banner de conectividad** (`SnackbarLayout layout="connectivity"`) → `Snackbar` (`ui/snackbar`), controlado con `open`:
+  `variant` `offline|recovered|error` → `neutral|success|error`; offline usa `entrance="fade"`.
 - **Modal**: `useModal()` mantiene `{ showModal, hideModal }`. Quienes leían `currentModalAtom` → `useCurrentModal()` o `modal.current`.
   `isSurveyCancelation` eliminado.
 - **ModalWithOptions** → `OptionModal` (`ui/option-modal`): `useModalWithOptions()` → `useOptionModal()` (misma forma).
@@ -34,7 +35,7 @@ Regla general: los imports pasan a `src/ds/<ui|lib>/<item>` con **exports con no
 
 | Componente | Cambio |
 | --- | --- |
-| Icon | tipo `IconName` (`FarmaIcons` queda como alias deprecado). Íconos `misc-*` no están en el DS: usar `SvgIcon icon={Svg}` con los SVG de la app |
+| Icon | tipo `IconName` (`FarmaIcons` queda como alias deprecado). La fuente solo trae los glifos usados: nombres que vienen del backend → `<Icon name={item.icon} fallback="bell-03" />` o `isIconName()`. Íconos `misc-*` → items `icon-*` (ver Assets) con `<SvgIcon icon={Visa} />` |
 | Text | variantes `card-number` → `mono-lg`, `card-text` → `mono-sm` |
 | Badge | sin `activePrescription`/`inactivePrescription`; tamaño `availablePrescription` → `wide`; nuevo `semibold`. Equivalentes: activa → `color="primary" className="text-primary-600" iconClassName="text-primary-600" semibold`; inactiva → `color="gray" className="bg-transparent text-gray-600" iconClassName="text-gray-600" semibold` |
 | Button | `socialButton` ahora es un `type` real (colores a validar con diseño) |
@@ -64,6 +65,27 @@ Regla general: los imports pasan a `src/ds/<ui|lib>/<item>` con **exports con no
 | AttemptLimitModal | `onGoToLogin` → `onButtonPress`; `title` y `buttonText` obligatorios; `descriptionPrefix` + `remainingTime` → `description` |
 | EmptyState | sin ilustración por defecto: `illustration={<EmptyResults />}` |
 | SelectedFilesPanel | `processLabel="Procesar receta"` (default ahora "Continuar") |
+
+## Assets (ilustraciones, íconos SVG, animaciones, fuente de íconos)
+
+El DS trae **solo los assets que la app usa** (importados con `pnpm --filter @farma/registry assets:import --app ../app-mobile`).
+`docs/assets-map.json` tiene, para cada ruta vieja o clave `misc-*`, el item a instalar, el import nuevo y los archivos de la app que lo usan.
+
+| Antes | Ahora |
+| --- | --- |
+| `import X from 'assets/svg/illustrations/kyc/ilus-identidad.svg'` | `add illustration-kyc-identidad` → `import Identidad from 'src/ds/illustrations/kyc/Identidad'` |
+| `<Icon name="misc-visa" />` | `add icon-visa` → `<SvgIcon icon={Visa} />` |
+| `require('assets/lottie-animations/clock.json')` | `add animation-clock` → `require('assets/farma/animations/clock.json')` |
+| `assets/fonts/FarmaIcons/*` (1230 glifos) | la fuente del DS (`fonts`) trae solo los glifos usados |
+
+Con comodines: `farma-system add 'illustration-kyc-*' 'icon-*'`. Después de migrar se puede borrar de app-mobile:
+`assets/svg/**`, `assets/lottie-animations/`, `assets/fonts/FarmaIcons/`, `src/design/_core/generated/misc-icons.ts`
+y las devDependencies del generador de fuentes que ya no se usa (`svg2ttf`, `svgicons2svgfont`, `oslllo-svg-fixer`, `xml2js`).
+`react-native-svg-transformer` se puede quitar cuando ningún `.svg` se importe directo.
+
+No se migran (no usados): 2 ilustraciones (`EmptyOrder`, `ilus-catalogo-02`) y 22 misc-icons
+(tarjetas `*-card`/`*-fill-card`, `cabal-icon`, `centraloeste`, `connection-icon`, `facebook`, `farmacity`, `farmaplus`,
+`footer-m1..m5`, `lasante`, `openfarma`, `osecac`, `shopping-bag`, `user`, `notification-message`).
 
 ## Se quedan en la app (dominio)
 

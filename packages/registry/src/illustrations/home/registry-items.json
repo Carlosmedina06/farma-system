@@ -1,0 +1,17 @@
+[
+  {
+    "name": "illustration-home-receta",
+    "type": "illustration",
+    "description": "Receta",
+    "files": [
+      {
+        "path": "Receta.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

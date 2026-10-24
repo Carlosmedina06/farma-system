@@ -1,0 +1,17 @@
+[
+  {
+    "name": "illustration-address-address-emptystate",
+    "type": "illustration",
+    "description": "AddressEmptystate",
+    "files": [
+      {
+        "path": "AddressEmptystate.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

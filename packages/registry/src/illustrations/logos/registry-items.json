@@ -1,0 +1,17 @@
+[
+  {
+    "name": "illustration-logos-generic-pharmacy-logo",
+    "type": "illustration",
+    "description": "GenericPharmacyLogo",
+    "files": [
+      {
+        "path": "GenericPharmacyLogo.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

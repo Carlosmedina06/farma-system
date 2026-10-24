@@ -1,0 +1,17 @@
+[
+  {
+    "name": "illustration-prevalidation-empty-prevalidation",
+    "type": "illustration",
+    "description": "EmptyPrevalidation",
+    "files": [
+      {
+        "path": "EmptyPrevalidation.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

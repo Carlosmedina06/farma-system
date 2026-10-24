@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/marker-incentive.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Path, G, Defs, ClipPath } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const MarkerIncentive = (props: SvgProps) => <Svg width={37} height={34} fill="none" viewBox="0 0 37 34" {...props}><Path stroke={props.color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.333 19.333a4 4 0 1 0 0-8 4 4 0 0 0 0 8" /><Path stroke={props.color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16.333 31.333C21.667 26 27 21.224 27 15.333c0-5.89-4.776-10.666-10.667-10.666-5.89 0-10.666 4.775-10.666 10.666S11 26 16.333 31.333" /><G clipPath="url(#a)"><Path fill="#DC6803" d="M28.333 14.667a6.667 6.667 0 1 0 0-13.334 6.667 6.667 0 0 0 0 13.334" /><Path stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M28.333 5.333V8m0 2.667h.007M35 8a6.667 6.667 0 1 1-13.333 0A6.667 6.667 0 0 1 35 8" /></G><Defs><ClipPath id="a"><Path fill="white" d="M20.333 0h16v16h-16z" /></ClipPath></Defs></Svg>;
+export default MarkerIncentive;

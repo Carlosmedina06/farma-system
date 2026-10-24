@@ -83,12 +83,12 @@ describe('Button', () => {
 
   it('should render with icon on right side', () => {
     const { getByTestId } = render(
-      <Button iconRightSide icon="arrow-right" testID="button" onPress={jest.fn()}>
+      <Button iconRightSide icon="chevron-right" testID="button" onPress={jest.fn()}>
         Button
       </Button>,
     )
 
-    expect(getByTestId('icon-arrow-right')).toBeTruthy()
+    expect(getByTestId('icon-chevron-right')).toBeTruthy()
   })
 
   it('should be disabled when disabled prop is true', () => {

@@ -1,0 +1,347 @@
+[
+  {
+    "name": "illustration-health-insurance-ase",
+    "type": "illustration",
+    "description": "Ase",
+    "files": [
+      {
+        "path": "Ase.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-avalian",
+    "type": "illustration",
+    "description": "Avalian",
+    "files": [
+      {
+        "path": "Avalian.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-galeno",
+    "type": "illustration",
+    "description": "Galeno",
+    "files": [
+      {
+        "path": "Galeno.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-hitaliano",
+    "type": "illustration",
+    "description": "Hitaliano",
+    "files": [
+      {
+        "path": "Hitaliano.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-ioma",
+    "type": "illustration",
+    "description": "Ioma",
+    "files": [
+      {
+        "path": "Ioma.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-luis-pasteur",
+    "type": "illustration",
+    "description": "LuisPasteur (antes <Icon name=\"misc-luis-pasteur\">)",
+    "files": [
+      {
+        "path": "LuisPasteur.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-medicus",
+    "type": "illustration",
+    "description": "Medicus",
+    "files": [
+      {
+        "path": "Medicus.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-medife",
+    "type": "illustration",
+    "description": "Medife",
+    "files": [
+      {
+        "path": "Medife.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-omint",
+    "type": "illustration",
+    "description": "Omint",
+    "files": [
+      {
+        "path": "Omint.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-osde",
+    "type": "illustration",
+    "description": "Osde",
+    "files": [
+      {
+        "path": "Osde.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-osde-white",
+    "type": "illustration",
+    "description": "OsdeWhite",
+    "files": [
+      {
+        "path": "OsdeWhite.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-osdepym",
+    "type": "illustration",
+    "description": "Osdepym",
+    "files": [
+      {
+        "path": "Osdepym.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-osdipp",
+    "type": "illustration",
+    "description": "Osdipp",
+    "files": [
+      {
+        "path": "Osdipp.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-osecac",
+    "type": "illustration",
+    "description": "Osecac",
+    "files": [
+      {
+        "path": "Osecac.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-ospe",
+    "type": "illustration",
+    "description": "Ospe",
+    "files": [
+      {
+        "path": "Ospe.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-osprera",
+    "type": "illustration",
+    "description": "Osprera",
+    "files": [
+      {
+        "path": "Osprera.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-osuthgra",
+    "type": "illustration",
+    "description": "Osuthgra",
+    "files": [
+      {
+        "path": "Osuthgra.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-pami",
+    "type": "illustration",
+    "description": "Pami",
+    "files": [
+      {
+        "path": "Pami.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-sancor",
+    "type": "illustration",
+    "description": "Sancor",
+    "files": [
+      {
+        "path": "Sancor.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-swiss-medical",
+    "type": "illustration",
+    "description": "SwissMedical",
+    "files": [
+      {
+        "path": "SwissMedical.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-uocra",
+    "type": "illustration",
+    "description": "Uocra",
+    "files": [
+      {
+        "path": "Uocra.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-uom",
+    "type": "illustration",
+    "description": "Uom",
+    "files": [
+      {
+        "path": "Uom.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-health-insurance-upcn",
+    "type": "illustration",
+    "description": "Upcn",
+    "files": [
+      {
+        "path": "Upcn.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

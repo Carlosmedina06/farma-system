@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/pdf-2.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const Pdf2 = (props: SvgProps) => <Svg width={36} height={40} fill="none" viewBox="0 0 36 40" {...props}><Path fill="#B30B00" d="M23.51 11.5V0H3C1.343 0 0 1.28 0 2.857v34.286C0 38.72 1.343 40 3 40h30c1.657 0 3-1.28 3-2.857v-25.63l-.013-.013z" /><Path fill="#FF9AA1" d="M35.988 11.5 23.63 0h-.118v11.5z" /><Path fill="white" d="M9.433 24.353H7.405v3.195H5.422v-8.885H9.58q1.437 0 2.294.687.854.688.854 2.128 0 1.574-.854 2.225-.855.651-2.442.65m.935-1.853q.389-.319.39-1.012 0-.695-.393-.988-.39-.295-1.099-.295H7.407v2.615h1.86q.706 0 1.1-.32M18.344 27.548H14.23v-8.885h4.114q.887.011 1.477.192 1.005.307 1.626 1.128.498.663.68 1.435.18.773.18 1.47-.001 1.772-.764 3.002-1.035 1.658-3.2 1.658m1.483-6.62q-.46-.724-1.82-.723h-1.84v5.798h1.84q1.413-.001 1.97-1.295.305-.711.304-1.695.001-1.358-.454-2.085M30.579 20.235H25.79v2.043h4.191v1.542h-4.19v3.725h-1.983v-8.873h6.77z" /></Svg>;
+export default Pdf2;

@@ -43,4 +43,4 @@ export const Playground: Story = {}
 
 export const SinDescripcion: Story = { args: { description: undefined } }
 
-export const Error: Story = { args: { iconType: 'error', icon: 'x-circle', title: 'Algo salió mal' } }
+export const Error: Story = { args: { iconType: 'error', icon: 'x-close', title: 'Algo salió mal' } }

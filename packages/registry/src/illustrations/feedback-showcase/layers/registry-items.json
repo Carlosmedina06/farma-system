@@ -1,0 +1,227 @@
+[
+  {
+    "name": "illustration-feedback-showcase-layers-pago-aprobado-badge",
+    "type": "illustration",
+    "description": "PagoAprobadoBadge",
+    "files": [
+      {
+        "path": "PagoAprobadoBadge.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-pago-aprobado-card1",
+    "type": "illustration",
+    "description": "PagoAprobadoCard1",
+    "files": [
+      {
+        "path": "PagoAprobadoCard1.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-pago-aprobado-card2",
+    "type": "illustration",
+    "description": "PagoAprobadoCard2",
+    "files": [
+      {
+        "path": "PagoAprobadoCard2.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-pago-demorado-arrow",
+    "type": "illustration",
+    "description": "PagoDemoradoArrow",
+    "files": [
+      {
+        "path": "PagoDemoradoArrow.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-pago-demorado-badge-inner",
+    "type": "illustration",
+    "description": "PagoDemoradoBadgeInner",
+    "files": [
+      {
+        "path": "PagoDemoradoBadgeInner.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-pago-demorado-badge-outer",
+    "type": "illustration",
+    "description": "PagoDemoradoBadgeOuter",
+    "files": [
+      {
+        "path": "PagoDemoradoBadgeOuter.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-pago-demorado-card1",
+    "type": "illustration",
+    "description": "PagoDemoradoCard1",
+    "files": [
+      {
+        "path": "PagoDemoradoCard1.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-pago-demorado-card2",
+    "type": "illustration",
+    "description": "PagoDemoradoCard2",
+    "files": [
+      {
+        "path": "PagoDemoradoCard2.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-rechazo-farmacia-badge",
+    "type": "illustration",
+    "description": "RechazoFarmaciaBadge",
+    "files": [
+      {
+        "path": "RechazoFarmaciaBadge.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-rechazo-farmacia-bag",
+    "type": "illustration",
+    "description": "RechazoFarmaciaBag",
+    "files": [
+      {
+        "path": "RechazoFarmaciaBag.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-rechazo-farmacia-detail1",
+    "type": "illustration",
+    "description": "RechazoFarmaciaDetail1",
+    "files": [
+      {
+        "path": "RechazoFarmaciaDetail1.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-rechazo-farmacia-dots",
+    "type": "illustration",
+    "description": "RechazoFarmaciaDots",
+    "files": [
+      {
+        "path": "RechazoFarmaciaDots.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-rechazo-farmacia-handle",
+    "type": "illustration",
+    "description": "RechazoFarmaciaHandle",
+    "files": [
+      {
+        "path": "RechazoFarmaciaHandle.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-rechazo-farmacia-sparkle",
+    "type": "illustration",
+    "description": "RechazoFarmaciaSparkle",
+    "files": [
+      {
+        "path": "RechazoFarmaciaSparkle.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-showcase-layers-rechazo-farmacia-strap",
+    "type": "illustration",
+    "description": "RechazoFarmaciaStrap",
+    "files": [
+      {
+        "path": "RechazoFarmaciaStrap.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/illustrations/feedback-showcase/layers/rechazo-farmacia-sparkle.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const RechazoFarmaciaSparkle = (props: SvgProps) => <Svg width={25} height={31} fill="none" viewBox="0 0 25 31" {...props}><Path fill="#D0D5DD" d="M5.55 30.976a.52.52 0 0 1-.584-.287C2.725 25.82.399 20.792.038 15.35-.249 11.13 1.09 6.972 3.702 3.953c1.423-1.637 3.1-2.838 4.864-3.455 2.039-.712 4.226-.659 6.01.149 2.146.978 3.462 2.87 4.195 4.284 1.253 2.413 1.997 5.188 2.719 7.878.117.425.234.85.34 1.275.934 3.38 1.614 6.782 2.23 9.972a.508.508 0 1 1-.998.191c-.616-3.168-1.285-6.538-2.21-9.886-.116-.415-.233-.85-.35-1.276-.711-2.637-1.444-5.358-2.633-7.675-.659-1.276-1.838-2.966-3.717-3.827-1.55-.702-3.462-.745-5.246-.117-1.593.563-3.133 1.658-4.44 3.157C2.025 7.44.783 11.32 1.048 15.275c.35 5.251 2.634 10.205 4.843 14.978a.52.52 0 0 1-.255.68l-.096.033z" /></Svg>;
+export default RechazoFarmaciaSparkle;

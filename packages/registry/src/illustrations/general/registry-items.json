@@ -1,0 +1,692 @@
+[
+  {
+    "name": "illustration-alergias",
+    "type": "illustration",
+    "description": "Alergias",
+    "files": [
+      {
+        "path": "Alergias.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-analgesicos",
+    "type": "illustration",
+    "description": "Analgesicos",
+    "files": [
+      {
+        "path": "Analgesicos.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-cancel-order",
+    "type": "illustration",
+    "description": "CancelOrder",
+    "files": [
+      {
+        "path": "CancelOrder.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-catalogo-sm",
+    "type": "illustration",
+    "description": "CatalogoSm",
+    "files": [
+      {
+        "path": "CatalogoSm.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-check",
+    "type": "illustration",
+    "description": "Check",
+    "files": [
+      {
+        "path": "Check.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-chip",
+    "type": "illustration",
+    "description": "Chip",
+    "files": [
+      {
+        "path": "Chip.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-close",
+    "type": "illustration",
+    "description": "Close",
+    "files": [
+      {
+        "path": "Close.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-cotizacion",
+    "type": "illustration",
+    "description": "Cotizacion",
+    "files": [
+      {
+        "path": "Cotizacion.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-credenciales",
+    "type": "illustration",
+    "description": "Credenciales",
+    "files": [
+      {
+        "path": "Credenciales.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-credit-card-mastercard-logo",
+    "type": "illustration",
+    "description": "CreditCardMastercardLogo",
+    "files": [
+      {
+        "path": "CreditCardMastercardLogo.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-credit-card-visa-logo",
+    "type": "illustration",
+    "description": "CreditCardVisaLogo",
+    "files": [
+      {
+        "path": "CreditCardVisaLogo.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-delivery-scooter",
+    "type": "illustration",
+    "description": "DeliveryScooter",
+    "files": [
+      {
+        "path": "DeliveryScooter.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-digestivos",
+    "type": "illustration",
+    "description": "Digestivos",
+    "files": [
+      {
+        "path": "Digestivos.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-empty-notifications",
+    "type": "illustration",
+    "description": "EmptyNotifications",
+    "files": [
+      {
+        "path": "EmptyNotifications.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-empty-results",
+    "type": "illustration",
+    "description": "EmptyResults",
+    "files": [
+      {
+        "path": "EmptyResults.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-entregadomicilio",
+    "type": "illustration",
+    "description": "Entregadomicilio",
+    "files": [
+      {
+        "path": "Entregadomicilio.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-error",
+    "type": "illustration",
+    "description": "Error",
+    "files": [
+      {
+        "path": "Error.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-error",
+    "type": "illustration",
+    "description": "FeedbackError",
+    "files": [
+      {
+        "path": "FeedbackError.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-success",
+    "type": "illustration",
+    "description": "FeedbackSuccess",
+    "files": [
+      {
+        "path": "FeedbackSuccess.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-feedback-waiting",
+    "type": "illustration",
+    "description": "FeedbackWaiting",
+    "files": [
+      {
+        "path": "FeedbackWaiting.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-ilus-mantenimiento-mobile",
+    "type": "illustration",
+    "description": "IlusMantenimientoMobile",
+    "files": [
+      {
+        "path": "IlusMantenimientoMobile.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-infeccion",
+    "type": "illustration",
+    "description": "Infeccion",
+    "files": [
+      {
+        "path": "Infeccion.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-location",
+    "type": "illustration",
+    "description": "Location",
+    "files": [
+      {
+        "path": "Location.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-logo",
+    "type": "illustration",
+    "description": "Logo",
+    "files": [
+      {
+        "path": "Logo.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-logo-xl",
+    "type": "illustration",
+    "description": "LogoXl",
+    "files": [
+      {
+        "path": "LogoXl.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-pami",
+    "type": "illustration",
+    "description": "Pami",
+    "files": [
+      {
+        "path": "Pami.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-payment-delayed",
+    "type": "illustration",
+    "description": "PaymentDelayed",
+    "files": [
+      {
+        "path": "PaymentDelayed.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-payment-rejected",
+    "type": "illustration",
+    "description": "PaymentRejected",
+    "files": [
+      {
+        "path": "PaymentRejected.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-pending-quote-pharmacy",
+    "type": "illustration",
+    "description": "PendingQuotePharmacy",
+    "files": [
+      {
+        "path": "PendingQuotePharmacy.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-permisos-camera",
+    "type": "illustration",
+    "description": "PermisosCamera",
+    "files": [
+      {
+        "path": "PermisosCamera.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-pharmacy-closed",
+    "type": "illustration",
+    "description": "PharmacyClosed",
+    "files": [
+      {
+        "path": "PharmacyClosed.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-poolfarmacias",
+    "type": "illustration",
+    "description": "Poolfarmacias",
+    "files": [
+      {
+        "path": "Poolfarmacias.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-preparation-blister",
+    "type": "illustration",
+    "description": "PreparationBlister",
+    "files": [
+      {
+        "path": "PreparationBlister.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-preparation-capsule",
+    "type": "illustration",
+    "description": "PreparationCapsule",
+    "files": [
+      {
+        "path": "PreparationCapsule.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-preparation-capsule-body",
+    "type": "illustration",
+    "description": "PreparationCapsuleBody",
+    "files": [
+      {
+        "path": "PreparationCapsuleBody.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-preparation-medicine",
+    "type": "illustration",
+    "description": "PreparationMedicine",
+    "files": [
+      {
+        "path": "PreparationMedicine.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-quote-receipt",
+    "type": "illustration",
+    "description": "QuoteReceipt",
+    "files": [
+      {
+        "path": "QuoteReceipt.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-rate",
+    "type": "illustration",
+    "description": "Rate",
+    "files": [
+      {
+        "path": "Rate.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-ready-pickup-bag",
+    "type": "illustration",
+    "description": "ReadyPickupBag",
+    "files": [
+      {
+        "path": "ReadyPickupBag.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-ready-pickup-check",
+    "type": "illustration",
+    "description": "ReadyPickupCheck",
+    "files": [
+      {
+        "path": "ReadyPickupCheck.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-red-marker",
+    "type": "illustration",
+    "description": "RedMarker",
+    "files": [
+      {
+        "path": "RedMarker.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-reemplazo",
+    "type": "illustration",
+    "description": "Reemplazo",
+    "files": [
+      {
+        "path": "Reemplazo.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-rejected-cross",
+    "type": "illustration",
+    "description": "RejectedCross",
+    "files": [
+      {
+        "path": "RejectedCross.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-suplements",
+    "type": "illustration",
+    "description": "Suplements",
+    "files": [
+      {
+        "path": "Suplements.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-thermometer",
+    "type": "illustration",
+    "description": "Thermometer",
+    "files": [
+      {
+        "path": "Thermometer.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-ubicacion",
+    "type": "illustration",
+    "description": "Ubicacion",
+    "files": [
+      {
+        "path": "Ubicacion.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

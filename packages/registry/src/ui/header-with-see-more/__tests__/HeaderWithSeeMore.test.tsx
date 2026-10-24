@@ -50,10 +50,10 @@ describe('HeaderWithSeeMore', () => {
 
   it('should render custom icon when provided', () => {
     const { getByTestId } = render(
-      <HeaderWithSeeMore icon="arrow-right" seeMoreText="See More" title="Test Title" onPress={jest.fn()} />,
+      <HeaderWithSeeMore icon="chevron-right" seeMoreText="See More" title="Test Title" onPress={jest.fn()} />,
     )
 
-    expect(getByTestId('icon-arrow-right')).toBeTruthy()
+    expect(getByTestId('icon-chevron-right')).toBeTruthy()
   })
 
   it('should call onPress when see more is pressed', () => {

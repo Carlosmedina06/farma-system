@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/illustrations/healthInsurance/osdepym.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { G, Path, Defs, ClipPath } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const Osdepym = (props: SvgProps) => <Svg width={32} height={32} fill="none" viewBox="0 0 32 32" {...props}><G clipPath="url(#a)"><Path fill="#015E56" d="M23.61 4H8.39A4.39 4.39 0 0 0 4 8.39v15.22A4.39 4.39 0 0 0 8.39 28h15.22A4.39 4.39 0 0 0 28 23.61V8.39A4.39 4.39 0 0 0 23.61 4" /><Path fill="white" d="M23.974 12.457c-5.09-.141-6.003 1.772-9.747 2.965-3.053.974-5.746-.36-6.78-.993a9 9 0 0 0-.118 1.565c3.509 2.527 7.344 3.066 12.11 1.271 2.834-1.067 4.352-.672 5.142-.108a8.74 8.74 0 0 0-.607-4.7M14.193 9.059c3.563.23 3.422 1.735 7.815.56A8.65 8.65 0 0 0 16 7.203a8.66 8.66 0 0 0-6.825 3.32c1.123-.756 2.883-1.601 5.018-1.463zM15.942 22.058c-2.98-.63-4.936-.387-6.08-.053A8.65 8.65 0 0 0 16 24.55a8.66 8.66 0 0 0 7.101-3.692c-1.338.862-3.788 1.914-7.159 1.2" /></G><Defs><ClipPath id="a"><Path fill="white" d="M4 4h24v24H4z" /></ClipPath></Defs></Svg>;
+export default Osdepym;

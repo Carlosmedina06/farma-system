@@ -3,6 +3,7 @@ import path from 'node:path'
 import kleur from 'kleur'
 
 import { loadConfig } from '../config/load'
+import { expandNames } from '../registry/expand'
 import { resolveItems } from '../registry/resolve'
 import { createSource } from '../registry/sources'
 import { installDependencies } from '../utils/package-manager'
@@ -23,10 +24,13 @@ const LABELS: Record<WriteResult, string> = {
   skipped: kleur.dim('omitido'),
 }
 
-export async function add(names: string[], options: AddOptions) {
+export async function add(patterns: string[], options: AddOptions) {
   const cwd = path.resolve(options.cwd)
   const config = await loadConfig(cwd)
   const source = createSource(config.registry, cwd)
+  const names = patterns.some((name) => name.includes('*'))
+    ? expandNames(patterns, await source.getIndex())
+    : patterns
   const items = await resolveItems(source, names)
 
   const extra = items.map((item) => item.name).filter((name) => !names.includes(name))

@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/visa-card-small.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const VisaCardSmall = (props: SvgProps) => <Svg width={18} height={6} fill="none" viewBox="0 0 18 6" {...props}><Path fill="#172B85" fillRule="evenodd" d="M4.701 5.78H3.213L2.097 1.399c-.053-.202-.166-.38-.331-.464A4.8 4.8 0 0 0 .402.47V.301h2.397c.331 0 .58.254.62.548L4 4.011 5.486.3h1.447zm3.06 0H6.355L7.512.302h1.406zm2.975-3.96c.042-.296.29-.465.58-.465.454-.042.95.043 1.364.253l.248-1.18a3.5 3.5 0 0 0-1.282-.253c-1.364 0-2.357.759-2.357 1.812 0 .802.704 1.222 1.2 1.476.537.253.744.421.702.674 0 .38-.413.548-.826.548a3.5 3.5 0 0 1-1.447-.338l-.248 1.18c.496.211 1.033.296 1.53.296 1.53.042 2.48-.717 2.48-1.855 0-1.433-1.944-1.517-1.944-2.149M17.6 5.78 16.482.302h-1.198a.62.62 0 0 0-.58.422L12.639 5.78h1.447l.289-.8h1.778l.165.8zM15.49 1.778l.412 2.065h-1.157z" clipRule="evenodd" /></Svg>;
+export default VisaCardSmall;

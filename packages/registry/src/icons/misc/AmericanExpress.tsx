@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/americanExpress.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Rect, Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const AmericanExpress = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Rect width={20.87} height={12} x={1.565} y={6} fill="#1F72CD" rx={2.087} /><Path fill="white" fillRule="evenodd" d="M5.984 10 4.23 13.995h2.1l.26-.637h.595l.26.637h2.311v-.486l.206.486h1.195l.206-.496v.496h4.806l.585-.62.547.62 2.468.005-1.759-1.991L19.77 10h-2.43l-.57.609-.53-.609h-5.228l-.449 1.031-.46-1.031H8.01v.47L7.776 10zm7.177.567h2.76l.844.939.87-.939h.845l-1.283 1.441 1.283 1.424h-.883l-.844-.95-.875.95H13.16zm.68 1.117v-.523h1.723l.751.836-.785.842h-1.688v-.572h1.505v-.583zM6.39 10.567h1.023l1.164 2.71v-2.71h1.12l.899 1.943.828-1.943h1.116v2.867h-.68l-.005-2.246-.99 2.246h-.606l-.995-2.246v2.246H7.867l-.264-.643h-1.43l-.265.643H5.16zm.027 1.63.471-1.145.47 1.145z" clipRule="evenodd" /></Svg>;
+export default AmericanExpress;

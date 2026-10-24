@@ -1,0 +1,17 @@
+[
+  {
+    "name": "illustration-pharmacy-pharmacy-emptystate",
+    "type": "illustration",
+    "description": "PharmacyEmptystate",
+    "files": [
+      {
+        "path": "PharmacyEmptystate.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

@@ -75,7 +75,7 @@ export const ConIcono: Story = {
   render: () => (
     <View className="gap-3">
       <Button icon="plus">Icono a la izquierda</Button>
-      <Button iconRightSide icon="arrow-right" type="secondary">
+      <Button iconRightSide icon="chevron-right" type="secondary">
         Icono a la derecha
       </Button>
       <Button icon="arrow-left" textAlign="left" type="tertiaryGray">

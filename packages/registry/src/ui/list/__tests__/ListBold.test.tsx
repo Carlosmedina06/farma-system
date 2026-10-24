@@ -79,10 +79,10 @@ describe('ListBold', () => {
 
   it('should render with right icon', () => {
     const { getByTestId } = render(
-      <ListBold icon="check" label="Label" rightIcon="arrow-right" testID="list-bold" />,
+      <ListBold icon="check" label="Label" rightIcon="chevron-right" testID="list-bold" />,
     )
 
-    expect(getByTestId('icon-arrow-right')).toBeTruthy()
+    expect(getByTestId('icon-chevron-right')).toBeTruthy()
   })
 
   it('should render with caption', () => {

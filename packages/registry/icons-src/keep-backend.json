@@ -1,0 +1,4 @@
+{
+  "description": "Íconos que la app no usa en código pero puede recibir del backend (ej. notificaciones: item.icon). Agregá nombres del glyph map completo y corré `pnpm icons:build`.",
+  "icons": []
+}

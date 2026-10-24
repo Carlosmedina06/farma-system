@@ -1,0 +1,17 @@
+[
+  {
+    "name": "illustration-products-search-products",
+    "type": "illustration",
+    "description": "SearchProducts",
+    "files": [
+      {
+        "path": "SearchProducts.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

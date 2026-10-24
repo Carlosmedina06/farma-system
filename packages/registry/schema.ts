@@ -5,7 +5,7 @@ import { z } from 'zod'
  * y el CLI (que lo consume), sin importar si el registry viene de una ruta
  * local o de un paquete npm.
  */
-export const registryItemTypeSchema = z.enum(['ui', 'lib', 'hook', 'theme'])
+export const registryItemTypeSchema = z.enum(['ui', 'lib', 'hook', 'theme', 'illustration', 'icon', 'animation'])
 
 export const registryFileSchema = z.object({
   /**
@@ -32,6 +32,12 @@ export const registryItemSchema = z.object({
  * relativas a la carpeta del propio item.
  */
 export const registryItemSourceSchema = registryItemSchema
+
+/**
+ * `registry-items.json`: varios items chicos en una misma carpeta
+ * (una ilustración, un ícono o una animación por item).
+ */
+export const registryItemsSourceSchema = z.array(registryItemSchema)
 
 export const builtFileSchema = registryFileSchema.extend({
   content: z.string(),

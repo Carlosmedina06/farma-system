@@ -1,0 +1,227 @@
+[
+  {
+    "name": "animation-approved",
+    "type": "animation",
+    "description": "Animación Lottie approved.json",
+    "files": [
+      {
+        "path": "animations/approved.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-clock",
+    "type": "animation",
+    "description": "Animación Lottie clock.json",
+    "files": [
+      {
+        "path": "animations/clock.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-crear-cuenta",
+    "type": "animation",
+    "description": "Animación Lottie crear-cuenta.json",
+    "files": [
+      {
+        "path": "animations/crear-cuenta.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-crear-cuenta-error",
+    "type": "animation",
+    "description": "Animación Lottie crear-cuenta-error.json",
+    "files": [
+      {
+        "path": "animations/crear-cuenta-error.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-crear-cuenta-error-badge",
+    "type": "animation",
+    "description": "Animación Lottie crear-cuenta-error-badge.json",
+    "files": [
+      {
+        "path": "animations/crear-cuenta-error-badge.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-dots-loader",
+    "type": "animation",
+    "description": "Animación Lottie dots-loader.json",
+    "files": [
+      {
+        "path": "animations/dots-loader.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-dots-loading",
+    "type": "animation",
+    "description": "Animación Lottie dots-loading.json",
+    "files": [
+      {
+        "path": "animations/dots-loading.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-farmacia-recibio",
+    "type": "animation",
+    "description": "Animación Lottie farmacia-recibio.json",
+    "files": [
+      {
+        "path": "animations/farmacia-recibio.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-in-progress",
+    "type": "animation",
+    "description": "Animación Lottie in-progress.json",
+    "files": [
+      {
+        "path": "animations/in-progress.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-pago-tarjeta-error",
+    "type": "animation",
+    "description": "Animación Lottie pago-tarjeta-error.json",
+    "files": [
+      {
+        "path": "animations/pago-tarjeta-error.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-pedido-cancelado",
+    "type": "animation",
+    "description": "Animación Lottie pedido-cancelado.lottie",
+    "files": [
+      {
+        "path": "animations/pedido-cancelado.lottie",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-rejected",
+    "type": "animation",
+    "description": "Animación Lottie rejected.json",
+    "files": [
+      {
+        "path": "animations/rejected.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-spinner-blue",
+    "type": "animation",
+    "description": "Animación Lottie spinner-blue.json",
+    "files": [
+      {
+        "path": "animations/spinner-blue.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-splash",
+    "type": "animation",
+    "description": "Animación Lottie splash.json",
+    "files": [
+      {
+        "path": "animations/splash.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "animation-success-animation",
+    "type": "animation",
+    "description": "Animación Lottie success-animation.json",
+    "files": [
+      {
+        "path": "animations/success-animation.json",
+        "type": "asset"
+      }
+    ],
+    "dependencies": [
+      "lottie-react-native"
+    ],
+    "registryDependencies": []
+  }
+]

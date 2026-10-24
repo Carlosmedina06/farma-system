@@ -85,3 +85,27 @@ describe('Icon', () => {
     expect(lastCall.maxFontSizeMultiplier).toBe(1)
   })
 })
+
+describe('Icon con nombres fuera de la fuente', () => {
+  it('usa fallback cuando el nombre no existe', () => {
+    render(<Icon fallback="check" name="no-existe-en-la-fuente" />)
+
+    const FarmaIcon = require('../FarmaIcon').default
+    const calls = FarmaIcon.mock.calls
+    expect(calls[calls.length - 1][0]).toMatchObject({ name: 'check' })
+  })
+
+  it('no dibuja nada sin fallback', () => {
+    const { toJSON } = render(<Icon name="no-existe-en-la-fuente" />)
+
+    expect(toJSON()).toBeNull()
+  })
+
+  it('isIconName distingue glifos incluidos', () => {
+    const { isIconName } = require('../Icon')
+
+    expect(isIconName('check')).toBe(true)
+    expect(isIconName('no-existe-en-la-fuente')).toBe(false)
+    expect(isIconName(undefined)).toBe(false)
+  })
+})

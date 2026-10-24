@@ -47,8 +47,8 @@ const meta = {
     close: () => {},
     title: 'Elegí una opción',
     options: [
-      { key: 'share', label: 'Compartir', icon: 'share-07', onPress: () => {} },
-      { key: 'copy', label: 'Copiar enlace', icon: 'copy-01', onPress: () => {} },
+      { key: 'share', label: 'Compartir', icon: 'send-03', onPress: () => {} },
+      { key: 'copy', label: 'Copiar enlace', icon: 'copy-03', onPress: () => {} },
       { key: 'delete', label: 'Eliminar', icon: 'trash-01', description: 'No se puede deshacer', onPress: () => {} },
     ],
   },

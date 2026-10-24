@@ -1,0 +1,17 @@
+[
+  {
+    "name": "illustration-order-history-empty-state-order-history",
+    "type": "illustration",
+    "description": "EmptyStateOrderHistory",
+    "files": [
+      {
+        "path": "EmptyStateOrderHistory.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

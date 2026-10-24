@@ -30,4 +30,4 @@ export const Playground: Story = {}
 
 export const SoloTitulo: Story = { args: { withAction: false } }
 
-export const OtroIcono: Story = { args: { icon: 'arrow-right' } }
+export const OtroIcono: Story = { args: { icon: 'chevron-right' } }

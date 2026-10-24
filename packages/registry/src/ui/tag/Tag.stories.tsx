@@ -30,7 +30,7 @@ export const Variantes: Story = {
     <View className="gap-2">
       <Tag checked text="Checkbox marcado" />
       <Tag checked={false} text="Checkbox vacío" />
-      <Tag icon={{ name: 'star-01', color: '#f79009' }} text="Con icono" />
+      <Tag icon={{ name: 'stars-selected', color: '#f79009' }} text="Con icono" />
       <Tag counter={12} text="Con contador" />
       <Tag text="Con cierre" onClose={() => {}} />
     </View>

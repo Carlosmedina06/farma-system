@@ -23,10 +23,10 @@ export const Playground: Story = {}
 export const ListBoldVariantes: Story = {
   render: () => (
     <View className="gap-6">
-      <ListBold caption="12:30" icon="bell-01" label="Con caption" />
-      <ListBold caption={() => 'Ayer'} description="Caption como función" icon="bell-01" label="Caption fn" />
+      <ListBold caption="12:30" icon="bell-03" label="Con caption" />
+      <ListBold caption={() => 'Ayer'} description="Caption como función" icon="bell-03" label="Caption fn" />
       <ListBold icon="marker-pin-02" label="Con link" textLinkLabel="Editar" onTextLinkPress={() => {}} />
-      <ListBold icon="home-line" label="Con icono derecho" rightIcon="arrow-right" />
+      <ListBold icon="home-05" label="Con icono derecho" rightIcon="chevron-right" />
       <ListBold isListLight icon="check" label="Label liviano" />
       <ListBold
         additionalDescription="Descripción adicional"
@@ -42,7 +42,7 @@ export const ListBoldVariantes: Story = {
 
 export const ListIconStory: Story = {
   name: 'ListIcon',
-  render: () => <ListIcon description="Descripción en una línea" icon="star-01" label="Label" />,
+  render: () => <ListIcon description="Descripción en una línea" icon="stars-selected" label="Label" />,
 }
 
 export const ListSingleLineStory: Story = {

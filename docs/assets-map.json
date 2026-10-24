@@ -1,0 +1,1386 @@
+{
+  "lottie-animations/approved": {
+    "item": "animation-approved",
+    "import": "require('assets/farma/animations/approved.json')",
+    "usedBy": [
+      "src/design/molecules/FeedbackScreen/constants/FeedbackScreen.constants.ts",
+      "src/screens/Kyc/KycResult/kycResult.constants.ts"
+    ]
+  },
+  "lottie-animations/clock": {
+    "item": "animation-clock",
+    "import": "require('assets/farma/animations/clock.json')",
+    "usedBy": [
+      "src/screens/payment/PaymentMethods/PaymentMethods.tsx"
+    ]
+  },
+  "lottie-animations/crear-cuenta": {
+    "item": "animation-crear-cuenta",
+    "import": "require('assets/farma/animations/crear-cuenta.json')",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/feedbackStates.ts"
+    ]
+  },
+  "lottie-animations/crear-cuenta-error": {
+    "item": "animation-crear-cuenta-error",
+    "import": "require('assets/farma/animations/crear-cuenta-error.json')",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/feedbackStates.ts"
+    ]
+  },
+  "lottie-animations/crear-cuenta-error-badge": {
+    "item": "animation-crear-cuenta-error-badge",
+    "import": "require('assets/farma/animations/crear-cuenta-error-badge.json')",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/feedbackStates.ts"
+    ]
+  },
+  "lottie-animations/dots-loader": {
+    "item": "animation-dots-loader",
+    "import": "require('assets/farma/animations/dots-loader.json')",
+    "usedBy": [
+      "src/design/molecules/LoadingView/LoadingView.tsx",
+      "src/screens/Addresses/AddressManager/components/CreateAddress/components/AddressSearchResults/AddressSearchResults.tsx",
+      "src/screens/Products/components/ProductsLoader/ProductsLoader.tsx"
+    ]
+  },
+  "lottie-animations/dots-loading": {
+    "item": "animation-dots-loading",
+    "import": "require('assets/farma/animations/dots-loading.json')",
+    "usedBy": [
+      "src/design/molecules/OutcomingMessage/WritingMessage/WritingMessage.tsx"
+    ]
+  },
+  "lottie-animations/farmacia-recibio": {
+    "item": "animation-farmacia-recibio",
+    "import": "require('assets/farma/animations/farmacia-recibio.json')",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/feedbackStates.ts"
+    ]
+  },
+  "lottie-animations/in-progress": {
+    "item": "animation-in-progress",
+    "import": "require('assets/farma/animations/in-progress.json')",
+    "usedBy": [
+      "src/design/molecules/FeedbackScreen/constants/FeedbackScreen.constants.ts",
+      "src/screens/Kyc/KycResult/kycResult.constants.ts"
+    ]
+  },
+  "lottie-animations/pago-tarjeta-error": {
+    "item": "animation-pago-tarjeta-error",
+    "import": "require('assets/farma/animations/pago-tarjeta-error.json')",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/feedbackStates.ts"
+    ]
+  },
+  "lottie-animations/pedido-cancelado": {
+    "item": "animation-pedido-cancelado",
+    "import": "require('assets/farma/animations/pedido-cancelado.lottie')",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/feedbackStates.ts"
+    ]
+  },
+  "lottie-animations/rejected": {
+    "item": "animation-rejected",
+    "import": "require('assets/farma/animations/rejected.json')",
+    "usedBy": [
+      "src/design/molecules/FeedbackScreen/constants/FeedbackScreen.constants.ts",
+      "src/screens/Kyc/KycResult/kycResult.constants.ts"
+    ]
+  },
+  "lottie-animations/spinner-blue": {
+    "item": "animation-spinner-blue",
+    "import": "require('assets/farma/animations/spinner-blue.json')",
+    "usedBy": [
+      "src/design/atoms/Spinner/Spinner.types.ts"
+    ]
+  },
+  "lottie-animations/splash": {
+    "item": "animation-splash",
+    "import": "require('assets/farma/animations/splash.json')",
+    "usedBy": [
+      "src/screens/Security/components/BiometricLock/BiometricLockScreen.tsx",
+      "src/screens/SplashScreen/SplashScreen.tsx"
+    ]
+  },
+  "lottie-animations/success-animation": {
+    "item": "animation-success-animation",
+    "import": "require('assets/farma/animations/success-animation.json')",
+    "usedBy": [
+      "src/design/molecules/Modal/ModalSuccessAnimated.tsx",
+      "src/design/molecules/Modal/components/ModalSuccess/ModalSuccess.tsx"
+    ]
+  },
+  "misc-american-express": {
+    "item": "icon-american-express",
+    "import": "import AmericanExpress from 'src/ds/icons/misc/AmericanExpress'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx",
+      "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
+      "src/screens/payment/CheckoutMethod/components/CreditCard.tsx",
+      "src/screens/payment/PaymentMethods/PaymentMethods.tsx",
+      "src/utils/text/strings.ts"
+    ]
+  },
+  "misc-apple": {
+    "item": "icon-apple",
+    "import": "import Apple from 'src/ds/icons/misc/Apple'",
+    "usedBy": [
+      "src/screens/Auth/components/AuthSocialButton/AuthSocialButton.tsx"
+    ]
+  },
+  "misc-bell-icon-red": {
+    "item": "icon-bell-icon-red",
+    "import": "import BellIconRed from 'src/ds/icons/misc/BellIconRed'",
+    "usedBy": [
+      "src/screens/Home/components/Header/Header.hook.tsx"
+    ]
+  },
+  "misc-cabal": {
+    "item": "icon-cabal",
+    "import": "import Cabal from 'src/ds/icons/misc/Cabal'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx",
+      "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
+      "src/screens/payment/CheckoutMethod/components/CreditCard.tsx",
+      "src/screens/payment/PaymentMethods/PaymentMethods.tsx",
+      "src/utils/text/strings.ts"
+    ]
+  },
+  "misc-card-shied-incentive": {
+    "item": "icon-card-shied-incentive",
+    "import": "import CardShiedIncentive from 'src/ds/icons/misc/CardShiedIncentive'",
+    "usedBy": [
+      "src/screens/Profile/components/ProfileHeaderOptions/ProfileHeaderOptions.tsx"
+    ]
+  },
+  "misc-clock-green": {
+    "item": "icon-clock-green",
+    "import": "import ClockGreen from 'src/ds/icons/misc/ClockGreen'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/usePharmacyProfile.ts"
+    ]
+  },
+  "misc-clock-red": {
+    "item": "icon-clock-red",
+    "import": "import ClockRed from 'src/ds/icons/misc/ClockRed'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/usePharmacyProfile.ts"
+    ]
+  },
+  "misc-credential-contrast": {
+    "item": "icon-credential-contrast",
+    "import": "import CredentialContrast from 'src/ds/icons/misc/CredentialContrast'",
+    "usedBy": [
+      "src/core/StartOrder/useStartOrder.ts"
+    ]
+  },
+  "misc-faceid": {
+    "item": "icon-faceid",
+    "import": "import Faceid from 'src/ds/icons/svg/Faceid'",
+    "usedBy": [
+      "src/screens/Security/utils/getUnlockLabels.ts"
+    ]
+  },
+  "misc-fingerprint": {
+    "item": "icon-fingerprint",
+    "import": "import Fingerprint from 'src/ds/icons/svg/Fingerprint'",
+    "usedBy": [
+      "src/screens/Security/utils/getUnlockLabels.ts"
+    ]
+  },
+  "misc-galeno": {
+    "item": "icon-galeno",
+    "import": "import Galeno from 'src/ds/icons/misc/Galeno'",
+    "usedBy": [
+      "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
+    ]
+  },
+  "misc-google": {
+    "item": "icon-google",
+    "import": "import Google from 'src/ds/icons/misc/Google'",
+    "usedBy": [
+      "src/screens/Auth/components/AuthSocialButton/AuthSocialButton.tsx"
+    ]
+  },
+  "misc-luis-pasteur": {
+    "item": "illustration-health-insurance-luis-pasteur",
+    "import": "import LuisPasteur from 'src/ds/illustrations/healthInsurance/LuisPasteur'",
+    "usedBy": [
+      "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx",
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "misc-marker-incentive": {
+    "item": "icon-marker-incentive",
+    "import": "import MarkerIncentive from 'src/ds/icons/misc/MarkerIncentive'",
+    "usedBy": [
+      "src/screens/Profile/components/ProfileHeaderOptions/ProfileHeaderOptions.tsx"
+    ]
+  },
+  "misc-master-card-small": {
+    "item": "icon-master-card-small",
+    "import": "import MasterCardSmall from 'src/ds/icons/misc/MasterCardSmall'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx"
+    ]
+  },
+  "misc-mastercard-card": {
+    "item": "icon-mastercard-card",
+    "import": "import MastercardCard from 'src/ds/icons/misc/MastercardCard'",
+    "usedBy": [
+      "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
+      "src/screens/payment/PaymentMethods/PaymentMethods.tsx",
+      "src/utils/text/strings.ts"
+    ]
+  },
+  "misc-mercado-pago": {
+    "item": "icon-mercado-pago",
+    "import": "import MercadoPago from 'src/ds/icons/misc/MercadoPago'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/components/PaymentMethods/BottomSheetContent.tsx",
+      "src/screens/payment/PaymentMethods/PaymentMethods.tsx",
+      "src/utils/constants/constants.ts"
+    ]
+  },
+  "misc-message-read": {
+    "item": "icon-message-read",
+    "import": "import MessageRead from 'src/ds/icons/misc/MessageRead'",
+    "usedBy": [
+      "src/design/molecules/IncomingMessage/IncomingMessage.tsx"
+    ]
+  },
+  "misc-message-square": {
+    "item": "icon-message-square-02",
+    "import": "import MessageSquare02 from 'src/ds/icons/misc/MessageSquare02'",
+    "usedBy": [
+      "src/screens/OrdersHistory/PreviusOrderDetail/Components/ChatHistoryCard/ChatHistoryCard.tsx"
+    ]
+  },
+  "misc-message-square-03": {
+    "item": "icon-message-square-03",
+    "import": "import MessageSquare03 from 'src/ds/icons/misc/MessageSquare03'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/AcceptedQuote/AcceptedQuote.tsx",
+      "src/design/molecules/TimelineCard/Components/DeliveryOwnCadet/DeliveryOwnCadet.tsx",
+      "src/design/molecules/TimelineCard/Components/PaymentError/PaymentError.tsx",
+      "src/design/molecules/TimelineCard/Components/PendingQuote/PendingQuote.tsx",
+      "src/design/molecules/TimelineCard/Components/Peya/DeliveryPeya/DeliveryPeya.tsx",
+      "src/design/molecules/TimelineCard/Components/Peya/PeyaCancelled/PeyaCancelled.tsx",
+      "src/design/molecules/TimelineCard/Components/Preparation/Preparation.tsx",
+      "src/design/molecules/TimelineCard/Components/Quote/Quote.tsx",
+      "src/design/molecules/TimelineCard/Components/QuotedReplacementProduct/QuotedReplacementProduct.tsx",
+      "src/design/molecules/TimelineCard/Components/ReadyForPickUp/ReadyForPickUp.tsx",
+      "src/design/molecules/TimelineCard/Components/Rejected/Rejected.tsx"
+    ]
+  },
+  "misc-message-unread": {
+    "item": "icon-message-unread",
+    "import": "import MessageUnread from 'src/ds/icons/misc/MessageUnread'",
+    "usedBy": [
+      "src/design/molecules/IncomingMessage/IncomingMessage.tsx"
+    ]
+  },
+  "misc-naranja-card": {
+    "item": "icon-naranja-card",
+    "import": "import NaranjaCard from 'src/ds/icons/misc/NaranjaCard'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx",
+      "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
+      "src/screens/payment/CheckoutMethod/components/CreditCard.tsx",
+      "src/screens/payment/PaymentMethods/PaymentMethods.tsx",
+      "src/utils/text/strings.ts"
+    ]
+  },
+  "misc-new-pills": {
+    "item": "icon-misc-new-pills",
+    "import": "import MiscNewPills from 'src/ds/icons/misc/MiscNewPills'",
+    "usedBy": [
+      "src/core/StartOrder/useStartOrder.ts"
+    ]
+  },
+  "misc-osde": {
+    "item": "icon-osde",
+    "import": "import Osde from 'src/ds/icons/misc/Osde'",
+    "usedBy": [
+      "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
+    ]
+  },
+  "misc-pami": {
+    "item": "icon-pami",
+    "import": "import Pami from 'src/ds/icons/misc/Pami'",
+    "usedBy": [
+      "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
+    ]
+  },
+  "misc-pdf-2": {
+    "item": "icon-pdf-2",
+    "import": "import Pdf2 from 'src/ds/icons/misc/Pdf2'",
+    "usedBy": [
+      "src/screens/OrderSummary/components/OrderPrescriptionCard/OrderPrescriptionGeneric.tsx"
+    ]
+  },
+  "misc-pdf-cloud": {
+    "item": "icon-pdf-cloud",
+    "import": "import PdfCloud from 'src/ds/icons/misc/PdfCloud'",
+    "usedBy": [
+      "src/core/Legal-Agreements/components/AgreementTabs.tsx",
+      "src/core/Legal-Agreements/components/LegalAgreementViewer.tsx"
+    ]
+  },
+  "misc-swiss-medical": {
+    "item": "icon-swiss-medical",
+    "import": "import SwissMedical from 'src/ds/icons/misc/SwissMedical'",
+    "usedBy": [
+      "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
+    ]
+  },
+  "misc-thumbs-down": {
+    "item": "icon-thumbs-down",
+    "import": "import ThumbsDown from 'src/ds/icons/misc/ThumbsDown'",
+    "usedBy": [
+      "src/screens/Home/components/AppRaterBottomSheet/components/AppRaterThumbIcon.tsx"
+    ]
+  },
+  "misc-thumbs-down-filled": {
+    "item": "icon-thumbs-down-filled",
+    "import": "import ThumbsDownFilled from 'src/ds/icons/misc/ThumbsDownFilled'",
+    "usedBy": [
+      "src/screens/Home/components/AppRaterBottomSheet/components/AppRaterThumbIcon.tsx"
+    ]
+  },
+  "misc-thumbs-up": {
+    "item": "icon-thumbs-up",
+    "import": "import ThumbsUp from 'src/ds/icons/misc/ThumbsUp'",
+    "usedBy": [
+      "src/screens/Home/components/AppRaterBottomSheet/components/AppRaterThumbIcon.tsx"
+    ]
+  },
+  "misc-thumbs-up-filled": {
+    "item": "icon-thumbs-up-filled",
+    "import": "import ThumbsUpFilled from 'src/ds/icons/misc/ThumbsUpFilled'",
+    "usedBy": [
+      "src/screens/Home/components/AppRaterBottomSheet/components/AppRaterThumbIcon.tsx"
+    ]
+  },
+  "misc-visa-card": {
+    "item": "icon-visa-card",
+    "import": "import VisaCard from 'src/ds/icons/misc/VisaCard'",
+    "usedBy": [
+      "src/screens/payment/PaymentMethods/PaymentMethods.tsx"
+    ]
+  },
+  "misc-visa-card-small": {
+    "item": "icon-visa-card-small",
+    "import": "import VisaCardSmall from 'src/ds/icons/misc/VisaCardSmall'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx"
+    ]
+  },
+  "misc-visa-fill-card": {
+    "item": "icon-visa-fill-card",
+    "import": "import VisaFillCard from 'src/ds/icons/misc/VisaFillCard'",
+    "usedBy": [
+      "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
+      "src/utils/text/strings.ts"
+    ]
+  },
+  "misc-walking-01": {
+    "item": "icon-walking-01",
+    "import": "import Walking01 from 'src/ds/icons/svg/Walking01'",
+    "usedBy": [
+      "src/screens/Order/OrderDetails/components/DeliveryMethodSelector/DeliveryMethodSelector.tsx",
+      "src/screens/Pharmacy/utils/methods/getDeliveryMethodLabel.ts",
+      "src/screens/PharmacyProfile/components/PharmacyDeliveryMethods/PharmacyDeliveryMethods.tsx"
+    ]
+  },
+  "svg/icons/MarkerDefault": {
+    "item": "icon-marker-default",
+    "import": "import MarkerDefault from 'src/ds/icons/svg/MarkerDefault'",
+    "usedBy": [
+      "src/screens/Pharmacy/PharmacyMap/components/PharmacyMarker/PharmacyMarket.tsx"
+    ]
+  },
+  "svg/icons/MarkerSelected": {
+    "item": "icon-marker-selected",
+    "import": "import MarkerSelected from 'src/ds/icons/svg/MarkerSelected'",
+    "usedBy": [
+      "src/screens/Pharmacy/PharmacyMap/components/PharmacyMarker/PharmacyMarket.tsx",
+      "src/screens/PharmacyProfile/components/MapView/MapView.tsx"
+    ]
+  },
+  "svg/icons/check": {
+    "item": "check-icon",
+    "import": "import { CheckIcon } from 'src/ds/ui/check-icon'",
+    "usedBy": [
+      "src/design/atoms/CheckBox/CheckBox.tsx",
+      "src/design/atoms/EmailInput/EmailInput.tsx",
+      "src/design/atoms/PhoneInput/PhoneInput.tsx"
+    ]
+  },
+  "svg/icons/check-white-circle": {
+    "item": "icon-check-white-circle",
+    "import": "import CheckWhiteCircle from 'src/ds/icons/svg/CheckWhiteCircle'",
+    "usedBy": [
+      "src/screens/Timeline/views/TimelineAfterQuoted/components/TimeLineStatus/OrderStatusTimeline/OrderStatusTimeline.tsx",
+      "src/screens/Timeline/views/TimelineCompleted/components/TimelineCompletedSteps/TimelineCompletedSteps.tsx"
+    ]
+  },
+  "svg/icons/ellipse": {
+    "item": "icon-ellipse",
+    "import": "import Ellipse from 'src/ds/icons/svg/Ellipse'",
+    "usedBy": [
+      "src/screens/Timeline/views/TimelineAfterQuoted/components/TimeLineStatus/OrderStatusTimeline/OrderStatusTimeline.tsx",
+      "src/screens/Timeline/views/TimelineAfterQuoted/components/TimeLineStatus/OrderStatusTimeline/PulsingActiveStepDot.tsx"
+    ]
+  },
+  "svg/icons/logo-farmatouch": {
+    "item": "icon-logo-farmatouch",
+    "import": "import LogoFarmatouch from 'src/ds/icons/svg/LogoFarmatouch'",
+    "usedBy": [
+      "src/core/OTAUpdateModal/OTAUpdateModal.tsx",
+      "src/design/molecules/CustomScreenHeader/CustomScreenHeader.tsx",
+      "src/screens/Disable/DisableScreen.tsx",
+      "src/screens/Home/components/Header/Header.tsx"
+    ]
+  },
+  "svg/icons/pdf-icon": {
+    "item": "selected-files-panel",
+    "import": "import { PdfIcon } from 'src/ds/ui/selected-files-panel'",
+    "usedBy": [
+      "src/design/molecules/SelectedFilesPanel/components/SelectedFilesPreview.tsx",
+      "src/screens/CreateOrder/AttachRecipe/Components/CardAttachment.tsx"
+    ]
+  },
+  "svg/icons/user-svg": {
+    "item": "icon-user-svg",
+    "import": "import UserSvg from 'src/ds/icons/svg/UserSvg'",
+    "usedBy": [
+      "src/screens/Profile/components/ProfileHeader/ProfileHeader.tsx"
+    ]
+  },
+  "svg/icons/vector": {
+    "item": "vector",
+    "import": "import { Vector } from 'src/ds/ui/vector'",
+    "usedBy": [
+      "src/screens/Timeline/views/TimelineAfterQuoted/components/TimeLineStatus/OrderStatusTimeline/OrderStatusTimeline.tsx",
+      "src/screens/Timeline/views/TimelineCompleted/components/TimelineCompletedSteps/TimelineCompletedSteps.tsx"
+    ]
+  },
+  "svg/illustrations/Close": {
+    "item": "illustration-close",
+    "import": "import Close from 'src/ds/illustrations/general/Close'",
+    "usedBy": [
+      "src/screens/Timeline/views/TimelineBeforeQuoted/components/TimelineBeforeQuotedClosed/TimelineBeforeQuotedClosed.tsx"
+    ]
+  },
+  "svg/illustrations/EmptyNotifications": {
+    "item": "illustration-empty-notifications",
+    "import": "import EmptyNotifications from 'src/ds/illustrations/general/EmptyNotifications'",
+    "usedBy": [
+      "src/screens/Notifications/components/NotificationEmpty/NotificationEmpty.tsx"
+    ]
+  },
+  "svg/illustrations/EmptyResults": {
+    "item": "illustration-empty-results",
+    "import": "import EmptyResults from 'src/ds/illustrations/general/EmptyResults'",
+    "usedBy": [
+      "src/design/molecules/EmptyState/EmptyState.tsx",
+      "src/screens/Products/components/ProductsGroupedByLaboratory/ProductsGroupedByLaboratory.tsx"
+    ]
+  },
+  "svg/illustrations/Feedback-Error": {
+    "item": "illustration-feedback-error",
+    "import": "import FeedbackError from 'src/ds/illustrations/general/FeedbackError'",
+    "usedBy": [
+      "src/screens/payment/PaymentErrors/usePaymentFeedbackModal.tsx"
+    ]
+  },
+  "svg/illustrations/Feedback-Success": {
+    "item": "illustration-feedback-success",
+    "import": "import FeedbackSuccess from 'src/ds/illustrations/general/FeedbackSuccess'",
+    "usedBy": [
+      "src/screens/payment/BankTransfer/hook/BankTransfer.hook.tsx",
+      "src/screens/payment/PaymentLink/hook/usePaymentLink.tsx"
+    ]
+  },
+  "svg/illustrations/Feedback-Waiting": {
+    "item": "illustration-feedback-waiting",
+    "import": "import FeedbackWaiting from 'src/ds/illustrations/general/FeedbackWaiting'",
+    "usedBy": [
+      "src/screens/payment/PaymentErrors/usePaymentFeedbackModal.tsx"
+    ]
+  },
+  "svg/illustrations/Ilus-mantenimiento-mobile": {
+    "item": "illustration-ilus-mantenimiento-mobile",
+    "import": "import IlusMantenimientoMobile from 'src/ds/illustrations/general/IlusMantenimientoMobile'",
+    "usedBy": [
+      "src/screens/Disable/DisableScreen.tsx"
+    ]
+  },
+  "svg/illustrations/Location": {
+    "item": "illustration-location",
+    "import": "import Location from 'src/ds/illustrations/general/Location'",
+    "usedBy": [
+      "src/design/molecules/DisabledLocationModal/DisabledLocationModal.tsx",
+      "src/hooks/permissions/useUserLocation/useUserLocation.tsx"
+    ]
+  },
+  "svg/illustrations/Logo": {
+    "item": "illustration-logo",
+    "import": "import Logo from 'src/ds/illustrations/general/Logo'",
+    "usedBy": [
+      "src/design/molecules/Header/Header.tsx",
+      "src/screens/Profile/components/ProfileFooter/ProfileFooter.tsx"
+    ]
+  },
+  "svg/illustrations/LogoXl": {
+    "item": "illustration-logo-xl",
+    "import": "import LogoXl from 'src/ds/illustrations/general/LogoXl'",
+    "usedBy": [
+      "src/screens/Auth/components/AuthHeader/AuthHeader.tsx"
+    ]
+  },
+  "svg/illustrations/Rate": {
+    "item": "illustration-rate",
+    "import": "import Rate from 'src/ds/illustrations/general/Rate'",
+    "usedBy": [
+      "src/screens/OrdersHistory/PreviusOrderDetail/Components/SurveyCard.tsx"
+    ]
+  },
+  "svg/illustrations/RedMarker": {
+    "item": "illustration-red-marker",
+    "import": "import RedMarker from 'src/ds/illustrations/general/RedMarker'",
+    "usedBy": [
+      "src/screens/Addresses/AddressManager/components/CreateAddress/components/AddressMapPreview/AddressMapPreview.tsx"
+    ]
+  },
+  "svg/illustrations/address/ilus-address-emptystate": {
+    "item": "illustration-address-address-emptystate",
+    "import": "import AddressEmptystate from 'src/ds/illustrations/address/AddressEmptystate'",
+    "usedBy": [
+      "src/screens/Addresses/Addresses/Addresses.tsx"
+    ]
+  },
+  "svg/illustrations/cancel-order": {
+    "item": "illustration-cancel-order",
+    "import": "import CancelOrder from 'src/ds/illustrations/general/CancelOrder'",
+    "usedBy": [
+      "src/screens/Timeline/views/TimelineCancel/TimelineCancel.tsx"
+    ]
+  },
+  "svg/illustrations/categories/alergias": {
+    "item": "illustration-categories-alergias",
+    "import": "import Alergias from 'src/ds/illustrations/categories/Alergias'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/calma-y-sueno": {
+    "item": "illustration-categories-calma-y-sueno",
+    "import": "import CalmaYSueno from 'src/ds/illustrations/categories/CalmaYSueno'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/cuidado-bucal": {
+    "item": "illustration-categories-cuidado-bucal",
+    "import": "import CuidadoBucal from 'src/ds/illustrations/categories/CuidadoBucal'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/cuidado-personal": {
+    "item": "illustration-categories-cuidado-personal",
+    "import": "import CuidadoPersonal from 'src/ds/illustrations/categories/CuidadoPersonal'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/default": {
+    "item": "illustration-categories-default",
+    "import": "import Default from 'src/ds/illustrations/categories/Default'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/components/HomeProductCategoriesItem.tsx",
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/dejar-de-fumar": {
+    "item": "illustration-categories-dejar-de-fumar",
+    "import": "import DejarDeFumar from 'src/ds/illustrations/categories/DejarDeFumar'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/digestion": {
+    "item": "illustration-categories-digestion",
+    "import": "import Digestion from 'src/ds/illustrations/categories/Digestion'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/dolor-corporal": {
+    "item": "illustration-categories-dolor-corporal",
+    "import": "import DolorCorporal from 'src/ds/illustrations/categories/DolorCorporal'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/gripe": {
+    "item": "illustration-categories-gripe",
+    "import": "import Gripe from 'src/ds/illustrations/categories/Gripe'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/hongos": {
+    "item": "illustration-categories-hongos",
+    "import": "import Hongos from 'src/ds/illustrations/categories/Hongos'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/nutricion": {
+    "item": "illustration-categories-nutricion",
+    "import": "import Nutricion from 'src/ds/illustrations/categories/Nutricion'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/ojos": {
+    "item": "illustration-categories-ojos",
+    "import": "import Ojos from 'src/ds/illustrations/categories/Ojos'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/piel": {
+    "item": "illustration-categories-piel",
+    "import": "import Piel from 'src/ds/illustrations/categories/Piel'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/piojos": {
+    "item": "illustration-categories-piojos",
+    "import": "import Piojos from 'src/ds/illustrations/categories/Piojos'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/sexual": {
+    "item": "illustration-categories-sexual",
+    "import": "import Sexual from 'src/ds/illustrations/categories/Sexual'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/suenio": {
+    "item": "illustration-categories-suenio",
+    "import": "import Suenio from 'src/ds/illustrations/categories/Suenio'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/suplementos": {
+    "item": "illustration-categories-suplementos",
+    "import": "import Suplementos from 'src/ds/illustrations/categories/Suplementos'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/categories/tos": {
+    "item": "illustration-categories-tos",
+    "import": "import Tos from 'src/ds/illustrations/categories/Tos'",
+    "usedBy": [
+      "src/screens/Home/components/HomeProductCategories/utils/getCategoryIcon.ts"
+    ]
+  },
+  "svg/illustrations/check": {
+    "item": "illustration-check",
+    "import": "import Check from 'src/ds/illustrations/general/Check'",
+    "usedBy": [
+      "src/screens/AvalaibleRecipes/components/AvalaibleRecipeQuantity/AvalaibleRecipeQuantity.tsx"
+    ]
+  },
+  "svg/illustrations/chip": {
+    "item": "illustration-chip",
+    "import": "import Chip from 'src/ds/illustrations/general/Chip'",
+    "usedBy": [
+      "src/screens/payment/CheckoutMethod/components/CreditCard.tsx"
+    ]
+  },
+  "svg/illustrations/credentials/ilus-credentials-emptystate": {
+    "item": "illustration-credentials-credentials-emptystate",
+    "import": "import CredentialsEmptystate from 'src/ds/illustrations/credentials/CredentialsEmptystate'",
+    "usedBy": [
+      "src/screens/Credentials/components/EmptyState/EmptyState.tsx"
+    ]
+  },
+  "svg/illustrations/credit-card-mastercard-logo": {
+    "item": "illustration-credit-card-mastercard-logo",
+    "import": "import CreditCardMastercardLogo from 'src/ds/illustrations/general/CreditCardMastercardLogo'",
+    "usedBy": [
+      "src/screens/payment/CheckoutMethod/components/CreditCard.tsx"
+    ]
+  },
+  "svg/illustrations/credit-card-visa-logo": {
+    "item": "illustration-credit-card-visa-logo",
+    "import": "import CreditCardVisaLogo from 'src/ds/illustrations/general/CreditCardVisaLogo'",
+    "usedBy": [
+      "src/screens/payment/CheckoutMethod/components/CreditCard.tsx"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/animated-quote-waiting/layer-1-base": {
+    "item": "illustration-feedback-showcase-animated-quote-waiting-layer-1-base",
+    "import": "import Layer1Base from 'src/ds/illustrations/feedback-showcase/animated-quote-waiting/Layer1Base'",
+    "usedBy": [
+      "src/screens/FeedbackStates/components/QuoteWaitingIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/animated-quote-waiting/layer-2-pill": {
+    "item": "illustration-feedback-showcase-animated-quote-waiting-layer-2-pill",
+    "import": "import Layer2Pill from 'src/ds/illustrations/feedback-showcase/animated-quote-waiting/Layer2Pill'",
+    "usedBy": [
+      "src/screens/FeedbackStates/components/QuoteWaitingIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/animated-quote-waiting/layer-3-details": {
+    "item": "illustration-feedback-showcase-animated-quote-waiting-layer-3-details",
+    "import": "import Layer3Details from 'src/ds/illustrations/feedback-showcase/animated-quote-waiting/Layer3Details'",
+    "usedBy": [
+      "src/screens/FeedbackStates/components/QuoteWaitingIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/pago-aprobado-badge": {
+    "item": "illustration-feedback-showcase-layers-pago-aprobado-badge",
+    "import": "import PagoAprobadoBadge from 'src/ds/illustrations/feedback-showcase/layers/PagoAprobadoBadge'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/pagoAprobadoLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/pago-aprobado-card1": {
+    "item": "illustration-feedback-showcase-layers-pago-aprobado-card1",
+    "import": "import PagoAprobadoCard1 from 'src/ds/illustrations/feedback-showcase/layers/PagoAprobadoCard1'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/pagoAprobadoLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/pago-aprobado-card2": {
+    "item": "illustration-feedback-showcase-layers-pago-aprobado-card2",
+    "import": "import PagoAprobadoCard2 from 'src/ds/illustrations/feedback-showcase/layers/PagoAprobadoCard2'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/pagoAprobadoLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/pago-demorado-arrow": {
+    "item": "illustration-feedback-showcase-layers-pago-demorado-arrow",
+    "import": "import PagoDemoradoArrow from 'src/ds/illustrations/feedback-showcase/layers/PagoDemoradoArrow'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/pagoDemoradoLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/pago-demorado-badge-inner": {
+    "item": "illustration-feedback-showcase-layers-pago-demorado-badge-inner",
+    "import": "import PagoDemoradoBadgeInner from 'src/ds/illustrations/feedback-showcase/layers/PagoDemoradoBadgeInner'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/pagoDemoradoLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/pago-demorado-badge-outer": {
+    "item": "illustration-feedback-showcase-layers-pago-demorado-badge-outer",
+    "import": "import PagoDemoradoBadgeOuter from 'src/ds/illustrations/feedback-showcase/layers/PagoDemoradoBadgeOuter'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/pagoDemoradoLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/pago-demorado-card1": {
+    "item": "illustration-feedback-showcase-layers-pago-demorado-card1",
+    "import": "import PagoDemoradoCard1 from 'src/ds/illustrations/feedback-showcase/layers/PagoDemoradoCard1'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/pagoDemoradoLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/pago-demorado-card2": {
+    "item": "illustration-feedback-showcase-layers-pago-demorado-card2",
+    "import": "import PagoDemoradoCard2 from 'src/ds/illustrations/feedback-showcase/layers/PagoDemoradoCard2'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/pagoDemoradoLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/rechazo-farmacia-badge": {
+    "item": "illustration-feedback-showcase-layers-rechazo-farmacia-badge",
+    "import": "import RechazoFarmaciaBadge from 'src/ds/illustrations/feedback-showcase/layers/RechazoFarmaciaBadge'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/rechazoFarmaciaLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/rechazo-farmacia-bag": {
+    "item": "illustration-feedback-showcase-layers-rechazo-farmacia-bag",
+    "import": "import RechazoFarmaciaBag from 'src/ds/illustrations/feedback-showcase/layers/RechazoFarmaciaBag'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/esperaCotizacionLayers.ts",
+      "src/screens/FeedbackStates/constants/layers/rechazoFarmaciaLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/rechazo-farmacia-detail1": {
+    "item": "illustration-feedback-showcase-layers-rechazo-farmacia-detail1",
+    "import": "import RechazoFarmaciaDetail1 from 'src/ds/illustrations/feedback-showcase/layers/RechazoFarmaciaDetail1'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/esperaCotizacionLayers.ts",
+      "src/screens/FeedbackStates/constants/layers/rechazoFarmaciaLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/rechazo-farmacia-dots": {
+    "item": "illustration-feedback-showcase-layers-rechazo-farmacia-dots",
+    "import": "import RechazoFarmaciaDots from 'src/ds/illustrations/feedback-showcase/layers/RechazoFarmaciaDots'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/esperaCotizacionLayers.ts",
+      "src/screens/FeedbackStates/constants/layers/rechazoFarmaciaLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/rechazo-farmacia-handle": {
+    "item": "illustration-feedback-showcase-layers-rechazo-farmacia-handle",
+    "import": "import RechazoFarmaciaHandle from 'src/ds/illustrations/feedback-showcase/layers/RechazoFarmaciaHandle'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/esperaCotizacionLayers.ts",
+      "src/screens/FeedbackStates/constants/layers/rechazoFarmaciaLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/rechazo-farmacia-sparkle": {
+    "item": "illustration-feedback-showcase-layers-rechazo-farmacia-sparkle",
+    "import": "import RechazoFarmaciaSparkle from 'src/ds/illustrations/feedback-showcase/layers/RechazoFarmaciaSparkle'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/esperaCotizacionLayers.ts",
+      "src/screens/FeedbackStates/constants/layers/rechazoFarmaciaLayers.ts"
+    ]
+  },
+  "svg/illustrations/feedback-showcase/layers/rechazo-farmacia-strap": {
+    "item": "illustration-feedback-showcase-layers-rechazo-farmacia-strap",
+    "import": "import RechazoFarmaciaStrap from 'src/ds/illustrations/feedback-showcase/layers/RechazoFarmaciaStrap'",
+    "usedBy": [
+      "src/screens/FeedbackStates/constants/layers/esperaCotizacionLayers.ts",
+      "src/screens/FeedbackStates/constants/layers/rechazoFarmaciaLayers.ts"
+    ]
+  },
+  "svg/illustrations/healthInsurance/ase": {
+    "item": "illustration-health-insurance-ase",
+    "import": "import Ase from 'src/ds/illustrations/healthInsurance/Ase'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/avalian": {
+    "item": "illustration-health-insurance-avalian",
+    "import": "import Avalian from 'src/ds/illustrations/healthInsurance/Avalian'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/galeno": {
+    "item": "illustration-health-insurance-galeno",
+    "import": "import Galeno from 'src/ds/illustrations/healthInsurance/Galeno'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/hitaliano": {
+    "item": "illustration-health-insurance-hitaliano",
+    "import": "import Hitaliano from 'src/ds/illustrations/healthInsurance/Hitaliano'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/ioma": {
+    "item": "illustration-health-insurance-ioma",
+    "import": "import Ioma from 'src/ds/illustrations/healthInsurance/Ioma'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/medicus": {
+    "item": "illustration-health-insurance-medicus",
+    "import": "import Medicus from 'src/ds/illustrations/healthInsurance/Medicus'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/medife": {
+    "item": "illustration-health-insurance-medife",
+    "import": "import Medife from 'src/ds/illustrations/healthInsurance/Medife'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/omint": {
+    "item": "illustration-health-insurance-omint",
+    "import": "import Omint from 'src/ds/illustrations/healthInsurance/Omint'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/osde": {
+    "item": "illustration-health-insurance-osde",
+    "import": "import Osde from 'src/ds/illustrations/healthInsurance/Osde'",
+    "usedBy": [
+      "src/screens/AvalaibleRecipes/components/AvailableRecipesCredentials/AvailableRecipesCredentialChip.tsx",
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx",
+      "src/screens/TokenEntry/TokenHelpDetail/TokenHelpDetail.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/osde-white": {
+    "item": "illustration-health-insurance-osde-white",
+    "import": "import OsdeWhite from 'src/ds/illustrations/healthInsurance/OsdeWhite'",
+    "usedBy": [
+      "src/screens/Credentials/components/OsdeCard/Osde-Card.tsx",
+      "src/screens/TokenEntry/components/TokenCredentialCard.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/osdepym": {
+    "item": "illustration-health-insurance-osdepym",
+    "import": "import Osdepym from 'src/ds/illustrations/healthInsurance/Osdepym'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/osdipp": {
+    "item": "illustration-health-insurance-osdipp",
+    "import": "import Osdipp from 'src/ds/illustrations/healthInsurance/Osdipp'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/osecac": {
+    "item": "illustration-health-insurance-osecac",
+    "import": "import Osecac from 'src/ds/illustrations/healthInsurance/Osecac'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/ospe": {
+    "item": "illustration-health-insurance-ospe",
+    "import": "import Ospe from 'src/ds/illustrations/healthInsurance/Ospe'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/osprera": {
+    "item": "illustration-health-insurance-osprera",
+    "import": "import Osprera from 'src/ds/illustrations/healthInsurance/Osprera'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/osuthgra": {
+    "item": "illustration-health-insurance-osuthgra",
+    "import": "import Osuthgra from 'src/ds/illustrations/healthInsurance/Osuthgra'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/pami": {
+    "item": "illustration-health-insurance-pami",
+    "import": "import Pami from 'src/ds/illustrations/healthInsurance/Pami'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx",
+      "src/screens/Credentials/components/PamiCard/PamiCard.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/sancor": {
+    "item": "illustration-health-insurance-sancor",
+    "import": "import Sancor from 'src/ds/illustrations/healthInsurance/Sancor'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/swissMedical": {
+    "item": "illustration-health-insurance-swiss-medical",
+    "import": "import SwissMedical from 'src/ds/illustrations/healthInsurance/SwissMedical'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/uocra": {
+    "item": "illustration-health-insurance-uocra",
+    "import": "import Uocra from 'src/ds/illustrations/healthInsurance/Uocra'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/uom": {
+    "item": "illustration-health-insurance-uom",
+    "import": "import Uom from 'src/ds/illustrations/healthInsurance/Uom'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/upcn": {
+    "item": "illustration-health-insurance-upcn",
+    "import": "import Upcn from 'src/ds/illustrations/healthInsurance/Upcn'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/home/ilus-receta": {
+    "item": "illustration-home-receta",
+    "import": "import Receta from 'src/ds/illustrations/home/Receta'",
+    "usedBy": [
+      "src/screens/Home/components/HomeStartOrder/components/HomeStartOrderCard/HomeStartOrderCard.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-alergias": {
+    "item": "illustration-alergias",
+    "import": "import Alergias from 'src/ds/illustrations/general/Alergias'",
+    "usedBy": [
+      "src/utils/validation/validateIconCategories.ts"
+    ]
+  },
+  "svg/illustrations/ilus-analgesicos": {
+    "item": "illustration-analgesicos",
+    "import": "import Analgesicos from 'src/ds/illustrations/general/Analgesicos'",
+    "usedBy": [
+      "src/utils/validation/validateIconCategories.ts"
+    ]
+  },
+  "svg/illustrations/ilus-catalogo-sm": {
+    "item": "illustration-catalogo-sm",
+    "import": "import CatalogoSm from 'src/ds/illustrations/general/CatalogoSm'",
+    "usedBy": [
+      "src/utils/validation/validateIconCategories.ts"
+    ]
+  },
+  "svg/illustrations/ilus-cotizacion": {
+    "item": "illustration-cotizacion",
+    "import": "import Cotizacion from 'src/ds/illustrations/general/Cotizacion'",
+    "usedBy": [
+      "src/screens/Auth/Onboarding/components/OnboardingCarousel/OnboardingCarousel.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-credenciales": {
+    "item": "illustration-credenciales",
+    "import": "import Credenciales from 'src/ds/illustrations/general/Credenciales'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/components/EmptyState.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-delivery-scooter": {
+    "item": "illustration-delivery-scooter",
+    "import": "import DeliveryScooter from 'src/ds/illustrations/general/DeliveryScooter'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/DeliveryOwnCadet/DeliveryOwnCadet.tsx",
+      "src/design/molecules/TimelineCard/Components/Peya/DeliveryPeya/DeliveryPeya.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-digestivos": {
+    "item": "illustration-digestivos",
+    "import": "import Digestivos from 'src/ds/illustrations/general/Digestivos'",
+    "usedBy": [
+      "src/utils/validation/validateIconCategories.ts"
+    ]
+  },
+  "svg/illustrations/ilus-entregadomicilio": {
+    "item": "illustration-entregadomicilio",
+    "import": "import Entregadomicilio from 'src/ds/illustrations/general/Entregadomicilio'",
+    "usedBy": [
+      "src/screens/Auth/Onboarding/components/OnboardingCarousel/OnboardingCarousel.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-error": {
+    "item": "illustration-error",
+    "import": "import Error from 'src/ds/illustrations/general/Error'",
+    "usedBy": [
+      "src/hooks/ui/useErrorModal/useErrorModal.tsx",
+      "src/screens/OrdersHistory/components/OrderHistoryError/OrderHistoryError.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-infeccion": {
+    "item": "illustration-infeccion",
+    "import": "import Infeccion from 'src/ds/illustrations/general/Infeccion'",
+    "usedBy": [
+      "src/utils/validation/validateIconCategories.ts"
+    ]
+  },
+  "svg/illustrations/ilus-pami": {
+    "item": "illustration-pami",
+    "import": "import Pami from 'src/ds/illustrations/general/Pami'",
+    "usedBy": [
+      "src/screens/Auth/Onboarding/components/OnboardingCarousel/OnboardingCarousel.tsx",
+      "src/screens/CreateOrder/CredentialsPicker/components/CredentialAvailable.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-payment-delayed": {
+    "item": "illustration-payment-delayed",
+    "import": "import PaymentDelayed from 'src/ds/illustrations/general/PaymentDelayed'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/PaymentError/PaymentError.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-payment-rejected": {
+    "item": "illustration-payment-rejected",
+    "import": "import PaymentRejected from 'src/ds/illustrations/general/PaymentRejected'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/PaymentError/PaymentError.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-pending-quote-pharmacy": {
+    "item": "illustration-pending-quote-pharmacy",
+    "import": "import PendingQuotePharmacy from 'src/ds/illustrations/general/PendingQuotePharmacy'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/PendingQuote/PendingQuote.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-pharmacy-closed": {
+    "item": "illustration-pharmacy-closed",
+    "import": "import PharmacyClosed from 'src/ds/illustrations/general/PharmacyClosed'",
+    "usedBy": [
+      "src/screens/TokenEntry/TokenPharmacyClosed/TokenPharmacyClosed.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-poolfarmacias": {
+    "item": "illustration-poolfarmacias",
+    "import": "import Poolfarmacias from 'src/ds/illustrations/general/Poolfarmacias'",
+    "usedBy": [
+      "src/design/molecules/ReassignmentModal/ReassignmentModal.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-preparation-blister": {
+    "item": "illustration-preparation-blister",
+    "import": "import PreparationBlister from 'src/ds/illustrations/general/PreparationBlister'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/Preparation/PreparationIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-preparation-capsule": {
+    "item": "illustration-preparation-capsule",
+    "import": "import PreparationCapsule from 'src/ds/illustrations/general/PreparationCapsule'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/Preparation/PreparationIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-preparation-capsule-body": {
+    "item": "illustration-preparation-capsule-body",
+    "import": "import PreparationCapsuleBody from 'src/ds/illustrations/general/PreparationCapsuleBody'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/Preparation/PreparationIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-preparation-medicine": {
+    "item": "illustration-preparation-medicine",
+    "import": "import PreparationMedicine from 'src/ds/illustrations/general/PreparationMedicine'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/Preparation/PreparationIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-quote-receipt": {
+    "item": "illustration-quote-receipt",
+    "import": "import QuoteReceipt from 'src/ds/illustrations/general/QuoteReceipt'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/AcceptedQuote/AcceptedQuote.tsx",
+      "src/design/molecules/TimelineCard/Components/Quote/Quote.tsx",
+      "src/design/molecules/TimelineCard/Components/QuotedReplacementProduct/QuotedReplacementProduct.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-ready-pickup-bag": {
+    "item": "illustration-ready-pickup-bag",
+    "import": "import ReadyPickupBag from 'src/ds/illustrations/general/ReadyPickupBag'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/ReadyForPickUp/ReadyForPickUpIllustration.tsx",
+      "src/design/molecules/TimelineCard/Components/Rejected/RejectedIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-ready-pickup-check": {
+    "item": "illustration-ready-pickup-check",
+    "import": "import ReadyPickupCheck from 'src/ds/illustrations/general/ReadyPickupCheck'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/ReadyForPickUp/ReadyForPickUpIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-reemplazo": {
+    "item": "illustration-reemplazo",
+    "import": "import Reemplazo from 'src/ds/illustrations/general/Reemplazo'",
+    "usedBy": [
+      "src/screens/Timeline/views/TimelineBeforeQuoted/useTimelineBeforeQuoted.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-rejected-cross": {
+    "item": "illustration-rejected-cross",
+    "import": "import RejectedCross from 'src/ds/illustrations/general/RejectedCross'",
+    "usedBy": [
+      "src/design/molecules/TimelineCard/Components/Rejected/RejectedIllustration.tsx"
+    ]
+  },
+  "svg/illustrations/ilus-suplements": {
+    "item": "illustration-suplements",
+    "import": "import Suplements from 'src/ds/illustrations/general/Suplements'",
+    "usedBy": [
+      "src/utils/validation/validateIconCategories.ts"
+    ]
+  },
+  "svg/illustrations/ilus-thermometer": {
+    "item": "illustration-thermometer",
+    "import": "import Thermometer from 'src/ds/illustrations/general/Thermometer'",
+    "usedBy": [
+      "src/utils/validation/validateIconCategories.ts"
+    ]
+  },
+  "svg/illustrations/ilus-ubicacion": {
+    "item": "illustration-ubicacion",
+    "import": "import Ubicacion from 'src/ds/illustrations/general/Ubicacion'",
+    "usedBy": [
+      "src/screens/OrderSummary/components/AddressEmpty/AddressEmpty.tsx"
+    ]
+  },
+  "svg/illustrations/kyc/ilus-credencial-error": {
+    "item": "illustration-kyc-credencial-error",
+    "import": "import CredencialError from 'src/ds/illustrations/kyc/CredencialError'",
+    "usedBy": [
+      "src/screens/Kyc/KycResult/KycBlockedTempView.tsx"
+    ]
+  },
+  "svg/illustrations/kyc/ilus-credencial-vencida": {
+    "item": "illustration-kyc-credencial-vencida",
+    "import": "import CredencialVencida from 'src/ds/illustrations/kyc/CredencialVencida'",
+    "usedBy": [
+      "src/screens/Kyc/KycIdentity/KycIdentity.tsx"
+    ]
+  },
+  "svg/illustrations/kyc/ilus-credentials": {
+    "item": "illustration-kyc-credentials",
+    "import": "import Credentials from 'src/ds/illustrations/kyc/Credentials'",
+    "usedBy": [
+      "src/screens/Kyc/KycIdentity/KycIdentity.tsx"
+    ]
+  },
+  "svg/illustrations/kyc/ilus-identidad": {
+    "item": "illustration-kyc-identidad",
+    "import": "import Identidad from 'src/ds/illustrations/kyc/Identidad'",
+    "usedBy": [
+      "src/screens/Kyc/KycIdentity/KycIdentity.tsx"
+    ]
+  },
+  "svg/illustrations/kyc/ilus-identidad-error": {
+    "item": "illustration-kyc-identidad-error",
+    "import": "import IdentidadError from 'src/ds/illustrations/kyc/IdentidadError'",
+    "usedBy": [
+      "src/screens/Kyc/KycResult/KycBlockedTempView.tsx"
+    ]
+  },
+  "svg/illustrations/kyc/ilus-identidad-incompleta": {
+    "item": "illustration-kyc-identidad-incompleta",
+    "import": "import IdentidadIncompleta from 'src/ds/illustrations/kyc/IdentidadIncompleta'",
+    "usedBy": [
+      "src/screens/Kyc/KycIdentity/KycIdentity.tsx"
+    ]
+  },
+  "svg/illustrations/kyc/ilus-identidad-vencida": {
+    "item": "illustration-kyc-identidad-vencida",
+    "import": "import IdentidadVencida from 'src/ds/illustrations/kyc/IdentidadVencida'",
+    "usedBy": [
+      "src/screens/Kyc/KycIdentity/KycIdentity.tsx"
+    ]
+  },
+  "svg/illustrations/logos/generic-pharmacy-logo": {
+    "item": "illustration-logos-generic-pharmacy-logo",
+    "import": "import GenericPharmacyLogo from 'src/ds/illustrations/logos/GenericPharmacyLogo'",
+    "usedBy": [
+      "src/screens/Timeline/views/TimelineAfterQuoted/components/TimelinePharmacyCard/components/TimelinePharmacyCardDefault/TimelinePharmacyCardDefault.tsx",
+      "src/screens/Timeline/views/TimelineAfterQuoted/components/TimelinePharmacyCard/components/TimelinePharmacyCardReadyForPickup/TimelinePharmacyCardReadyForPickup.tsx",
+      "src/screens/Timeline/views/TimelineCompleted/components/TimelineCompletedPharmacyCard/TimelineCompletedPharmacyCard.tsx"
+    ]
+  },
+  "svg/illustrations/order-history/empty-state-order-history": {
+    "item": "illustration-order-history-empty-state-order-history",
+    "import": "import EmptyStateOrderHistory from 'src/ds/illustrations/order-history/EmptyStateOrderHistory'",
+    "usedBy": [
+      "src/screens/OrdersHistory/components/OrdersEmpty/OrdersEmpty.tsx"
+    ]
+  },
+  "svg/illustrations/order-summary/ilus-active-order": {
+    "item": "illustration-order-summary-active-order",
+    "import": "import ActiveOrder from 'src/ds/illustrations/order-summary/ActiveOrder'",
+    "usedBy": [
+      "src/screens/OrderSummary/components/ActiveOrder.tsx"
+    ]
+  },
+  "svg/illustrations/order-summary/ilus-emptystate-ordersummary": {
+    "item": "illustration-order-summary-emptystate-ordersummary",
+    "import": "import EmptystateOrdersummary from 'src/ds/illustrations/order-summary/EmptystateOrdersummary'",
+    "usedBy": [
+      "src/screens/OrderSummary/components/EmptyState/EmptyState.tsx"
+    ]
+  },
+  "svg/illustrations/permisos-camera": {
+    "item": "illustration-permisos-camera",
+    "import": "import PermisosCamera from 'src/ds/illustrations/general/PermisosCamera'",
+    "usedBy": [
+      "src/hooks/media/useGetFileFromCamera.tsx",
+      "src/hooks/media/useGetImageFromGallery.tsx",
+      "src/screens/AvalaibleRecipes/hooks/useAttachFilesForPrevalidation.tsx",
+      "src/screens/Chat/hooks/useAttachFile.tsx"
+    ]
+  },
+  "svg/illustrations/pharmacy/ilus-pharmacy-emptystate": {
+    "item": "illustration-pharmacy-pharmacy-emptystate",
+    "import": "import PharmacyEmptystate from 'src/ds/illustrations/pharmacy/PharmacyEmptystate'",
+    "usedBy": [
+      "src/screens/Pharmacy/components/PharmacyEmptyState/PharmacyEmptyState.tsx"
+    ]
+  },
+  "svg/illustrations/prevalidation/ilus-empty-prevalidation": {
+    "item": "illustration-prevalidation-empty-prevalidation",
+    "import": "import EmptyPrevalidation from 'src/ds/illustrations/prevalidation/EmptyPrevalidation'",
+    "usedBy": [
+      "src/screens/AvalaibleRecipes/components/EmptyAvailableRecipes/EmptyAvailableRecipes.tsx"
+    ]
+  },
+  "svg/illustrations/products/ilus-search-products": {
+    "item": "illustration-products-search-products",
+    "import": "import SearchProducts from 'src/ds/illustrations/products/SearchProducts'",
+    "usedBy": [
+      "src/screens/Products/components/ProductsCategories/ProductsCategories.tsx",
+      "src/screens/Products/components/ProductsSearch/ProductsSearch.tsx"
+    ]
+  },
+  "svg/logo-farmatouch-simple": {
+    "item": "icon-logo-farmatouch-simple",
+    "import": "import LogoFarmatouchSimple from 'src/ds/icons/svg/LogoFarmatouchSimple'",
+    "usedBy": [
+      "src/core/Legal-Agreements/components/Header.tsx"
+    ]
+  },
+  "svg/pharmacy-profile/logo-default-pharmacy": {
+    "item": "illustration-pharmacy-profile-logo-default-pharmacy",
+    "import": "import LogoDefaultPharmacy from 'src/ds/illustrations/pharmacy-profile/LogoDefaultPharmacy'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/utils/methods/getLogoByPharmacyName.ts"
+    ]
+  },
+  "svg/pharmacy-profile/logo-farmacity": {
+    "item": "illustration-pharmacy-profile-logo-farmacity",
+    "import": "import LogoFarmacity from 'src/ds/illustrations/pharmacy-profile/LogoFarmacity'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/utils/methods/getLogoByPharmacyName.ts"
+    ]
+  },
+  "svg/pharmacy-profile/logo-farmaplus": {
+    "item": "illustration-pharmacy-profile-logo-farmaplus",
+    "import": "import LogoFarmaplus from 'src/ds/illustrations/pharmacy-profile/LogoFarmaplus'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/utils/methods/getLogoByPharmacyName.ts"
+    ]
+  },
+  "svg/pharmacy-profile/logo-lesante": {
+    "item": "illustration-pharmacy-profile-logo-lesante",
+    "import": "import LogoLesante from 'src/ds/illustrations/pharmacy-profile/LogoLesante'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/utils/methods/getLogoByPharmacyName.ts"
+    ]
+  },
+  "svg/pharmacy-profile/logo-soyfarmacia": {
+    "item": "illustration-pharmacy-profile-logo-soyfarmacia",
+    "import": "import LogoSoyfarmacia from 'src/ds/illustrations/pharmacy-profile/LogoSoyfarmacia'",
+    "usedBy": [
+      "src/screens/PharmacyProfile/utils/methods/getLogoByPharmacyName.ts"
+    ]
+  }
+}

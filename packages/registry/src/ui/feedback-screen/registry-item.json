@@ -3,19 +3,48 @@
   "type": "ui",
   "description": "Pantalla de resultado a pantalla completa (éxito/error/aviso/info, Lottie). Controlada + capa opcional FeedbackScreenHost/useFeedback().",
   "files": [
-    { "path": "FeedbackScreen.tsx" },
-    { "path": "FeedbackScreenHost.tsx" },
-    { "path": "FeedbackScreenView.tsx" },
-    { "path": "components/FeedbackActionButton.tsx" },
-    { "path": "constants/FeedbackScreen.constants.ts" },
-    { "path": "hooks/useFeedbackScreen.ts" },
-    { "path": "methods/feedbackScreenMethods.ts" },
-    { "path": "types/FeedbackScreen.types.ts" },
-    { "path": "index.ts" },
-    { "path": "lottie/approved.json", "type": "asset" },
-    { "path": "lottie/rejected.json", "type": "asset" },
-    { "path": "lottie/in-progress.json", "type": "asset" }
+    {
+      "path": "FeedbackScreen.tsx"
+    },
+    {
+      "path": "FeedbackScreenHost.tsx"
+    },
+    {
+      "path": "FeedbackScreenView.tsx"
+    },
+    {
+      "path": "components/FeedbackActionButton.tsx"
+    },
+    {
+      "path": "constants/FeedbackScreen.constants.ts"
+    },
+    {
+      "path": "hooks/useFeedbackScreen.ts"
+    },
+    {
+      "path": "methods/feedbackScreenMethods.ts"
+    },
+    {
+      "path": "types/FeedbackScreen.types.ts"
+    },
+    {
+      "path": "index.ts"
+    }
   ],
-  "dependencies": ["lottie-react-native", "react-native-reanimated", "react-native-worklets"],
-  "registryDependencies": ["store", "text", "button", "safe-area-view", "screen-layout", "portal"]
+  "dependencies": [
+    "lottie-react-native",
+    "react-native-reanimated",
+    "react-native-worklets"
+  ],
+  "registryDependencies": [
+    "store",
+    "text",
+    "button",
+    "safe-area-view",
+    "screen-layout",
+    "portal",
+    "animation-approved",
+    "animation-rejected",
+    "animation-in-progress"
+  ]
 }

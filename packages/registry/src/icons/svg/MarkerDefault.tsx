@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/icons/MarkerDefault.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Rect, Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const MarkerDefault = (props: SvgProps) => <Svg width={28} height={28} fill="none" viewBox="0 0 28 28" {...props}><Rect width={28} height={28} fill="#475467" rx={14} /><Path stroke="#ffffff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 20v-3.6c0-.373 0-.56-.073-.703a.67.67 0 0 0-.291-.291c-.143-.073-.33-.073-.703-.073h-1.866c-.374 0-.56 0-.703.073a.67.67 0 0 0-.291.291c-.073.143-.073.33-.073.703V20m-4-9.333a2 2 0 0 0 4 0 2 2 0 0 0 4 0 2 2 0 0 0 4 0M10.133 20h7.734c.746 0 1.12 0 1.405-.145.25-.128.455-.332.583-.583.145-.285.145-.659.145-1.405v-7.734c0-.746 0-1.12-.145-1.405a1.33 1.33 0 0 0-.583-.583C18.987 8 18.613 8 17.867 8h-7.734c-.746 0-1.12 0-1.405.145-.25.128-.455.332-.583.583C8 9.013 8 9.387 8 10.133v7.734c0 .746 0 1.12.145 1.405.128.25.332.455.583.583.285.145.659.145 1.405.145" /></Svg>;
+export default MarkerDefault;

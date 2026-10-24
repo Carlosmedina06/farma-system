@@ -1,7 +1,7 @@
 import LottieView from 'lottie-react-native'
 import { View } from 'react-native'
 
-import dotsLoading from '@farma/assets/lottie/dots-loading.json'
+import dotsLoading from '@farma/assets/animations/dots-loading.json'
 import { cn } from '@farma/registry/lib/utils'
 import { Text } from '@farma/registry/ui/text'
 

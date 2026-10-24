@@ -12,7 +12,7 @@ import { ButtonSectionLayout } from '@farma/registry/ui/button-section-layout'
 import { Portal } from '@farma/registry/ui/portal'
 import type { ButtonProps } from '@farma/registry/ui/button'
 import type { ButtonSectionVariant } from '@farma/registry/ui/button-section-layout'
-import successAnimation from '@farma/assets/lottie/success-animation.json'
+import successAnimation from '@farma/assets/animations/success-animation.json'
 
 interface ModalSuccessAnimatedProps {
   title?: string

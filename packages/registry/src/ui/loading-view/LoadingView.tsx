@@ -1,7 +1,7 @@
 import type { FC } from 'react'
 import { Platform, View } from 'react-native'
 import LottieView from 'lottie-react-native'
-import dotsLoader from '@farma/assets/lottie/dots-loader.json'
+import dotsLoader from '@farma/assets/animations/dots-loader.json'
 import { Spinner } from '@farma/registry/ui/spinner'
 import { Text } from '@farma/registry/ui/text'
 import { getWP } from '@farma/registry/lib/dimensions'

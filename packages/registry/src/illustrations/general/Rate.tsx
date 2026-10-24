@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/illustrations/Rate.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const Rate = (props: SvgProps) => <Svg width={40} height={40} fill="none" viewBox="0 0 40 40" {...props}><Path fill="#7680F9" d="M20.806 4.067c-.884-1.573-3.352-1.388-3.949.296l-2.671 7.523c-.248.693-.883 1.214-1.662 1.345L3.047 14.82c-1.844.31-2.408 2.514-.921 3.57l7.98 5.681c.646.455.954 1.208.815 1.954L9.297 34.46c-.331 1.743 1.736 3.006 3.31 2.027l4.83-2.987C17.64 22.214 20.38 13.644 23 7.979z" /><Path fill="#969DFB" d="m35.386 12.575-8.684-.228a2.2 2.2 0 0 1-1.85-1.08L22.998 7.97c-2.62 5.666-5.359 14.236-5.562 25.52l2.451-1.517.273-.165a2.29 2.29 0 0 1 1.957-.201l9.575 3.42c1.78.636 3.493-1.033 2.745-2.66l-4.348-9.439c-.38-.833-.122-1.797.634-2.355l5.947-4.426c1.57-1.17.722-3.525-1.286-3.58z" /><Path fill="#7680F9" d="M28.672 24.637s1.894 1.925 2.32 5.89zM28.398 26.049s1.222 1.362 1.637 4.209z" /></Svg>;
+export default Rate;

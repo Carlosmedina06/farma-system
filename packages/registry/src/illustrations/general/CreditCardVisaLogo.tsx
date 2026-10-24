@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/illustrations/credit-card-visa-logo.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Rect, Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const CreditCardVisaLogo = (props: SvgProps) => <Svg width={34} height={24} fill="none" viewBox="0 0 34 24" {...props}><Rect width={33} height={23} x={0.5} y={0.5} fill="white" rx={3.5} /><Rect width={33} height={23} x={0.5} y={0.5} stroke="#F2F4F7" rx={3.5} /><Path fill="#172B85" fillRule="evenodd" d="M10.75 15.858H8.69L7.147 9.792c-.073-.279-.229-.525-.458-.642A6.6 6.6 0 0 0 4.8 8.508v-.233h3.318c.458 0 .802.35.859.758l.801 4.376 2.059-5.134h2.002zm4.234 0H13.04l1.602-7.583h1.945zm4.119-5.482c.057-.409.4-.642.801-.642a3.54 3.54 0 0 1 1.888.35l.344-1.633a4.8 4.8 0 0 0-1.774-.351c-1.888 0-3.262 1.05-3.262 2.508 0 1.11.973 1.692 1.66 2.042.743.35 1.03.584.972.934 0 .524-.572.758-1.143.758a4.8 4.8 0 0 1-2.003-.467l-.343 1.633c.687.292 1.43.409 2.117.409 2.117.058 3.432-.992 3.432-2.567 0-1.983-2.69-2.1-2.69-2.974m9.497 5.482-1.545-7.583h-1.658a.86.86 0 0 0-.802.583l-2.86 7h2.002l.4-1.108h2.46l.23 1.108zm-2.917-5.54.571 2.857h-1.602z" clipRule="evenodd" /></Svg>;
+export default CreditCardVisaLogo;

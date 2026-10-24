@@ -8,9 +8,9 @@ import { DetailCard } from './DetailCard'
 import type { DetailCardProps } from './DetailCard.types'
 
 const ITEMS: DetailCardProps['itemsList'] = [
-  { label: 'retiro en sucursal', icon: 'building-07', noCost: true },
+  { label: 'retiro en sucursal', icon: 'building-02', noCost: true },
   { label: 'tarjeta de crédito', description: 'Visa terminada en 4242', icon: 'credit-card-02' },
-  { label: 'total', caption: '$ 12.500', icon: 'receipt' },
+  { label: 'total', caption: '$ 12.500', icon: 'receipt-check' },
 ]
 
 function Demo(props: DetailCardProps) {

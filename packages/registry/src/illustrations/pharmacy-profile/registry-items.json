@@ -1,0 +1,77 @@
+[
+  {
+    "name": "illustration-pharmacy-profile-logo-default-pharmacy",
+    "type": "illustration",
+    "description": "LogoDefaultPharmacy",
+    "files": [
+      {
+        "path": "LogoDefaultPharmacy.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-pharmacy-profile-logo-farmacity",
+    "type": "illustration",
+    "description": "LogoFarmacity",
+    "files": [
+      {
+        "path": "LogoFarmacity.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-pharmacy-profile-logo-farmaplus",
+    "type": "illustration",
+    "description": "LogoFarmaplus",
+    "files": [
+      {
+        "path": "LogoFarmaplus.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-pharmacy-profile-logo-lesante",
+    "type": "illustration",
+    "description": "LogoLesante",
+    "files": [
+      {
+        "path": "LogoLesante.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-pharmacy-profile-logo-soyfarmacia",
+    "type": "illustration",
+    "description": "LogoSoyfarmacia",
+    "files": [
+      {
+        "path": "LogoSoyfarmacia.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

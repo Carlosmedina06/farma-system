@@ -50,8 +50,8 @@ export const Playground: Story = {}
 export const ConAcciones: Story = {
   args: {
     actions: [
-      { name: 'search-lg', onPress: () => {} },
-      { name: 'shopping-cart-01', amount: 3, onPress: () => {} },
+      { name: 'search-sm', onPress: () => {} },
+      { name: 'shopping-bag-01', amount: 3, onPress: () => {} },
     ],
   },
 }

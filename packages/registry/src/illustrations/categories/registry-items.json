@@ -1,0 +1,272 @@
+[
+  {
+    "name": "illustration-categories-alergias",
+    "type": "illustration",
+    "description": "Alergias",
+    "files": [
+      {
+        "path": "Alergias.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-calma-y-sueno",
+    "type": "illustration",
+    "description": "CalmaYSueno",
+    "files": [
+      {
+        "path": "CalmaYSueno.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-cuidado-bucal",
+    "type": "illustration",
+    "description": "CuidadoBucal",
+    "files": [
+      {
+        "path": "CuidadoBucal.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-cuidado-personal",
+    "type": "illustration",
+    "description": "CuidadoPersonal",
+    "files": [
+      {
+        "path": "CuidadoPersonal.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-default",
+    "type": "illustration",
+    "description": "Default",
+    "files": [
+      {
+        "path": "Default.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-dejar-de-fumar",
+    "type": "illustration",
+    "description": "DejarDeFumar",
+    "files": [
+      {
+        "path": "DejarDeFumar.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-digestion",
+    "type": "illustration",
+    "description": "Digestion",
+    "files": [
+      {
+        "path": "Digestion.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-dolor-corporal",
+    "type": "illustration",
+    "description": "DolorCorporal",
+    "files": [
+      {
+        "path": "DolorCorporal.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-gripe",
+    "type": "illustration",
+    "description": "Gripe",
+    "files": [
+      {
+        "path": "Gripe.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-hongos",
+    "type": "illustration",
+    "description": "Hongos",
+    "files": [
+      {
+        "path": "Hongos.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-nutricion",
+    "type": "illustration",
+    "description": "Nutricion",
+    "files": [
+      {
+        "path": "Nutricion.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-ojos",
+    "type": "illustration",
+    "description": "Ojos",
+    "files": [
+      {
+        "path": "Ojos.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-piel",
+    "type": "illustration",
+    "description": "Piel",
+    "files": [
+      {
+        "path": "Piel.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-piojos",
+    "type": "illustration",
+    "description": "Piojos",
+    "files": [
+      {
+        "path": "Piojos.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-sexual",
+    "type": "illustration",
+    "description": "Sexual",
+    "files": [
+      {
+        "path": "Sexual.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-suenio",
+    "type": "illustration",
+    "description": "Suenio",
+    "files": [
+      {
+        "path": "Suenio.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-suplementos",
+    "type": "illustration",
+    "description": "Suplementos",
+    "files": [
+      {
+        "path": "Suplementos.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-categories-tos",
+    "type": "illustration",
+    "description": "Tos",
+    "files": [
+      {
+        "path": "Tos.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

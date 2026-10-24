@@ -17,7 +17,7 @@ function DotsDropdownDemo(props: Omit<DotsDropdownProps, 'options'>) {
           {...props}
           options={[
             { label: 'Editar', icon: 'edit-01', onPress: () => setLast('Editar') },
-            { label: 'Duplicar', icon: 'copy-01', onPress: () => setLast('Duplicar') },
+            { label: 'Duplicar', icon: 'copy-03', onPress: () => setLast('Duplicar') },
             { label: 'Eliminar', icon: 'trash-01', onPress: () => setLast('Eliminar') },
           ]}
         />

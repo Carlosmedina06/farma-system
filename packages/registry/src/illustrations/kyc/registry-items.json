@@ -1,0 +1,107 @@
+[
+  {
+    "name": "illustration-kyc-credencial-error",
+    "type": "illustration",
+    "description": "CredencialError",
+    "files": [
+      {
+        "path": "CredencialError.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-kyc-credencial-vencida",
+    "type": "illustration",
+    "description": "CredencialVencida",
+    "files": [
+      {
+        "path": "CredencialVencida.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-kyc-credentials",
+    "type": "illustration",
+    "description": "Credentials",
+    "files": [
+      {
+        "path": "Credentials.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-kyc-identidad",
+    "type": "illustration",
+    "description": "Identidad",
+    "files": [
+      {
+        "path": "Identidad.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-kyc-identidad-error",
+    "type": "illustration",
+    "description": "IdentidadError",
+    "files": [
+      {
+        "path": "IdentidadError.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-kyc-identidad-incompleta",
+    "type": "illustration",
+    "description": "IdentidadIncompleta",
+    "files": [
+      {
+        "path": "IdentidadIncompleta.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-kyc-identidad-vencida",
+    "type": "illustration",
+    "description": "IdentidadVencida",
+    "files": [
+      {
+        "path": "IdentidadVencida.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

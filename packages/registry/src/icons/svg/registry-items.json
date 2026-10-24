@@ -1,0 +1,152 @@
+[
+  {
+    "name": "icon-check-white-circle",
+    "type": "icon",
+    "description": "CheckWhiteCircle",
+    "files": [
+      {
+        "path": "CheckWhiteCircle.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-ellipse",
+    "type": "icon",
+    "description": "Ellipse",
+    "files": [
+      {
+        "path": "Ellipse.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-faceid",
+    "type": "icon",
+    "description": "Faceid (antes <Icon name=\"misc-faceid\">)",
+    "files": [
+      {
+        "path": "Faceid.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-fingerprint",
+    "type": "icon",
+    "description": "Fingerprint (antes <Icon name=\"misc-fingerprint\">)",
+    "files": [
+      {
+        "path": "Fingerprint.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-logo-farmatouch",
+    "type": "icon",
+    "description": "LogoFarmatouch",
+    "files": [
+      {
+        "path": "LogoFarmatouch.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-logo-farmatouch-simple",
+    "type": "icon",
+    "description": "LogoFarmatouchSimple",
+    "files": [
+      {
+        "path": "LogoFarmatouchSimple.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-marker-default",
+    "type": "icon",
+    "description": "MarkerDefault",
+    "files": [
+      {
+        "path": "MarkerDefault.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-marker-selected",
+    "type": "icon",
+    "description": "MarkerSelected",
+    "files": [
+      {
+        "path": "MarkerSelected.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-user-svg",
+    "type": "icon",
+    "description": "UserSvg",
+    "files": [
+      {
+        "path": "UserSvg.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "icon-walking-01",
+    "type": "icon",
+    "description": "Walking01 (antes <Icon name=\"misc-walking-01\">)",
+    "files": [
+      {
+        "path": "Walking01.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

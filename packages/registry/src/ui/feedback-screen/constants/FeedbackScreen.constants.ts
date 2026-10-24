@@ -1,7 +1,7 @@
 import type { AnimationObject } from 'lottie-react-native'
-import approved from '@farma/assets/lottie/approved.json'
-import inProgress from '@farma/assets/lottie/in-progress.json'
-import rejected from '@farma/assets/lottie/rejected.json'
+import approved from '@farma/assets/animations/approved.json'
+import inProgress from '@farma/assets/animations/in-progress.json'
+import rejected from '@farma/assets/animations/rejected.json'
 
 import type { FeedbackType } from '../types/FeedbackScreen.types'
 

@@ -1,6 +1,6 @@
 import type { AnimationObject } from 'lottie-react-native'
 
-import spinnerBlue from '@farma/assets/lottie/spinner-blue.json'
+import spinnerBlue from '@farma/assets/animations/spinner-blue.json'
 
 export type Colors = 'blue'
 export type SpinnerSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl'

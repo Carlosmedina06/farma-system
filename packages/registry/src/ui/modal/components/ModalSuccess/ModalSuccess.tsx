@@ -10,7 +10,7 @@ import { cn } from '@farma/registry/lib/utils'
 import { ModalContent } from '../ModalContent/ModalContent'
 import { ModalActions } from '../ModalActions/ModalActions'
 import { ModalProps } from '../../Modal.types'
-import successAnimation from '@farma/assets/lottie/success-animation.json'
+import successAnimation from '@farma/assets/animations/success-animation.json'
 
 const AnimatedView = Animated.createAnimatedComponent(View)
 const AnimatedLottieView = Animated.createAnimatedComponent(LottieView)

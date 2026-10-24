@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/mastercard-card.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const MastercardCard = (props: SvgProps) => <Svg width={58} height={40} fill="none" viewBox="0 0 58 40" {...props}><Path fill="#ED0006" fillRule="evenodd" d="M28.632 28.05a11.34 11.34 0 0 1-7.33 2.667c-6.242 0-11.302-5-11.302-11.167S15.06 8.383 21.301 8.383c2.797 0 5.357 1.004 7.33 2.668a11.34 11.34 0 0 1 7.331-2.668c6.242 0 11.301 5 11.301 11.167s-5.06 11.167-11.3 11.167a11.34 11.34 0 0 1-7.331-2.668" clipRule="evenodd" /><Path fill="#F9A000" fillRule="evenodd" d="M28.632 28.05c2.43-2.05 3.97-5.097 3.97-8.5s-1.54-6.451-3.97-8.5a11.34 11.34 0 0 1 7.33-2.667c6.242 0 11.301 5 11.301 11.167s-5.06 11.167-11.3 11.167a11.34 11.34 0 0 1-7.331-2.668" clipRule="evenodd" /><Path fill="#FF5E00" fillRule="evenodd" d="M28.632 28.049c2.43-2.048 3.97-5.096 3.97-8.499s-1.54-6.45-3.97-8.5c-2.43 2.05-3.97 5.097-3.97 8.5s1.54 6.45 3.97 8.499" clipRule="evenodd" /></Svg>;
+export default MastercardCard;

@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/card-shied-incentive.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Path, G, Defs, ClipPath } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const CardShiedIncentive = (props: SvgProps) => <Svg width={36} height={34} fill="none" viewBox="0 0 36 34" {...props}><Path stroke={props.color} strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M29.333 15.333H2.667m26.666 1.334v-3.734c0-1.493 0-2.24-.29-2.81a2.67 2.67 0 0 0-1.166-1.166c-.57-.29-1.317-.29-2.81-.29H6.933c-1.493 0-2.24 0-2.81.29-.502.256-.91.664-1.166 1.166-.29.57-.29 1.317-.29 2.81v10.134c0 1.493 0 2.24.29 2.81.256.502.664.91 1.166 1.166.57.29 1.317.29 2.81.29h8.4M24 30s4-1.907 4-4.766v-3.337l-2.917-1.042a3.2 3.2 0 0 0-2.168 0L20 21.897v3.337C20 28.094 24 30 24 30" /><G clipPath="url(#a)"><Path fill="#DC6803" d="M28 14.667a6.667 6.667 0 1 0 0-13.334 6.667 6.667 0 0 0 0 13.334" /><Path stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M28 5.333V8m0 2.667h.007M34.667 8a6.667 6.667 0 1 1-13.334 0 6.667 6.667 0 0 1 13.334 0" /></G><Defs><ClipPath id="a"><Path fill="white" d="M20 0h16v16H20z" /></ClipPath></Defs></Svg>;
+export default CardShiedIncentive;

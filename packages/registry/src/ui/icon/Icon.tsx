@@ -5,6 +5,7 @@ import { useResolveClassNames } from 'uniwind'
 import { cn } from '@farma/registry/lib/utils'
 
 import FarmaIcon from './FarmaIcon'
+import glyphMap from './glyph-map.json'
 
 /** Nombre de un glifo de la fuente farmaIcons. */
 export type IconName = ComponentProps<typeof FarmaIcon>['name']
@@ -12,8 +13,17 @@ export type IconName = ComponentProps<typeof FarmaIcon>['name']
 /** @deprecated usa `IconName`. Alias para migrar desde app-mobile. */
 export type FarmaIcons = IconName
 
+/**
+ * ¿El string es un glifo incluido en la fuente? La fuente solo trae los íconos que se usan
+ * (ver `pnpm icons:build`), así que úsalo para nombres que llegan de afuera (backend, deep links).
+ */
+export const isIconName = (name: unknown): name is IconName => typeof name === 'string' && name in glyphMap
+
 export type IconProps = {
-  name: IconName
+  /** Acepta cualquier string: si no está en la fuente se usa `fallback` (o no se dibuja nada). */
+  name: IconName | (string & {})
+  /** Ícono a mostrar cuando `name` no está en la fuente. */
+  fallback?: IconName
   size?: number
   color?: string
   className?: ClassValue
@@ -51,19 +61,22 @@ const splitClassNameStyles = (resolved?: TextStyle) => {
   }
 }
 
-const Icon = ({ name, size, color, className, style, ...props }: IconProps) => {
+const Icon = ({ name, fallback, size, color, className, style, ...props }: IconProps) => {
   const resolvedClassName = StyleSheet.flatten(
     useResolveClassNames(String(cn(className) ?? '')),
   ) as TextStyle | undefined
   const { color: classNameColor, layoutStyle } = splitClassNameStyles(resolvedClassName)
   const resolvedColor = color ?? (typeof classNameColor === 'string' ? classNameColor : '#000000')
   const metricsStyle = getIconMetricsStyle(size)
+  const glyph = isIconName(name) ? name : fallback
+
+  if (!glyph) return null
 
   return (
     <FarmaIcon
       {...NO_FONT_SCALING}
       color={resolvedColor}
-      name={name}
+      name={glyph}
       size={size}
       style={[metricsStyle, layoutStyle, style]}
       {...props}

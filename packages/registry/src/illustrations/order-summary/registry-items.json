@@ -1,0 +1,32 @@
+[
+  {
+    "name": "illustration-order-summary-active-order",
+    "type": "illustration",
+    "description": "ActiveOrder",
+    "files": [
+      {
+        "path": "ActiveOrder.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  },
+  {
+    "name": "illustration-order-summary-emptystate-ordersummary",
+    "type": "illustration",
+    "description": "EmptystateOrdersummary",
+    "files": [
+      {
+        "path": "EmptystateOrdersummary.tsx",
+        "type": "code"
+      }
+    ],
+    "dependencies": [
+      "react-native-svg"
+    ],
+    "registryDependencies": []
+  }
+]

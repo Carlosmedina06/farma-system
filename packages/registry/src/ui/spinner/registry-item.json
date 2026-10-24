@@ -3,11 +3,21 @@
   "type": "ui",
   "description": "Spinner animado (Lottie).",
   "files": [
-    { "path": "Spinner.tsx" },
-    { "path": "Spinner.types.ts" },
-    { "path": "index.ts" },
-    { "path": "lottie/spinner-blue.json", "type": "asset" }
+    {
+      "path": "Spinner.tsx"
+    },
+    {
+      "path": "Spinner.types.ts"
+    },
+    {
+      "path": "index.ts"
+    }
   ],
-  "dependencies": ["lottie-react-native"],
-  "registryDependencies": ["utils"]
+  "dependencies": [
+    "lottie-react-native"
+  ],
+  "registryDependencies": [
+    "utils",
+    "animation-spinner-blue"
+  ]
 }
