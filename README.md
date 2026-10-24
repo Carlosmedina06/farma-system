@@ -161,10 +161,14 @@ que ya tiene la app. Solo hacen falta las de los componentes que importes.
    nueva y el `CHANGELOG.md`.
 3. Al mergear ese PR, el workflow publica `@carlosmedina06/farma-ui` en npm (con provenance) y crea el tag.
 
-Requisitos (una vez): secret `NPM_TOKEN` en el repo de GitHub (token *Automation* o *Granular* con permiso de
-publicación del scope `@carlosmedina06`) y, en Settings → Actions, permitir que los workflows creen PRs.
+Requisitos (una vez, sin tokens):
+- En npmjs.com → paquete → **Settings → Trusted Publisher**: GitHub Actions, repo `Carlosmedina06/farma-system`,
+  workflow `release.yml`. El workflow se autentica por OIDC; no hace falta `NPM_TOKEN`.
+- En GitHub → Settings → Actions → General: *Read and write permissions* y
+  *Allow GitHub Actions to create and approve pull requests*.
 
-Publicación manual (sin CI): `pnpm version-packages && pnpm release` con `npm login` hecho.
+Publicación manual (sin CI): `pnpm version-packages && pnpm release` con `npm login` hecho
+(npm pide el código de 2FA: agregar `--otp=<código>` al `npm publish` de `scripts/release.sh` o correrlo en una terminal interactiva).
 
 ## Instalarlo en la app (CLI, copiando el código)
 

@@ -18,7 +18,7 @@
     "ui:pack": "pnpm registry:build && pnpm --filter @carlosmedina06/farma-ui pack:local",
     "changeset": "changeset",
     "version-packages": "changeset version",
-    "release": "pnpm registry:build && changeset publish"
+    "release": "bash scripts/release.sh"
   },
   "devDependencies": {
     "@changesets/cli": "^2.31.1",
