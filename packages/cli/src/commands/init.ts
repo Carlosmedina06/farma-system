@@ -6,6 +6,7 @@ import prompts from 'prompts'
 
 import { writeConfig } from '../config/load'
 import { CONFIG_FILE, farmaConfigSchema } from '../config/schema'
+import { createSource } from '../registry/sources'
 import { readPackageJson } from '../utils/package-manager'
 import { add } from './add'
 
@@ -60,6 +61,29 @@ export async function init(options: InitOptions) {
   await writeConfig(cwd, config)
   console.log(`${kleur.green('✔')} ${CONFIG_FILE} creado`)
 
-  await add(['utils'], { cwd, yes: options.yes, skipInstall: options.skipInstall })
-  console.log(`${kleur.green('✔')} Listo. Agrega componentes con ${kleur.cyan('farma-system add <nombre>')}`)
+  const index = await createSource(config.registry, cwd).getIndex()
+  let selected: string[] = []
+  if (!options.yes && index.length > 0) {
+    const picked = await prompts(
+      {
+        type: 'multiselect',
+        name: 'components',
+        message: 'Componentes a instalar',
+        hint: 'espacio marca, enter confirma',
+        instructions: false,
+        choices: index
+          .filter((item) => item.name !== 'utils')
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((item) => ({
+            title: `${item.name}  ${item.description ?? ''}`.trim(),
+            value: item.name,
+          })),
+      },
+      { onCancel: () => process.exit(1) },
+    )
+    selected = picked.components ?? []
+  }
+
+  await add(['utils', ...selected], { cwd, yes: options.yes, skipInstall: options.skipInstall })
+  console.log(`${kleur.green('✔')} Listo. Cualquier otro: ${kleur.cyan('farma-system add <nombre>')}`)
 }

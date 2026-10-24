@@ -1,0 +1,13 @@
+{
+  "name": "typing-indicator",
+  "type": "ui",
+  "description": "Burbuja \"Escribiendo...\" con animación Lottie de puntos; texto y nombre del emisor configurables.",
+  "files": [
+    { "path": "TypingIndicator.tsx" },
+    { "path": "TypingIndicator.types.ts" },
+    { "path": "index.ts" },
+    { "path": "lottie/dots-loading.json", "type": "asset" }
+  ],
+  "dependencies": ["lottie-react-native"],
+  "registryDependencies": ["utils", "text"]
+}

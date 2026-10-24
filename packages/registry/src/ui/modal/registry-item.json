@@ -1,0 +1,36 @@
+{
+  "name": "modal",
+  "type": "ui",
+  "description": "Modal controlado (normal, compacto, fullscreen, feedback, éxito con animación) + capa opcional ModalHost/modal.show()/useModal().",
+  "files": [
+    { "path": "Modal.tsx" },
+    { "path": "Modal.types.ts" },
+    { "path": "Modal.constants.ts" },
+    { "path": "ModalSuccessAnimated.tsx" },
+    { "path": "ModalHost.tsx" },
+    { "path": "components/CompactModal/CompactModal.tsx" },
+    { "path": "components/ModalActions/ModalActions.tsx" },
+    { "path": "components/ModalContent/ModalContent.tsx" },
+    { "path": "components/ModalFeedBack/ModalFeedBack.tsx" },
+    { "path": "components/ModalFullScreen/ModalFullScreen.tsx" },
+    { "path": "components/ModalNormal/ModalNormal.tsx" },
+    { "path": "components/ModalSuccess/ModalSuccess.tsx" },
+    { "path": "index.ts" },
+    { "path": "lottie/success-animation.json", "type": "asset" }
+  ],
+  "dependencies": ["react-native-reanimated", "react-native-safe-area-context", "expo-status-bar", "lottie-react-native"],
+  "registryDependencies": [
+    "utils",
+    "tokens",
+    "dimensions",
+    "store",
+    "text",
+    "icon",
+    "button",
+    "featured-icon",
+    "button-section-layout",
+    "animated-layout",
+    "safe-area-view",
+    "portal"
+  ]
+}

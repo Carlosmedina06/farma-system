@@ -1,0 +1,8 @@
+{
+  "name": "detail-card",
+  "type": "ui",
+  "description": "Tarjeta de detalle con título, acción (lápiz o textLink), lista de ítems ListBold (con leyenda 'Sin costo' opcional), skeleton de carga y slot de pie.",
+  "files": [{ "path": "DetailCard.tsx" }, { "path": "DetailCard.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "button", "icon", "list", "shimmer-skeleton", "text"]
+}

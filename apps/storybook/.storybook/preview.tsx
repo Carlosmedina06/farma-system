@@ -3,9 +3,12 @@ import './fonts.css'
 
 import type { Preview } from '@storybook/react-native-web-vite'
 import { View } from 'react-native'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { SafeAreaInsetsContext, SafeAreaProvider } from 'react-native-safe-area-context'
 
 import { PortalHost } from '@farma/registry/ui/portal'
+import { FeedbackScreenHost } from '@farma/registry/ui/feedback-screen'
+import { ModalHost } from '@farma/registry/ui/modal'
+import { OptionModalHost } from '@farma/registry/ui/option-modal'
 import { ToastHost } from '@farma/registry/ui/toast'
 
 /** Viewports de dispositivos para ver los componentes como en la app. */
@@ -32,6 +35,8 @@ const MOBILE_VIEWPORTS = {
   },
 }
 
+const IPHONE_15_INSETS = { top: 59, right: 0, bottom: 34, left: 0 }
+
 const preview: Preview = {
   parameters: {
     layout: 'fullscreen',
@@ -45,13 +50,20 @@ const preview: Preview = {
   },
   decorators: [
     (Story) => (
-      <SafeAreaProvider>
-        <View className="flex-1 bg-white p-4">
-          <Story />
-        </View>
-        <PortalHost />
-        <ToastHost topOffset={60} />
-      </SafeAreaProvider>
+      <View style={{ flex: 1, height: '100%' }}>
+        <SafeAreaProvider>
+          <SafeAreaInsetsContext.Provider value={IPHONE_15_INSETS}>
+            <View className="flex-1 bg-white p-4">
+              <Story />
+            </View>
+            <ModalHost />
+            <OptionModalHost />
+            <FeedbackScreenHost />
+            <PortalHost />
+            <ToastHost topOffset={IPHONE_15_INSETS.top + 16} />
+          </SafeAreaInsetsContext.Provider>
+        </SafeAreaProvider>
+      </View>
     ),
   ],
 }

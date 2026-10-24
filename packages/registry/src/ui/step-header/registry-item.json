@@ -1,0 +1,14 @@
+{
+  "name": "step-header",
+  "type": "ui",
+  "description": "Cabecera de pasos controlada (steps + activeStep) con círculos animados, check en pasos completados y botón volver opcional.",
+  "files": [
+    { "path": "StepHeader.tsx" },
+    { "path": "StepHeader.types.ts" },
+    { "path": "components/AnimatedCircle.tsx" },
+    { "path": "components/AnimatedCircle.types.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["utils", "icon", "text"]
+}

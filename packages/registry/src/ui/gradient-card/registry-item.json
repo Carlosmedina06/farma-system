@@ -1,0 +1,8 @@
+{
+  "name": "gradient-card",
+  "type": "ui",
+  "description": "Tarjeta con fondo degradado horizontal (colores configurables), animada y opcionalmente presionable.",
+  "files": [{ "path": "GradientCard.tsx" }, { "path": "GradientCard.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "animated-layout", "linear-gradient"]
+}

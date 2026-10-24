@@ -1,0 +1,5 @@
+export { TextWithBold } from './TextWithBold'
+export { ParseText } from './ParseText/ParseText'
+export { findBoldText, regexBoldText, removeBoldSimbol, splitBoldText, splitRegularText } from './TextWithBold.utils'
+export { TextAlignMapper } from './TextWithBold.types'
+export type { ParseTextProps, TextAlign, TextWithBoldProps } from './TextWithBold.types'

@@ -1,0 +1,8 @@
+{
+  "name": "empty-state",
+  "type": "ui",
+  "description": "Estado vacío con slot de ilustración, título y texto secundario (a11y agrupada).",
+  "files": [{ "path": "EmptyState.tsx" }, { "path": "EmptyState.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "text", "screen-layout"]
+}

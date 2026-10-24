@@ -1,0 +1,15 @@
+{
+  "name": "selected-files-panel",
+  "type": "ui",
+  "description": "Panel con carrusel de archivos seleccionados (miniatura PDF/imagen/genérica, quitar, skeleton) y botón de acción.",
+  "files": [
+    { "path": "SelectedFilesPanel.tsx" },
+    { "path": "SelectedFilesPanel.types.ts" },
+    { "path": "components/SelectedFilesPreview.tsx" },
+    { "path": "components/PdfIcon.tsx" },
+    { "path": "files.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-svg"],
+  "registryDependencies": ["utils", "button", "icon", "text", "animated-layout", "shimmer-skeleton"]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "app-refresh-control",
+  "type": "ui",
+  "description": "RefreshControl con los colores del DS (azul primario por defecto, sobreescribible por props).",
+  "files": [{ "path": "AppRefreshControl.tsx" }, { "path": "AppRefreshControl.types.ts" }, { "path": "index.ts" }],
+  "dependencies": []
+}

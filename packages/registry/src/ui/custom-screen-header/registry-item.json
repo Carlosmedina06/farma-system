@@ -1,0 +1,8 @@
+{
+  "name": "custom-screen-header",
+  "type": "ui",
+  "description": "Cabecera de pantalla con botón volver (y back de Android), título o slot de logo, acciones con badge, slot derecho y slot subHeader.",
+  "files": [{ "path": "CustomScreenHeader.tsx" }, { "path": "CustomScreenHeader.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["@react-native-community/hooks"],
+  "registryDependencies": ["utils", "icon", "text"]
+}

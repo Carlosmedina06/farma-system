@@ -1,0 +1,8 @@
+{
+  "name": "dropdown",
+  "type": "ui",
+  "description": "Selector tipo input que abre un bottom sheet con la lista de opciones, búsqueda opcional, renderItem/filtro personalizables y formatLabel.",
+  "files": [{ "path": "Dropdown.tsx" }, { "path": "DropdownItem.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["@react-native-community/hooks", "react-native-safe-area-context"],
+  "registryDependencies": ["utils", "icon", "text", "input", "search", "bottom-sheet"]
+}

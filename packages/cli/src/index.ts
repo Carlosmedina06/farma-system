@@ -11,7 +11,7 @@ const program = new Command()
 
 program
   .command('init')
-  .description('Crea farma.json e instala las utilidades base')
+  .description('Crea farma.json y deja elegir qué componentes instalar')
   .option('-c, --cwd <path>', 'directorio del proyecto', process.cwd())
   .option('-r, --registry <spec>', 'registry (local:<ruta> o npm:<paquete>)')
   .option('-y, --yes', 'usar valores por defecto sin preguntar')
@@ -20,8 +20,8 @@ program
 
 program
   .command('add')
-  .description('Copia uno o más componentes (y sus dependencias) al proyecto')
-  .argument('<names...>', 'nombres de los componentes')
+  .description('Copia cualquier componente del registry (y sus dependencias) al proyecto')
+  .argument('<names...>', 'nombres, como en `farma-system list` (button, modal, toast…)')
   .option('-c, --cwd <path>', 'directorio del proyecto', process.cwd())
   .option('-o, --overwrite', 'sobrescribir archivos existentes sin preguntar')
   .option('-y, --yes', 'no preguntar; omite archivos que ya existen salvo con --overwrite')

@@ -1,8 +1,8 @@
 {
   "name": "toast",
   "type": "ui",
-  "description": "API imperativa opcional: <ToastHost /> + toast.show() sobre react-native-toast-message.",
+  "description": "Toast flotante. <ToastHost /> + toast.show(), sin depender del snackbar.",
   "files": [{ "path": "toast.tsx" }, { "path": "index.ts" }],
-  "dependencies": ["react-native-toast-message"],
-  "registryDependencies": ["snackbar"]
+  "dependencies": ["react-native-toast-message", "tailwind-variants"],
+  "registryDependencies": ["utils", "icon", "text"]
 }

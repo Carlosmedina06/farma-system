@@ -1,8 +1,0 @@
-{
-  "name": "snackbar-inline",
-  "type": "ui",
-  "description": "Banner animado y controlado (open/onDismiss): conectividad, avisos persistentes.",
-  "files": [{ "path": "InlineSnackbar.tsx" }, { "path": "index.ts" }],
-  "dependencies": ["react-native-reanimated", "react-native-worklets", "react-native-safe-area-context"],
-  "registryDependencies": ["icon", "text"]
-}

@@ -1,0 +1,13 @@
+{
+  "name": "dots-dropdown",
+  "type": "ui",
+  "description": "Botón de tres puntos que abre un menú contextual animado (controlado o no) posicionado junto al disparador.",
+  "files": [
+    { "path": "DotsDropdown.tsx" },
+    { "path": "DotsDropdown.types.ts" },
+    { "path": "utils/computeDropdownPosition.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["utils", "tokens", "icon", "text"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "option-modal",
+  "type": "ui",
+  "description": "Modal con opciones (radio) y opción de texto libre configurable. Controlado + capa opcional OptionModalHost/useOptionModal().",
+  "files": [
+    { "path": "OptionModal.tsx" },
+    { "path": "OptionModal.types.ts" },
+    { "path": "OptionModal.constants.ts" },
+    { "path": "OptionModalHost.tsx" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["utils", "store", "button", "featured-icon", "input", "radio", "text", "portal"]
+}

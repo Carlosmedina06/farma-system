@@ -1,0 +1,13 @@
+{
+  "name": "select-menu",
+  "type": "ui",
+  "description": "Select con trigger tipo input y popover animado anclado (se abre arriba si no hay espacio).",
+  "files": [
+    { "path": "SelectMenu.tsx" },
+    { "path": "SelectMenu.types.ts" },
+    { "path": "selectMenuPosition.ts" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["utils", "tokens", "icon", "text"]
+}

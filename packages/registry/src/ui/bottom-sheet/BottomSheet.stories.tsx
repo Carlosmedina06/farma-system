@@ -48,7 +48,11 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
-export const Playground: Story = {}
+export const Playground: Story = {
+  args: {
+    full: true
+  }
+}
 
 export const SinTitulo: Story = { args: { title: undefined, divider: true, closeControl: 'pill' } }
 

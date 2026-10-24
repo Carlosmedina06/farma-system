@@ -1,0 +1,13 @@
+{
+  "name": "loading-view",
+  "type": "ui",
+  "description": "Pantalla de carga con animación Lottie de puntos (Spinner en Android), título y descripción.",
+  "files": [
+    { "path": "LoadingView.tsx" },
+    { "path": "LoadingView.types.ts" },
+    { "path": "index.ts" },
+    { "path": "lottie/dots-loader.json", "type": "asset" }
+  ],
+  "dependencies": ["lottie-react-native"],
+  "registryDependencies": ["utils", "dimensions", "text", "spinner"]
+}

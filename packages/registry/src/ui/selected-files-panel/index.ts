@@ -1,0 +1,6 @@
+export { default as SelectedFilesPanel } from './SelectedFilesPanel'
+export { default as SelectedFilesPreview } from './components/SelectedFilesPreview'
+export { PdfIcon } from './components/PdfIcon'
+export type { PdfIconProps } from './components/PdfIcon'
+export { getFileExtension, getFileNameWithoutExtension } from './files'
+export type { SelectedFile, SelectedFilesPanelProps, SelectedFilesPreviewProps } from './SelectedFilesPanel.types'

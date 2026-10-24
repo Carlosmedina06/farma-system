@@ -1,0 +1,15 @@
+{
+  "name": "chat-bubble",
+  "type": "ui",
+  "description": "Burbuja de chat presentacional (incoming/outgoing) con hora, check de leído, nombre del emisor, link, adjunto (imagen/pdf/archivo con slot de render), skeleton de carga e indicador de escritura.",
+  "files": [
+    { "path": "ChatBubble.tsx" },
+    { "path": "ChatBubble.types.ts" },
+    { "path": "components/AttachmentPreview.tsx" },
+    { "path": "components/LoadingImageSkeleton.tsx" },
+    { "path": "components/MessageStatusIcons.tsx" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-svg"],
+  "registryDependencies": ["utils", "text", "icon", "shimmer-skeleton", "typing-indicator"]
+}

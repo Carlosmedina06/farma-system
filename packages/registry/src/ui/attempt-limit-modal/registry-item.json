@@ -1,0 +1,8 @@
+{
+  "name": "attempt-limit-modal",
+  "type": "ui",
+  "description": "Overlay de pantalla completa (controlado) con FeaturedIcon, título, descripción y botón; p. ej. límite de intentos alcanzado.",
+  "files": [{ "path": "AttemptLimitModal.tsx" }, { "path": "AttemptLimitModal.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["expo-status-bar", "react-native-safe-area-context", "react-native-reanimated"],
+  "registryDependencies": ["button", "featured-icon", "text", "icon"]
+}

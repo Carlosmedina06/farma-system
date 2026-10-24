@@ -1,17 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react-native-web-vite'
 import { Pressable, View } from 'react-native'
 
-import { SnackbarType } from '../snackbar/Snackbar.types'
 import Text from '../text/Text'
-import { toast } from './toast'
+import { ToastType, toast } from './toast'
 
-/** El `<ToastHost />` está montado una vez en el decorator global de Storybook (como en el root de la app). */
 function Demo() {
   const buttons = [
-    { label: 'Default', type: SnackbarType.Default },
-    { label: 'Éxito', type: SnackbarType.Success },
-    { label: 'Error', type: SnackbarType.Error },
-    { label: 'Neutro con check', type: SnackbarType.DefaultSuccess },
+    { label: 'Default', type: ToastType.Default },
+    { label: 'Éxito', type: ToastType.Success },
+    { label: 'Error', type: ToastType.Error },
+    { label: 'Neutro con check', type: ToastType.DefaultSuccess },
   ]
 
   return (

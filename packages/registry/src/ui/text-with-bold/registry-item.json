@@ -1,0 +1,14 @@
+{
+  "name": "text-with-bold",
+  "type": "ui",
+  "description": "Texto con segmentos en negrita marcados como #**…**# (ParseText + utilidades de parseo).",
+  "files": [
+    { "path": "TextWithBold.tsx" },
+    { "path": "TextWithBold.types.ts" },
+    { "path": "TextWithBold.utils.ts" },
+    { "path": "ParseText/ParseText.tsx" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": [],
+  "registryDependencies": ["utils", "text"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "tab-bar",
+  "type": "ui",
+  "description": "Barra de pestañas inferior con indicador animado (reanimated), iconos activo/inactivo por ruta y badges por props. Tipada estructuralmente para usarse como `tabBar` de @react-navigation/bottom-tabs sin depender de él.",
+  "files": [
+    { "path": "TabBar.tsx" },
+    { "path": "TabBar.types.ts" },
+    { "path": "components/TabItem.tsx" },
+    { "path": "components/TabIcon.tsx" },
+    { "path": "components/TabLabel.tsx" },
+    { "path": "index.ts" }
+  ],
+  "dependencies": ["react-native-reanimated"],
+  "registryDependencies": ["utils", "tokens", "dimensions", "text", "icon"]
+}

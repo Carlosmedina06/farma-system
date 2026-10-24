@@ -1,0 +1,8 @@
+{
+  "name": "header-with-see-more",
+  "type": "ui",
+  "description": "Encabezado de sección con título y acción \"ver más\" opcional con ícono.",
+  "files": [{ "path": "HeaderWithSeeMore.tsx" }, { "path": "HeaderWithSeeMore.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "text", "icon"]
+}

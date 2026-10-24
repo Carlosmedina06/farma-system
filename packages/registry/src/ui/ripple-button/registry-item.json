@@ -1,0 +1,8 @@
+{
+  "name": "ripple-button",
+  "type": "ui",
+  "description": "Pressable con efecto ripple nativo en Android y resaltado al presionar en iOS. Envuelve un único hijo.",
+  "files": [{ "path": "RippleButtonEffect.tsx" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils"]
+}

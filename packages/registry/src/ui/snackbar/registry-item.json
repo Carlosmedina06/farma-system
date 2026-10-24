@@ -1,8 +1,8 @@
 {
   "name": "snackbar",
   "type": "ui",
-  "description": "Snackbar presentacional (default, success, error). Sin estado global: usalo solo o con toast.",
-  "files": [{ "path": "Snackbar.tsx" }, { "path": "Snackbar.types.ts" }, { "path": "index.ts" }],
-  "dependencies": ["tailwind-variants"],
-  "registryDependencies": ["utils", "icon", "text"]
+  "description": "Banner a ancho de pantalla que cubre la status bar, con el texto centrado.",
+  "files": [{ "path": "Snackbar.tsx" }, { "path": "index.ts" }],
+  "dependencies": ["react-native-reanimated", "react-native-worklets", "react-native-safe-area-context"],
+  "registryDependencies": ["icon", "text", "portal"]
 }

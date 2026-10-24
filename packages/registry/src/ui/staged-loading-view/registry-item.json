@@ -1,0 +1,8 @@
+{
+  "name": "staged-loading-view",
+  "type": "ui",
+  "description": "Pantalla de carga por etapas con SteppedProgressBar y título/descripción de la etapa activa.",
+  "files": [{ "path": "StagedLoadingView.tsx" }, { "path": "StagedLoadingView.types.ts" }, { "path": "index.ts" }],
+  "dependencies": ["expo-status-bar"],
+  "registryDependencies": ["screen-layout", "animated-layout", "progress", "text"]
+}

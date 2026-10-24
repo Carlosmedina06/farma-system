@@ -1,0 +1,8 @@
+{
+  "name": "action-sheet",
+  "type": "ui",
+  "description": "Bottom sheet de acciones genérico: lista de opciones (icono, label, descripción, onPress) con ripple, nota informativa y pie opcional.",
+  "files": [{ "path": "ActionSheet.tsx" }, { "path": "ActionSheet.types.ts" }, { "path": "index.ts" }],
+  "dependencies": [],
+  "registryDependencies": ["utils", "dimensions", "bottom-sheet", "icon", "ripple-button", "text"]
+}

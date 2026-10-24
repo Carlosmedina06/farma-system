@@ -2,9 +2,7 @@ import { beforeEach, describe, expect, it, jest } from '@jest/globals'
 import { fireEvent, render } from '@testing-library/react-native'
 import Toast from 'react-native-toast-message'
 
-import { SnackbarType } from '@farma/registry/ui/snackbar'
-
-import { ToastHost, showToast, toast } from '../toast'
+import { ToastHost, ToastType, showToast, toast } from '../toast'
 
 jest.mock('react-native-toast-message', () => {
   const { View } = require('react-native')
@@ -27,12 +25,12 @@ describe('toast', () => {
     jest.clearAllMocks()
   })
 
-  it('toast.show llama a Toast.show con los props del Snackbar', () => {
-    toast.show({ text: 'Hola', type: SnackbarType.Success, withIcon: true })
+  it('toast.show llama a Toast.show con el texto y el tipo', () => {
+    toast.show({ text: 'Hola', type: ToastType.Success, withIcon: true })
 
     expect(Toast.show).toHaveBeenCalledWith({
-      type: SnackbarType.Success,
-      props: { text: 'Hola', type: SnackbarType.Success, withIcon: true },
+      type: ToastType.Success,
+      props: { text: 'Hola', type: ToastType.Success, withIcon: true },
       position: 'top',
       visibilityTime: 4000,
       autoHide: true,
@@ -44,11 +42,11 @@ describe('toast', () => {
     showToast({ text: 'Hola', duration: 1000, position: 'bottom' })
 
     expect(Toast.show).toHaveBeenCalledWith(
-      expect.objectContaining({ type: SnackbarType.Default, visibilityTime: 1000, position: 'bottom' }),
+      expect.objectContaining({ type: ToastType.Default, visibilityTime: 1000, position: 'bottom' }),
     )
   })
 
-  it('no pasa duration ni position al Snackbar', () => {
+  it('no pasa duration ni position a la vista', () => {
     toast.show({ text: 'Hola', duration: 1000, position: 'bottom' })
 
     const { props } = (Toast.show as jest.Mock).mock.calls[0]![0] as { props: Record<string, unknown> }
@@ -56,11 +54,11 @@ describe('toast', () => {
     expect(props).not.toHaveProperty('position')
   })
 
-  it('ToastHost pasa los offsets y el Snackbar se cierra con Toast.hide', () => {
+  it('ToastHost pasa los offsets y se cierra con Toast.hide', () => {
     const { getByTestId } = render(<ToastHost bottomOffset={40} topOffset={120} />)
 
     expect(getByTestId('toast-root').props).toMatchObject({ topOffset: 120, bottomOffset: 40 })
-    fireEvent.press(getByTestId('snackbar'))
+    fireEvent.press(getByTestId('toast'))
     expect(Toast.hide).toHaveBeenCalled()
   })
 })
