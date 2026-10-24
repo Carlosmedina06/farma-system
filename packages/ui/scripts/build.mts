@@ -102,6 +102,7 @@ for (const item of items) {
 }
 Object.assign(exports, {
   './illustrations/*': { types: './lib/illustrations/*.d.ts', default: './lib/illustrations/*.js' },
+  './icons/misc/*': { types: './lib/ui/icon/misc/*.d.ts', default: './lib/ui/icon/misc/*.js' },
   './icons/*': { types: './lib/icons/*.d.ts', default: './lib/icons/*.js' },
   './animations/*': './assets/animations/*',
   './fonts/*': './assets/fonts/*',
@@ -111,13 +112,18 @@ Object.assign(exports, {
 
 const pkgPath = path.join(root, 'package.json')
 const pkg = JSON.parse(await readFile(pkgPath, 'utf8'))
+// `--local`: versión única por empaquetado (0.1.0-local.<fecha>) para que yarn no reutilice su caché
+// al instalar desde el tarball. Al publicar en el npm privado se usa la versión tal cual.
+const baseVersion = String(pkg.version).replace(/-local\.\d+$/, '')
+const stamp = new Date().toISOString().replace(/\D/g, '').slice(0, 14)
+const version = process.argv.includes('--local') ? `${baseVersion}-local.${stamp}` : baseVersion
 const sortedPeers = [...peers].sort()
 await writeFile(
   pkgPath,
   JSON.stringify(
     {
       name: pkg.name,
-      version: pkg.version,
+      version,
       description: pkg.description,
       license: pkg.license,
       sideEffects: false,
@@ -130,7 +136,7 @@ await writeFile(
       peerDependenciesMeta: Object.fromEntries(
         sortedPeers.filter((dep) => !REQUIRED_PEERS.includes(dep)).map((dep) => [dep, { optional: true }]),
       ),
-      scripts: { build: 'tsx scripts/build.mts', pack: 'pnpm build && rm -rf dist && pnpm pack --pack-destination dist && mv dist/farma-ui-*.tgz dist/farma-ui.tgz' },
+      scripts: { build: 'tsx scripts/build.mts', pack: 'tsx scripts/build.mts --local && rm -rf dist && pnpm pack --pack-destination dist && mv dist/farma-ui-*.tgz dist/farma-ui.tgz' },
       devDependencies: pkg.devDependencies,
     },
     null,
