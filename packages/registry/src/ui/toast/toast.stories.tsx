@@ -23,6 +23,21 @@ function Demo() {
           <Text className="text-center text-white">toast.show({label})</Text>
         </Pressable>
       ))}
+      <Pressable
+        className="rounded-md bg-primary-600 p-3"
+        onPress={() =>
+          toast.show({
+            text: 'Margen 16px e ícono de 18px',
+            type: ToastType.Default,
+            withIcon: true,
+            withCloseIcon: true,
+            iconSize: 18,
+            className: 'mx-padding-xl',
+          })
+        }
+      >
+        <Text className="text-center text-white">toast.show(className + iconSize)</Text>
+      </Pressable>
     </View>
   )
 }

@@ -21,7 +21,11 @@ export type ShowToastProps = {
   withIcon?: boolean
   withCloseIcon?: boolean
   icon?: IconName
+  /** Tamaño del ícono de `withIcon`. Default 20. */
+  iconSize?: number
   closeLabel?: string
+  /** Clases extra para el contenedor (ej. otro margen lateral: `mx-padding-xl`). */
+  className?: string
   position?: 'top' | 'bottom'
   /** Milisegundos visible. Default 4000. */
   duration?: number
@@ -56,11 +60,13 @@ function ToastView({
   withIcon = false,
   withCloseIcon = false,
   icon,
+  iconSize = 20,
   closeLabel = 'Cerrar',
+  className,
 }: Omit<ShowToastProps, 'position' | 'duration'>) {
   return (
     <Pressable
-      className={cn(toastVariants({ type }))}
+      className={cn(toastVariants({ type }), className)}
       style={{
         shadowColor: '#00000017',
         shadowOffset: { width: 0, height: 2 },
@@ -72,7 +78,7 @@ function ToastView({
       onPress={() => Toast.hide()}
     >
       <View className="flex-shrink flex-row items-center gap-2">
-        {withIcon && <Icon color="#FFFFFF" name={icon ?? iconMapper[type]} size={20} />}
+        {withIcon && <Icon color="#FFFFFF" name={icon ?? iconMapper[type]} size={iconSize} />}
         <Text className="flex-shrink text-white" type="body2">
           {text}
         </Text>

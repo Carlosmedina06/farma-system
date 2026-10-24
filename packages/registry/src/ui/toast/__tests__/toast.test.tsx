@@ -2,6 +2,8 @@ import { beforeEach, describe, expect, it, jest } from '@jest/globals'
 import { fireEvent, render } from '@testing-library/react-native'
 import Toast from 'react-native-toast-message'
 
+import { Icon } from '@farma/registry/ui/icon'
+
 import { ToastHost, ToastType, showToast, toast } from '../toast'
 
 jest.mock('react-native-toast-message', () => {
@@ -11,7 +13,7 @@ jest.mock('react-native-toast-message', () => {
       const Default = config.Default
       return (
         <View testID="toast-root" {...{ topOffset, bottomOffset }}>
-          <Default props={{ text: 'desde el host', type: 'Default' }} />
+          <Default props={(globalThis as any).__toastViewProps ?? { text: 'desde el host', type: 'Default' }} />
         </View>
       )
     },
@@ -60,5 +62,22 @@ describe('toast', () => {
     expect(getByTestId('toast-root').props).toMatchObject({ topOffset: 120, bottomOffset: 40 })
     fireEvent.press(getByTestId('toast'))
     expect(Toast.hide).toHaveBeenCalled()
+  })
+
+  it('acepta className para el contenedor e iconSize para el ícono', () => {
+    ;(globalThis as any).__toastViewProps = {
+      text: 'Eliminaste un producto',
+      type: ToastType.Default,
+      withIcon: true,
+      iconSize: 18,
+      className: 'mx-padding-xl',
+    }
+    const { getByTestId, UNSAFE_getByType } = render(<ToastHost />)
+    delete (globalThis as any).__toastViewProps
+
+    const className = getByTestId('toast').props.className as string
+    expect(className).toContain('mx-padding-xl')
+    expect(className).not.toContain('mx-padding-4xl')
+    expect(UNSAFE_getByType(Icon).props.size).toBe(18)
   })
 })

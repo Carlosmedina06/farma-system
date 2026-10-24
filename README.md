@@ -134,7 +134,7 @@ igual que cuando se publique. Para actualizar: `pnpm ui:pack` y de nuevo el `yar
 @import 'tailwindcss';
 @import 'uniwind';
 @import '@farma/ui/theme.css';            /* tokens del DS */
-@source '../node_modules/@farma/ui/lib';  /* que Uniwind vea las clases de los componentes */
+@source './node_modules/@farma/ui/lib';   /* relativo a global.css (en la raíz de la app): que Uniwind vea las clases del paquete */
 ```
 
 ```jsonc
