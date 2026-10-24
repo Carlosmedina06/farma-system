@@ -1,5 +1,6 @@
 /**
- * Genera la fuente farmaIcons SOLO con los glifos que se usan:
+ * Genera la fuente farmaIcons del DS. Con `icons-src/config.json` → `subset: false` trae TODOS los glifos.
+ * Con `subset: true` trae SOLO los glifos que se usan:
  *  - los que usan los componentes del registry (escaneo de src/),
  *  - los que usa la app (`--app <ruta>`; se guardan en icons-src/used-app.json para no depender de la app),
  *  - los que manda el backend (icons-src/keep-backend.json, a mano).
@@ -53,12 +54,15 @@ const backend: { icons: string[] } = JSON.parse(await readFile(path.join(iconsSr
 const unknown = backend.icons.filter((name) => !(name in fullMap))
 if (unknown.length > 0) throw new Error(`keep-backend.json tiene íconos que no existen en la fuente: ${unknown.join(', ')}`)
 
-const keep = [...new Set([...registryIcons, ...appIcons, ...backend.icons])].sort()
+const config: { subset: boolean } = JSON.parse(await readFile(path.join(iconsSrc, 'config.json'), 'utf8'))
+const keep = config.subset
+  ? [...new Set([...registryIcons, ...appIcons, ...backend.icons])].sort()
+  : Object.keys(fullMap).sort()
 const subsetMap = Object.fromEntries(keep.map((name) => [name, fullMap[name]!]))
 const text = String.fromCodePoint(...Object.values(subsetMap))
 
 const full = await readFile(path.join(iconsSrc, 'farmaIcons.full.ttf'))
-const subset = await subsetFont(full, text, { targetFormat: 'truetype' })
+const subset = config.subset ? await subsetFont(full, text, { targetFormat: 'truetype' }) : full
 await writeFile(path.join(root, 'assets/fonts/farmaIcons.ttf'), subset)
 await writeFile(path.join(root, 'src/ui/icon/glyph-map.json'), JSON.stringify(subsetMap, null, 2) + '\n')
 
@@ -71,7 +75,7 @@ for await (const file of glob('**/*.stories.tsx', { cwd: path.join(root, 'src') 
 }
 
 console.log(
-  `icons: ${keep.length}/${Object.keys(fullMap).length} glifos ` +
+  `icons: ${keep.length}/${Object.keys(fullMap).length} glifos${config.subset ? '' : ' (fuente completa)'} ` +
     `(registry ${registryIcons.size}, app ${appIcons.length}, backend ${backend.icons.length}) · ` +
     `${Math.round(full.length / 1024)} KB → ${Math.round(subset.length / 1024)} KB`,
 )

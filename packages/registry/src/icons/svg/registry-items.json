@@ -30,36 +30,6 @@
     "registryDependencies": []
   },
   {
-    "name": "icon-faceid",
-    "type": "icon",
-    "description": "Faceid (antes <Icon name=\"misc-faceid\">)",
-    "files": [
-      {
-        "path": "Faceid.tsx",
-        "type": "code"
-      }
-    ],
-    "dependencies": [
-      "react-native-svg"
-    ],
-    "registryDependencies": []
-  },
-  {
-    "name": "icon-fingerprint",
-    "type": "icon",
-    "description": "Fingerprint (antes <Icon name=\"misc-fingerprint\">)",
-    "files": [
-      {
-        "path": "Fingerprint.tsx",
-        "type": "code"
-      }
-    ],
-    "dependencies": [
-      "react-native-svg"
-    ],
-    "registryDependencies": []
-  },
-  {
     "name": "icon-logo-farmatouch",
     "type": "icon",
     "description": "LogoFarmatouch",
@@ -126,21 +96,6 @@
     "files": [
       {
         "path": "UserSvg.tsx",
-        "type": "code"
-      }
-    ],
-    "dependencies": [
-      "react-native-svg"
-    ],
-    "registryDependencies": []
-  },
-  {
-    "name": "icon-walking-01",
-    "type": "icon",
-    "description": "Walking01 (antes <Icon name=\"misc-walking-01\">)",
-    "files": [
-      {
-        "path": "Walking01.tsx",
         "type": "code"
       }
     ],

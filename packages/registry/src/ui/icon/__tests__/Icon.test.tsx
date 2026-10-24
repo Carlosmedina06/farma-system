@@ -109,3 +109,21 @@ describe('Icon con nombres fuera de la fuente', () => {
     expect(isIconName(undefined)).toBe(false)
   })
 })
+
+describe('Icon con íconos misc-*', () => {
+  it('dibuja el SVG misc con tamaño y color', () => {
+    const { UNSAFE_root } = render(<Icon color="#123456" name="misc-apple" size={32} />)
+
+    const svg = UNSAFE_root.findAll((node: any) => node.props?.width === 32 && node.props?.color === '#123456')
+    expect(svg.length).toBeGreaterThan(0)
+    const FarmaIcon = require('../FarmaIcon').default
+    expect(FarmaIcon.mock.calls.some((call: any[]) => call[0].name === 'misc-apple')).toBe(false)
+  })
+
+  it('isIconName reconoce claves misc-*', () => {
+    const { isIconName } = require('../Icon')
+
+    expect(isIconName('misc-visa-card')).toBe(true)
+    expect(isIconName('misc-no-existe')).toBe(false)
+  })
+})

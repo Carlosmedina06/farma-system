@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/mastercard-fill-card.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Rect, Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const MastercardFillCard = (props: SvgProps) => <Svg width={34} height={24} fill="none" viewBox="0 0 34 24" {...props}><Rect width={33} height={23} x={0.5} y={0.5} fill="white" rx={3.5} /><Rect width={33} height={23} x={0.5} y={0.5} stroke="#F2F4F7" rx={3.5} /><Path fill="#ED0006" fillRule="evenodd" d="M17.179 16.83a6.8 6.8 0 0 1-4.398 1.6c-3.745 0-6.781-3-6.781-6.7s3.036-6.7 6.78-6.7c1.679 0 3.215.603 4.399 1.6a6.8 6.8 0 0 1 4.398-1.6c3.745 0 6.781 3 6.781 6.7s-3.036 6.7-6.78 6.7a6.8 6.8 0 0 1-4.399-1.6" clipRule="evenodd" /><Path fill="#F9A000" fillRule="evenodd" d="M17.18 16.83a6.65 6.65 0 0 0 2.382-5.1c0-2.042-.925-3.87-2.383-5.1a6.8 6.8 0 0 1 4.399-1.6c3.744 0 6.78 3 6.78 6.7s-3.036 6.7-6.78 6.7a6.8 6.8 0 0 1-4.399-1.6" clipRule="evenodd" /><Path fill="#FF5E00" fillRule="evenodd" d="M17.179 16.83a6.65 6.65 0 0 0 2.382-5.1c0-2.042-.924-3.87-2.382-5.1a6.65 6.65 0 0 0-2.383 5.1c0 2.042.925 3.87 2.383 5.1" clipRule="evenodd" /></Svg>;
+export default MastercardFillCard;

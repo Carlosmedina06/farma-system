@@ -5,8 +5,11 @@ import { TextInput, View } from 'react-native'
 import Text from '../text/Text'
 import Icon, { type IconName } from './Icon'
 import glyphMap from './glyph-map.json'
+import { miscIcons } from './misc-icons'
 
-const NAMES = Object.keys(glyphMap) as IconName[]
+const GLYPHS = Object.keys(glyphMap) as IconName[]
+const MISC = Object.keys(miscIcons) as IconName[]
+const NAMES = [...GLYPHS, ...MISC]
 
 const meta = {
   title: 'Fundamentos/Icon',
@@ -20,15 +23,15 @@ type Story = StoryObj<typeof meta>
 
 export const Playground: Story = {}
 
-function Catalog() {
+function Catalog({ names }: { names: IconName[] }) {
   const [query, setQuery] = useState('')
-  const filtered = NAMES.filter((name) => name.includes(query.toLowerCase())).slice(0, 120)
+  const filtered = names.filter((name) => name.toLowerCase().includes(query.toLowerCase()))
 
   return (
     <View className="gap-3">
       <TextInput
         className="rounded-sm border border-gray-300 px-3 py-2"
-        placeholder={`Buscar entre ${NAMES.length} íconos…`}
+        placeholder={`Buscar entre ${names.length} íconos…`}
         value={query}
         onChangeText={setQuery}
       />
@@ -46,4 +49,11 @@ function Catalog() {
   )
 }
 
-export const Catalogo: Story = { render: () => <Catalog /> }
+/** Todos: glifos de la fuente + íconos SVG `misc-*`. Se usan igual: `<Icon name="…" />`. */
+export const Catalogo: Story = { render: () => <Catalog names={NAMES} /> }
+
+/** Los 1230 glifos de la fuente farmaIcons. */
+export const Fuente: Story = { render: () => <Catalog names={GLYPHS} /> }
+
+/** Íconos SVG `misc-*` (marcas, obras sociales, tarjetas…), con las mismas claves que app-mobile. */
+export const Misc: Story = { render: () => <Catalog names={MISC} /> }

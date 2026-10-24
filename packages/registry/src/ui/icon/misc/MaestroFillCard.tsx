@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/maestro-fill-card.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Rect, Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const MaestroFillCard = (props: SvgProps) => <Svg width={34} height={24} fill="none" viewBox="0 0 34 24" {...props}><Rect width={33} height={23} x={0.5} y={0.5} fill="white" rx={3.5} /><Rect width={33} height={23} x={0.5} y={0.5} stroke="#F2F4F7" rx={3.5} /><Path fill="#ED0006" d="M19.258 11.706c0 3.703-2.968 6.706-6.63 6.706-3.66 0-6.628-3.003-6.628-6.706S8.968 5 12.629 5s6.629 3.002 6.629 6.706" /><Path fill="#0099DF" d="M27.857 11.706c0 3.703-2.968 6.706-6.629 6.706S14.6 15.409 14.6 11.706 17.567 5 21.228 5s6.63 3.002 6.63 6.706" /><Path fill="#6C6BBD" fillRule="evenodd" d="M16.929 6.602a6.72 6.72 0 0 1 2.329 5.103 6.72 6.72 0 0 1-2.33 5.104 6.72 6.72 0 0 1-2.328-5.104c0-2.043.903-3.873 2.329-5.103" clipRule="evenodd" /></Svg>;
+export default MaestroFillCard;

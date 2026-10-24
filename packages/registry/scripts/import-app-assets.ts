@@ -128,15 +128,13 @@ for (const [file, text] of sources) {
 // 3. misc-icons: se usan por clave ('misc-visa'), no por ruta ----------------------------------------
 const miscText = sources.get(MISC_MAP) ?? ''
 const miscImports = new Map([...miscText.matchAll(/import (\w+) from 'assets\/([^']+?)(?:\.svg)?'/g)].map((m) => [m[1]!, m[2]!]))
-const miscKeys = new Map<string, string>() // archivo -> clave
+const miscEntries: { key: string; asset: string; usedBy: string[] }[] = []
 for (const [, key, variable] of miscText.matchAll(/'(misc-[\w-]+)':\s*(\w+)/g)) {
   const asset = miscImports.get(variable!)
   if (!asset) continue
-  miscKeys.set(asset, key!)
   const keyRegex = new RegExp(`['"\`]${key!.replace(/[-]/g, '\\-')}['"\`]`)
-  for (const [file, text] of sources) {
-    if (file !== MISC_MAP && keyRegex.test(text)) use(asset, file)
-  }
+  const users = [...sources].filter(([file, text]) => file !== MISC_MAP && keyRegex.test(text)).map(([file]) => file)
+  miscEntries.push({ key: key!, asset: asset.replace(/\.svg$/, ''), usedBy: users.sort() })
 }
 
 // 4. Generación --------------------------------------------------------------------------------------
@@ -166,7 +164,9 @@ for (const file of svgFiles.sort()) {
     continue
   }
 
-  const parts = asset.split('/').slice(1) // illustrations/kyc/ok | misc-icons/visa | icons/faceid | pharmacy-profile/logo
+  if (asset.startsWith('svg/misc-icons/')) continue // van dentro del item `icon` (ver abajo)
+
+  const parts = asset.split('/').slice(1) // illustrations/kyc/ok | icons/faceid | pharmacy-profile/logo
   const base = parts.at(-1)!
   let kind: 'illustration' | 'icon'
   let dir: string
@@ -178,7 +178,7 @@ for (const file of svgFiles.sort()) {
     itemName = ['illustration', ...group, base.replace(/^ilus-/, '')].map(kebab).join('-')
   } else {
     kind = 'icon'
-    dir = path.posix.join('icons', parts[0] === 'misc-icons' ? 'misc' : 'svg')
+    dir = path.posix.join('icons', 'svg')
     itemName = `icon-${kebab(base)}`
   }
 
@@ -192,25 +192,61 @@ for (const file of svgFiles.sort()) {
     : await transform(content, SVGR_CONFIG, { componentName: component, filePath: file })
   await writeFile(path.join(outDir, fileName), `// Generado desde app-mobile/${file} por scripts/import-app-assets.ts\n${code}`)
 
-  const miscKey = miscKeys.get(asset)
   add({
     dir,
     item: {
       name: itemName,
       type: kind,
-      description: miscKey ? `${component} (antes <Icon name="${miscKey}">)` : component,
+      description: component,
       files: [{ path: fileName, type: 'code' }],
       dependencies: ['react-native-svg'],
       registryDependencies: [],
     },
   })
-  assetsMap[miscKey ?? asset] = {
+  assetsMap[asset] = {
     item: itemName,
     import: `import ${component} from 'src/ds/${dir}/${component}'`,
     usedBy: users,
   }
   generated++
 }
+
+// misc-*: todos, con las mismas claves que app-mobile, dentro del item `icon` (<Icon name="misc-visa" />)
+const iconDir = path.join(srcDir, 'ui/icon')
+await rm(path.join(iconDir, 'misc'), { recursive: true, force: true })
+await mkdir(path.join(iconDir, 'misc'), { recursive: true })
+const miscLines: string[] = []
+for (const { key, asset, usedBy: users } of miscEntries.sort((a, b) => a.key.localeCompare(b.key))) {
+  const component = pascal(key.replace(/^misc-/, ''))
+  const file = `assets/${asset}.svg`
+  const code = await transform(await readFile(path.join(app, file), 'utf8'), SVGR_CONFIG, { componentName: component, filePath: file })
+  await writeFile(path.join(iconDir, 'misc', `${component}.tsx`), `// Generado desde app-mobile/${file} por scripts/import-app-assets.ts\n${code}`)
+  miscLines.push(`  '${key}': ${component},`)
+  assetsMap[key] = { item: 'icon', import: `<Icon name="${key}" />`, usedBy: users }
+}
+const miscComponents = miscEntries.map(({ key }) => pascal(key.replace(/^misc-/, ''))).sort()
+await writeFile(
+  path.join(iconDir, 'misc-icons.ts'),
+  [
+    '// Generado por scripts/import-app-assets.ts: íconos SVG `misc-*` con las mismas claves que app-mobile.',
+    ...miscComponents.map((c) => `import ${c} from './misc/${c}'`),
+    '',
+    'export const miscIcons = {',
+    ...miscLines,
+    '} as const',
+    '',
+    'export type MiscIconName = keyof typeof miscIcons',
+    '',
+  ].join('\n'),
+)
+const iconManifestPath = path.join(iconDir, 'registry-item.json')
+const iconManifest = JSON.parse(await readFile(iconManifestPath, 'utf8')) as RegistryItem
+iconManifest.files = [
+  ...iconManifest.files.filter((f) => f.type === 'asset' || !(f.path.startsWith('misc/') || f.path === 'misc-icons.ts')),
+  { path: 'misc-icons.ts', type: 'code' },
+  ...miscComponents.map((c) => ({ path: `misc/${c}.tsx`, type: 'code' as const })),
+]
+await writeFile(iconManifestPath, JSON.stringify(iconManifest, null, 2) + '\n')
 
 // Lottie: items solo-asset; la app los usa con require('assets/farma/animations/<archivo>')
 let animations = 0
@@ -249,4 +285,4 @@ const mapFile = path.resolve(root, '../../docs/assets-map.json')
 await mkdir(path.dirname(mapFile), { recursive: true })
 await writeFile(mapFile, JSON.stringify(Object.fromEntries(Object.entries(assetsMap).sort()), null, 2) + '\n')
 
-console.log(`assets: ${generated} SVG → TSX, ${animations} animaciones, mapa en ${path.relative(process.cwd(), mapFile)}`)
+console.log(`assets: ${generated} SVG → TSX, ${miscEntries.length} íconos misc en \`icon\`, ${animations} animaciones, mapa en ${path.relative(process.cwd(), mapFile)}`)

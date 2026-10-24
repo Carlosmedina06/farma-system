@@ -112,8 +112,8 @@
     ]
   },
   "misc-american-express": {
-    "item": "icon-american-express",
-    "import": "import AmericanExpress from 'src/ds/icons/misc/AmericanExpress'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-american-express\" />",
     "usedBy": [
       "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx",
       "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
@@ -122,23 +122,33 @@
       "src/utils/text/strings.ts"
     ]
   },
+  "misc-american-express-card": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-american-express-card\" />",
+    "usedBy": []
+  },
+  "misc-american-express-fill-card": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-american-express-fill-card\" />",
+    "usedBy": []
+  },
   "misc-apple": {
-    "item": "icon-apple",
-    "import": "import Apple from 'src/ds/icons/misc/Apple'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-apple\" />",
     "usedBy": [
       "src/screens/Auth/components/AuthSocialButton/AuthSocialButton.tsx"
     ]
   },
   "misc-bell-icon-red": {
-    "item": "icon-bell-icon-red",
-    "import": "import BellIconRed from 'src/ds/icons/misc/BellIconRed'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-bell-icon-red\" />",
     "usedBy": [
       "src/screens/Home/components/Header/Header.hook.tsx"
     ]
   },
   "misc-cabal": {
-    "item": "icon-cabal",
-    "import": "import Cabal from 'src/ds/icons/misc/Cabal'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-cabal\" />",
     "usedBy": [
       "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx",
       "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
@@ -147,119 +157,205 @@
       "src/utils/text/strings.ts"
     ]
   },
+  "misc-cabal-card": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-cabal-card\" />",
+    "usedBy": []
+  },
+  "misc-cabal-icon": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-cabal-icon\" />",
+    "usedBy": []
+  },
   "misc-card-shied-incentive": {
-    "item": "icon-card-shied-incentive",
-    "import": "import CardShiedIncentive from 'src/ds/icons/misc/CardShiedIncentive'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-card-shied-incentive\" />",
     "usedBy": [
       "src/screens/Profile/components/ProfileHeaderOptions/ProfileHeaderOptions.tsx"
     ]
   },
+  "misc-centraloeste": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-centraloeste\" />",
+    "usedBy": []
+  },
+  "misc-chat-message": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-chat-message\" />",
+    "usedBy": []
+  },
   "misc-clock-green": {
-    "item": "icon-clock-green",
-    "import": "import ClockGreen from 'src/ds/icons/misc/ClockGreen'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-clock-green\" />",
     "usedBy": [
       "src/screens/PharmacyProfile/usePharmacyProfile.ts"
     ]
   },
   "misc-clock-red": {
-    "item": "icon-clock-red",
-    "import": "import ClockRed from 'src/ds/icons/misc/ClockRed'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-clock-red\" />",
     "usedBy": [
       "src/screens/PharmacyProfile/usePharmacyProfile.ts"
     ]
   },
+  "misc-connection-icon": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-connection-icon\" />",
+    "usedBy": []
+  },
   "misc-credential-contrast": {
-    "item": "icon-credential-contrast",
-    "import": "import CredentialContrast from 'src/ds/icons/misc/CredentialContrast'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-credential-contrast\" />",
     "usedBy": [
       "src/core/StartOrder/useStartOrder.ts"
     ]
   },
+  "misc-facebook": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-facebook\" />",
+    "usedBy": []
+  },
   "misc-faceid": {
-    "item": "icon-faceid",
-    "import": "import Faceid from 'src/ds/icons/svg/Faceid'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-faceid\" />",
     "usedBy": [
       "src/screens/Security/utils/getUnlockLabels.ts"
     ]
+  },
+  "misc-farmacity": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-farmacity\" />",
+    "usedBy": []
+  },
+  "misc-farmaplus": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-farmaplus\" />",
+    "usedBy": []
   },
   "misc-fingerprint": {
-    "item": "icon-fingerprint",
-    "import": "import Fingerprint from 'src/ds/icons/svg/Fingerprint'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-fingerprint\" />",
     "usedBy": [
       "src/screens/Security/utils/getUnlockLabels.ts"
     ]
   },
+  "misc-footer-m1": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-footer-m1\" />",
+    "usedBy": []
+  },
+  "misc-footer-m2": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-footer-m2\" />",
+    "usedBy": []
+  },
+  "misc-footer-m3": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-footer-m3\" />",
+    "usedBy": []
+  },
+  "misc-footer-m4": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-footer-m4\" />",
+    "usedBy": []
+  },
+  "misc-footer-m5": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-footer-m5\" />",
+    "usedBy": []
+  },
   "misc-galeno": {
-    "item": "icon-galeno",
-    "import": "import Galeno from 'src/ds/icons/misc/Galeno'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-galeno\" />",
     "usedBy": [
       "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
     ]
   },
   "misc-google": {
-    "item": "icon-google",
-    "import": "import Google from 'src/ds/icons/misc/Google'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-google\" />",
     "usedBy": [
       "src/screens/Auth/components/AuthSocialButton/AuthSocialButton.tsx"
     ]
   },
+  "misc-headphone-01": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-headphone-01\" />",
+    "usedBy": []
+  },
+  "misc-headphone-02": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-headphone-02\" />",
+    "usedBy": []
+  },
+  "misc-lasante": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-lasante\" />",
+    "usedBy": []
+  },
   "misc-luis-pasteur": {
-    "item": "illustration-health-insurance-luis-pasteur",
-    "import": "import LuisPasteur from 'src/ds/illustrations/healthInsurance/LuisPasteur'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-luis-pasteur\" />",
     "usedBy": [
-      "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx",
-      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+      "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
     ]
   },
+  "misc-maestro-fill-card": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-maestro-fill-card\" />",
+    "usedBy": []
+  },
   "misc-marker-incentive": {
-    "item": "icon-marker-incentive",
-    "import": "import MarkerIncentive from 'src/ds/icons/misc/MarkerIncentive'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-marker-incentive\" />",
     "usedBy": [
       "src/screens/Profile/components/ProfileHeaderOptions/ProfileHeaderOptions.tsx"
     ]
   },
   "misc-master-card-small": {
-    "item": "icon-master-card-small",
-    "import": "import MasterCardSmall from 'src/ds/icons/misc/MasterCardSmall'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-master-card-small\" />",
     "usedBy": [
       "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx"
     ]
   },
   "misc-mastercard-card": {
-    "item": "icon-mastercard-card",
-    "import": "import MastercardCard from 'src/ds/icons/misc/MastercardCard'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-mastercard-card\" />",
     "usedBy": [
       "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
       "src/screens/payment/PaymentMethods/PaymentMethods.tsx",
       "src/utils/text/strings.ts"
     ]
   },
+  "misc-mastercard-fill-card": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-mastercard-fill-card\" />",
+    "usedBy": []
+  },
   "misc-mercado-pago": {
-    "item": "icon-mercado-pago",
-    "import": "import MercadoPago from 'src/ds/icons/misc/MercadoPago'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-mercado-pago\" />",
     "usedBy": [
-      "src/screens/PharmacyProfile/components/PaymentMethods/BottomSheetContent.tsx",
       "src/screens/payment/PaymentMethods/PaymentMethods.tsx",
       "src/utils/constants/constants.ts"
     ]
   },
   "misc-message-read": {
-    "item": "icon-message-read",
-    "import": "import MessageRead from 'src/ds/icons/misc/MessageRead'",
-    "usedBy": [
-      "src/design/molecules/IncomingMessage/IncomingMessage.tsx"
-    ]
+    "item": "icon",
+    "import": "<Icon name=\"misc-message-read\" />",
+    "usedBy": []
   },
   "misc-message-square": {
-    "item": "icon-message-square-02",
-    "import": "import MessageSquare02 from 'src/ds/icons/misc/MessageSquare02'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-message-square\" />",
     "usedBy": [
       "src/screens/OrdersHistory/PreviusOrderDetail/Components/ChatHistoryCard/ChatHistoryCard.tsx"
     ]
   },
   "misc-message-square-03": {
-    "item": "icon-message-square-03",
-    "import": "import MessageSquare03 from 'src/ds/icons/misc/MessageSquare03'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-message-square-03\" />",
     "usedBy": [
       "src/design/molecules/TimelineCard/Components/AcceptedQuote/AcceptedQuote.tsx",
       "src/design/molecules/TimelineCard/Components/DeliveryOwnCadet/DeliveryOwnCadet.tsx",
@@ -275,119 +371,133 @@
     ]
   },
   "misc-message-unread": {
-    "item": "icon-message-unread",
-    "import": "import MessageUnread from 'src/ds/icons/misc/MessageUnread'",
-    "usedBy": [
-      "src/design/molecules/IncomingMessage/IncomingMessage.tsx"
-    ]
+    "item": "icon",
+    "import": "<Icon name=\"misc-message-unread\" />",
+    "usedBy": []
   },
   "misc-naranja-card": {
-    "item": "icon-naranja-card",
-    "import": "import NaranjaCard from 'src/ds/icons/misc/NaranjaCard'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-naranja-card\" />",
     "usedBy": [
       "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx",
       "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
-      "src/screens/payment/CheckoutMethod/components/CreditCard.tsx",
       "src/screens/payment/PaymentMethods/PaymentMethods.tsx",
       "src/utils/text/strings.ts"
     ]
   },
   "misc-new-pills": {
-    "item": "icon-misc-new-pills",
-    "import": "import MiscNewPills from 'src/ds/icons/misc/MiscNewPills'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-new-pills\" />",
     "usedBy": [
       "src/core/StartOrder/useStartOrder.ts"
     ]
   },
+  "misc-openfarma": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-openfarma\" />",
+    "usedBy": []
+  },
   "misc-osde": {
-    "item": "icon-osde",
-    "import": "import Osde from 'src/ds/icons/misc/Osde'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-osde\" />",
     "usedBy": [
       "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
     ]
+  },
+  "misc-osecac": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-osecac\" />",
+    "usedBy": []
   },
   "misc-pami": {
-    "item": "icon-pami",
-    "import": "import Pami from 'src/ds/icons/misc/Pami'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-pami\" />",
     "usedBy": [
       "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
     ]
   },
+  "misc-particular": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-particular\" />",
+    "usedBy": []
+  },
   "misc-pdf-2": {
-    "item": "icon-pdf-2",
-    "import": "import Pdf2 from 'src/ds/icons/misc/Pdf2'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-pdf-2\" />",
     "usedBy": [
       "src/screens/OrderSummary/components/OrderPrescriptionCard/OrderPrescriptionGeneric.tsx"
     ]
   },
   "misc-pdf-cloud": {
-    "item": "icon-pdf-cloud",
-    "import": "import PdfCloud from 'src/ds/icons/misc/PdfCloud'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-pdf-cloud\" />",
     "usedBy": [
       "src/core/Legal-Agreements/components/AgreementTabs.tsx",
       "src/core/Legal-Agreements/components/LegalAgreementViewer.tsx"
     ]
   },
+  "misc-shopping-bag": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-shopping-bag\" />",
+    "usedBy": []
+  },
   "misc-swiss-medical": {
-    "item": "icon-swiss-medical",
-    "import": "import SwissMedical from 'src/ds/icons/misc/SwissMedical'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-swiss-medical\" />",
     "usedBy": [
       "src/core/HealthInsurancePickerCarousel/components/HealthInsurancePickerCarouselCard.tsx"
     ]
   },
   "misc-thumbs-down": {
-    "item": "icon-thumbs-down",
-    "import": "import ThumbsDown from 'src/ds/icons/misc/ThumbsDown'",
-    "usedBy": [
-      "src/screens/Home/components/AppRaterBottomSheet/components/AppRaterThumbIcon.tsx"
-    ]
+    "item": "icon",
+    "import": "<Icon name=\"misc-thumbs-down\" />",
+    "usedBy": []
   },
   "misc-thumbs-down-filled": {
-    "item": "icon-thumbs-down-filled",
-    "import": "import ThumbsDownFilled from 'src/ds/icons/misc/ThumbsDownFilled'",
-    "usedBy": [
-      "src/screens/Home/components/AppRaterBottomSheet/components/AppRaterThumbIcon.tsx"
-    ]
+    "item": "icon",
+    "import": "<Icon name=\"misc-thumbs-down-filled\" />",
+    "usedBy": []
   },
   "misc-thumbs-up": {
-    "item": "icon-thumbs-up",
-    "import": "import ThumbsUp from 'src/ds/icons/misc/ThumbsUp'",
-    "usedBy": [
-      "src/screens/Home/components/AppRaterBottomSheet/components/AppRaterThumbIcon.tsx"
-    ]
+    "item": "icon",
+    "import": "<Icon name=\"misc-thumbs-up\" />",
+    "usedBy": []
   },
   "misc-thumbs-up-filled": {
-    "item": "icon-thumbs-up-filled",
-    "import": "import ThumbsUpFilled from 'src/ds/icons/misc/ThumbsUpFilled'",
-    "usedBy": [
-      "src/screens/Home/components/AppRaterBottomSheet/components/AppRaterThumbIcon.tsx"
-    ]
+    "item": "icon",
+    "import": "<Icon name=\"misc-thumbs-up-filled\" />",
+    "usedBy": []
+  },
+  "misc-user": {
+    "item": "icon",
+    "import": "<Icon name=\"misc-user\" />",
+    "usedBy": []
   },
   "misc-visa-card": {
-    "item": "icon-visa-card",
-    "import": "import VisaCard from 'src/ds/icons/misc/VisaCard'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-visa-card\" />",
     "usedBy": [
       "src/screens/payment/PaymentMethods/PaymentMethods.tsx"
     ]
   },
   "misc-visa-card-small": {
-    "item": "icon-visa-card-small",
-    "import": "import VisaCardSmall from 'src/ds/icons/misc/VisaCardSmall'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-visa-card-small\" />",
     "usedBy": [
       "src/screens/PharmacyProfile/components/CheckoutMethods/CheckoutMethods.tsx"
     ]
   },
   "misc-visa-fill-card": {
-    "item": "icon-visa-fill-card",
-    "import": "import VisaFillCard from 'src/ds/icons/misc/VisaFillCard'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-visa-fill-card\" />",
     "usedBy": [
       "src/screens/payment/CheckoutMethod/PaymentConfirmation/PaymentConfirmation.tsx",
       "src/utils/text/strings.ts"
     ]
   },
   "misc-walking-01": {
-    "item": "icon-walking-01",
-    "import": "import Walking01 from 'src/ds/icons/svg/Walking01'",
+    "item": "icon",
+    "import": "<Icon name=\"misc-walking-01\" />",
     "usedBy": [
       "src/screens/Order/OrderDetails/components/DeliveryMethodSelector/DeliveryMethodSelector.tsx",
       "src/screens/Pharmacy/utils/methods/getDeliveryMethodLabel.ts",
@@ -894,6 +1004,13 @@
   "svg/illustrations/healthInsurance/ioma": {
     "item": "illustration-health-insurance-ioma",
     "import": "import Ioma from 'src/ds/illustrations/healthInsurance/Ioma'",
+    "usedBy": [
+      "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
+    ]
+  },
+  "svg/illustrations/healthInsurance/luisPasteur": {
+    "item": "illustration-health-insurance-luis-pasteur",
+    "import": "import LuisPasteur from 'src/ds/illustrations/healthInsurance/LuisPasteur'",
     "usedBy": [
       "src/screens/CreateOrder/CredentialsPicker/utils/getHealthInsuranceImage.tsx"
     ]

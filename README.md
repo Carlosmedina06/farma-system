@@ -175,8 +175,9 @@ import { Modal } from 'src/ds/ui/modal'
 
 ## Assets: solo lo que la app usa
 
-Ilustraciones, íconos SVG y animaciones viven en el registry como **un item por asset**, así cada app instala
-exactamente los que usa:
+Ilustraciones, íconos SVG sueltos y animaciones viven en el registry como **un item por asset**, así cada app
+instala exactamente los que usa. Los **íconos** (`Icon`) vienen completos: los 1230 glifos de la fuente farmaIcons
+y los 61 SVG `misc-*`, con las mismas claves que app-mobile (`<Icon name="misc-card-shied-incentive" />`).
 
 ```sh
 farma-system list -t illustration            # o: list kyc · list -t icon · list -t animation
@@ -187,18 +188,20 @@ farma-system add 'illustration-kyc-*' icon-visa animation-clock
 - **Ilustraciones e íconos SVG** son componentes TSX (`react-native-svg`), generados con la misma configuración
   de SVGR que usa hoy la app: no necesitan `react-native-svg-transformer`.
 - **Animaciones** se copian a `assetsDir` (`assets/farma/animations/`).
-- **Fuente de íconos** (`Icon`): solo trae los glifos usados por el DS, por la app y los que manda el backend.
+- **`Icon`** trae todos los glifos y todos los `misc-*`. Se pueden ver en Storybook: **Fundamentos/Icon**
+  (Catálogo, Fuente, Misc).
 
 Para traer de la app lo que usa (reejecutable; no modifica la app):
 
 ```sh
-pnpm --filter @farma/registry assets:import --app ../app-mobile   # SVG → TSX y animaciones usadas
-pnpm --filter @farma/registry icons:build --app ../app-mobile     # recorta la fuente de íconos
+pnpm --filter @farma/registry assets:import --app ../app-mobile   # ilustraciones, misc-* y animaciones
+pnpm --filter @farma/registry icons:build                         # regenera la fuente de íconos
 ```
 
-`icons:build` parte de `packages/registry/icons-src/farmaIcons.full.ttf` (no se distribuye) y suma
-`icons-src/keep-backend.json`, donde van los íconos que llegan del backend (ej. notificaciones).
-Para nombres externos usá `<Icon name={x} fallback="bell-03" />` o `isIconName(x)`.
+`icons:build` parte de `packages/registry/icons-src/farmaIcons.full.ttf`. Hoy genera la fuente completa
+(`icons-src/config.json` → `"subset": false`). Con `"subset": true` la recorta a los glifos usados por el DS,
+por la app y los de `icons-src/keep-backend.json`.
+Para nombres que llegan de afuera (ej. notificaciones) usá `<Icon name={x} fallback="bell-03" />` o `isIconName(x)`.
 En Storybook están las galerías **Assets/Ilustraciones**, **Assets/Íconos SVG** y **Assets/Animaciones**.
 
 ## Agregar o migrar un componente
@@ -218,4 +221,4 @@ Ver [`packages/registry/MIGRATING.md`](packages/registry/MIGRATING.md). En resum
 | `pnpm typecheck`       | TypeScript en todo el monorepo                                  |
 | `pnpm test`            | Tests del CLI (vitest) y de los componentes (jest-expo)         |
 | `pnpm --filter @farma/registry assets:import --app <app>` | Importa los SVG y animaciones que usa la app |
-| `pnpm --filter @farma/registry icons:build [--app <app>]` | Recorta la fuente de íconos a los glifos usados |
+| `pnpm --filter @farma/registry icons:build [--app <app>]` | Regenera la fuente de íconos (completa o recortada según `icons-src/config.json`) |

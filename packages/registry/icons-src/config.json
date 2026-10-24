@@ -1,0 +1,4 @@
+{
+  "description": "subset: false → la fuente del DS trae TODOS los glifos. true → solo los usados (registry + app + keep-backend.json).",
+  "subset": false
+}

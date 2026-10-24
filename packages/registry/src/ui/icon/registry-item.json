@@ -3,12 +3,277 @@
   "type": "ui",
   "description": "Icon (fuente farmaIcons, ~1200 glifos tipados) y SvgIcon para SVGs propios.",
   "files": [
-    { "path": "Icon.tsx" },
-    { "path": "FarmaIcon.tsx" },
-    { "path": "SvgIcon.tsx" },
-    { "path": "glyph-map.json" },
-    { "path": "index.ts" }
+    {
+      "path": "Icon.tsx"
+    },
+    {
+      "path": "FarmaIcon.tsx"
+    },
+    {
+      "path": "SvgIcon.tsx"
+    },
+    {
+      "path": "glyph-map.json"
+    },
+    {
+      "path": "index.ts"
+    },
+    {
+      "path": "misc-icons.ts",
+      "type": "code"
+    },
+    {
+      "path": "misc/AmericanExpress.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/AmericanExpressCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/AmericanExpressFillCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Apple.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/BellIconRed.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Cabal.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/CabalCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/CabalIcon.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/CardShiedIncentive.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Centraloeste.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ChatMessage.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ClockGreen.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ClockRed.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ConnectionIcon.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/CredentialContrast.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Facebook.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Faceid.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Farmacity.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Farmaplus.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Fingerprint.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/FooterM1.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/FooterM2.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/FooterM3.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/FooterM4.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/FooterM5.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Galeno.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Google.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Headphone01.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Headphone02.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Lasante.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/LuisPasteur.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MaestroFillCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MarkerIncentive.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MasterCardSmall.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MastercardCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MastercardFillCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MercadoPago.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MessageRead.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MessageSquare.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MessageSquare03.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/MessageUnread.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/NaranjaCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/NewPills.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Openfarma.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Osde.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Osecac.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Pami.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Particular.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Pdf2.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/PdfCloud.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ShoppingBag.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/SwissMedical.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ThumbsDown.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ThumbsDownFilled.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ThumbsUp.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/ThumbsUpFilled.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/User.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/VisaCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/VisaCardSmall.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/VisaFillCard.tsx",
+      "type": "code"
+    },
+    {
+      "path": "misc/Walking01.tsx",
+      "type": "code"
+    }
   ],
-  "dependencies": ["@react-native-vector-icons/common", "react-native-svg", "clsx"],
-  "registryDependencies": ["utils", "fonts"]
+  "dependencies": [
+    "@react-native-vector-icons/common",
+    "react-native-svg",
+    "clsx"
+  ],
+  "registryDependencies": [
+    "utils",
+    "fonts"
+  ]
 }

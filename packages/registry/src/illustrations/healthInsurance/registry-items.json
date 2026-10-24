@@ -77,7 +77,7 @@
   {
     "name": "illustration-health-insurance-luis-pasteur",
     "type": "illustration",
-    "description": "LuisPasteur (antes <Icon name=\"misc-luis-pasteur\">)",
+    "description": "LuisPasteur",
     "files": [
       {
         "path": "LuisPasteur.tsx",

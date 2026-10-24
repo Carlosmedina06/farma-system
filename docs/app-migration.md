@@ -35,7 +35,7 @@ Regla general: los imports pasan a `src/ds/<ui|lib>/<item>` con **exports con no
 
 | Componente | Cambio |
 | --- | --- |
-| Icon | tipo `IconName` (`FarmaIcons` queda como alias deprecado). La fuente solo trae los glifos usados: nombres que vienen del backend → `<Icon name={item.icon} fallback="bell-03" />` o `isIconName()`. Íconos `misc-*` → items `icon-*` (ver Assets) con `<SvgIcon icon={Visa} />` |
+| Icon | Igual que antes: glifos y `misc-*` con las mismas claves (`<Icon name="misc-visa-card" />`). Tipo `IconName` (`FarmaIcons` queda como alias deprecado). Nuevo `fallback` e `isIconName()` para nombres del backend |
 | Text | variantes `card-number` → `mono-lg`, `card-text` → `mono-sm` |
 | Badge | sin `activePrescription`/`inactivePrescription`; tamaño `availablePrescription` → `wide`; nuevo `semibold`. Equivalentes: activa → `color="primary" className="text-primary-600" iconClassName="text-primary-600" semibold`; inactiva → `color="gray" className="bg-transparent text-gray-600" iconClassName="text-gray-600" semibold` |
 | Button | `socialButton` ahora es un `type` real (colores a validar con diseño) |
@@ -74,18 +74,16 @@ El DS trae **solo los assets que la app usa** (importados con `pnpm --filter @fa
 | Antes | Ahora |
 | --- | --- |
 | `import X from 'assets/svg/illustrations/kyc/ilus-identidad.svg'` | `add illustration-kyc-identidad` → `import Identidad from 'src/ds/illustrations/kyc/Identidad'` |
-| `<Icon name="misc-visa" />` | `add icon-visa` → `<SvgIcon icon={Visa} />` |
+| `<Icon name="misc-visa-card" />` | igual (los 61 `misc-*` vienen con `icon`) |
 | `require('assets/lottie-animations/clock.json')` | `add animation-clock` → `require('assets/farma/animations/clock.json')` |
-| `assets/fonts/FarmaIcons/*` (1230 glifos) | la fuente del DS (`fonts`) trae solo los glifos usados |
+| `assets/fonts/FarmaIcons/*` (1230 glifos) | la fuente del DS (`fonts`), completa |
 
 Con comodines: `farma-system add 'illustration-kyc-*' 'icon-*'`. Después de migrar se puede borrar de app-mobile:
 `assets/svg/**`, `assets/lottie-animations/`, `assets/fonts/FarmaIcons/`, `src/design/_core/generated/misc-icons.ts`
 y las devDependencies del generador de fuentes que ya no se usa (`svg2ttf`, `svgicons2svgfont`, `oslllo-svg-fixer`, `xml2js`).
 `react-native-svg-transformer` se puede quitar cuando ningún `.svg` se importe directo.
 
-No se migran (no usados): 2 ilustraciones (`EmptyOrder`, `ilus-catalogo-02`) y 22 misc-icons
-(tarjetas `*-card`/`*-fill-card`, `cabal-icon`, `centraloeste`, `connection-icon`, `facebook`, `farmacity`, `farmaplus`,
-`footer-m1..m5`, `lasante`, `openfarma`, `osecac`, `shopping-bag`, `user`, `notification-message`).
+No se migran (no usados): 2 ilustraciones (`EmptyOrder`, `ilus-catalogo-02`). Los 61 `misc-*` se migran todos, aunque 22 no se usen hoy.
 
 ## Se quedan en la app (dominio)
 

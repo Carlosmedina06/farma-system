@@ -1,5 +1,7 @@
 export { default as Icon, isIconName } from './Icon'
-export type { FarmaIcons, IconName, IconProps } from './Icon'
+export type { FarmaIcons, GlyphName, IconName, IconProps } from './Icon'
+export { miscIcons } from './misc-icons'
+export type { MiscIconName } from './misc-icons'
 export { FarmaIcon } from './FarmaIcon'
 export { SvgIcon } from './SvgIcon'
 export type { SvgIconProps } from './SvgIcon'

@@ -1,0 +1,6 @@
+// Generado desde app-mobile/assets/svg/misc-icons/american-express-card.svg por scripts/import-app-assets.ts
+import * as React from "react";
+import Svg, { Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+const AmericanExpressCard = (props: SvgProps) => <Svg width={24} height={24} fill="none" viewBox="0 0 24 24" {...props}><Path fill="#1F72CD" d="M0 4a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v16a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4z" /><Path fill="white" fillRule="evenodd" d="m4.297 9.44-2.245 5.114H4.74l.333-.815h.762l.333.815h2.96v-.622l.263.622h1.53l.264-.635v.635h6.154l.748-.794.7.794 3.161.007-2.252-2.55 2.252-2.572h-3.111l-.729.78-.678-.78h-6.695l-.575 1.32-.588-1.32H6.889v.601l-.298-.6zm.52.726h1.311l1.49 3.468v-3.469h1.435l1.15 2.488 1.06-2.488h1.429v3.671h-.87l-.006-2.876-1.267 2.876H9.77L8.497 10.96v2.876H6.71l-.339-.823H4.54l-.34.822h-.957zm12.203 0h-3.533v3.668h3.479l1.121-1.216 1.08 1.216h1.13l-1.642-1.824 1.643-1.844h-1.081L18.1 11.367zm-11.565.62-.603 1.466h1.206zm8.904.81v-.671h2.205l.962 1.071-1.004 1.078h-2.163v-.732h1.928v-.747z" clipRule="evenodd" /></Svg>;
+export default AmericanExpressCard;
