@@ -14,10 +14,14 @@
     "storybook": "pnpm --filter @farma/storybook storybook",
     "farma-system": "node packages/cli/dist/index.js",
     "storybook:build": "pnpm --filter @farma/storybook build",
-    "ui:build": "pnpm registry:build && pnpm --filter @farma/ui build",
-    "ui:pack": "pnpm registry:build && pnpm --filter @farma/ui run pack"
+    "ui:build": "pnpm registry:build && pnpm --filter @carlosmedina/farma-ui build",
+    "ui:pack": "pnpm registry:build && pnpm --filter @carlosmedina/farma-ui pack:local",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "pnpm registry:build && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.31.1",
     "typescript": "~6.0.3"
   }
 }

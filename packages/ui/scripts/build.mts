@@ -112,22 +112,15 @@ Object.assign(exports, {
 
 const pkgPath = path.join(root, 'package.json')
 const pkg = JSON.parse(await readFile(pkgPath, 'utf8'))
-// `--local`: versión única por empaquetado (0.1.0-local.<fecha>) para que yarn no reutilice su caché
-// al instalar desde el tarball. Al publicar en el npm privado se usa la versión tal cual.
-const baseVersion = String(pkg.version).replace(/-local\.\d+$/, '')
-const stamp = new Date().toISOString().replace(/\D/g, '').slice(0, 14)
-const version = process.argv.includes('--local') ? `${baseVersion}-local.${stamp}` : baseVersion
 const sortedPeers = [...peers].sort()
+// Solo se regeneran los campos derivados del registry; nombre, versión (Changesets) y metadata se mantienen.
 await writeFile(
   pkgPath,
   JSON.stringify(
     {
-      name: pkg.name,
-      version,
-      description: pkg.description,
-      license: pkg.license,
+      ...pkg,
       sideEffects: false,
-      files: ['lib', 'assets', 'theme.css'],
+      files: ['lib', 'assets', 'theme.css', 'README.md'],
       exports,
       // Versiones exactas del registry → rango con ^ (la app elige el patch).
       peerDependencies: Object.fromEntries(
@@ -136,12 +129,10 @@ await writeFile(
       peerDependenciesMeta: Object.fromEntries(
         sortedPeers.filter((dep) => !REQUIRED_PEERS.includes(dep)).map((dep) => [dep, { optional: true }]),
       ),
-      scripts: { build: 'tsx scripts/build.mts', pack: 'tsx scripts/build.mts --local && rm -rf dist && pnpm pack --pack-destination dist && mv dist/farma-ui-*.tgz dist/farma-ui.tgz' },
-      devDependencies: pkg.devDependencies,
     },
     null,
     2,
   ) + '\n',
 )
 
-console.log(`@farma/ui: ${Object.keys(exports).length} entries, ${sortedPeers.length} peerDependencies → lib/`)
+console.log(`${pkg.name}: ${Object.keys(exports).length} entries, ${sortedPeers.length} peerDependencies → lib/`)

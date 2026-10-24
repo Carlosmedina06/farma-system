@@ -1,13 +1,36 @@
 {
-  "name": "@farma/ui",
-  "version": "0.1.0-local.20261024190838",
-  "description": "Design system de Farma para React Native + Expo + Uniwind. Un import por componente: @farma/ui/button, @farma/ui/icon…",
+  "name": "@carlosmedina/farma-ui",
+  "version": "0.0.0",
+  "description": "Design system de Farma para React Native + Expo + Uniwind. Un import por componente: @carlosmedina/farma-ui/button, /icon, /modal…",
+  "keywords": [
+    "react-native",
+    "expo",
+    "uniwind",
+    "tailwind",
+    "design-system",
+    "ui",
+    "components"
+  ],
   "license": "UNLICENSED",
+  "author": "Carlos Medina",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carlosmedina06/farma-system.git",
+    "directory": "packages/ui"
+  },
+  "homepage": "https://github.com/Carlosmedina06/farma-system#readme",
+  "bugs": {
+    "url": "https://github.com/Carlosmedina06/farma-system/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "files": [
     "lib",
     "assets",
-    "theme.css"
+    "theme.css",
+    "README.md"
   ],
   "exports": {
     "./accordion": {
@@ -394,12 +417,13 @@
       "optional": true
     }
   },
-  "scripts": {
-    "build": "tsx scripts/build.mts",
-    "pack": "tsx scripts/build.mts --local && rm -rf dist && pnpm pack --pack-destination dist && mv dist/farma-ui-*.tgz dist/farma-ui.tgz"
-  },
   "devDependencies": {
     "@farma/registry": "workspace:*",
     "tsx": "^4.23.15"
+  },
+  "scripts": {
+    "build": "tsx scripts/build.mts",
+    "pack:local": "tsx scripts/build.mts && tsx scripts/pack-local.mts",
+    "prepublishOnly": "tsx scripts/build.mts"
   }
 }
